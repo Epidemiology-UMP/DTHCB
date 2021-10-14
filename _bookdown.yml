@@ -1,0 +1,12 @@
+output_dir: "docs"
+book_filename: "EPICB"
+language:
+  label:
+    fig: 'Hình '
+    tab: 'Bảng '
+    eq: 'Công thức '
+    solution: 'Đáp án. '
+  ui:
+    chapter_name: "Chương "
+delete_merged_file: true
+before_chapter_script: R/webex.R

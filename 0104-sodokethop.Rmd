@@ -1,0 +1,486 @@
+# Số Đo Kết Hợp {#dthcb_sodokethop}
+
+## Mục tiêu bài giảng {-}
+Sau khi học xong bài này, học viên có thể
+
+* Tính toán được những số đo kết hợp, gồm nguy cơ tương đối, tỉ số số chênh, nguy cơ qui trách, và nguy cơ qui trách dân số.
+
+* Lý giải được ý nghĩa của những số đo nói trên để xác định được một nguyên nhân gây bệnh, và lượng giá được tác động của nguyên nhân đó đối với tình trạng sức khỏe của một cộng đồng.
+
+## Giới thiệu {-}
+
+Để mô tả sự xuất hiện của một hiện tượng sức khỏe, chúng ta sử dụng những số đo bệnh trạng hoặc tử vong, đó là số hiện mắc và số mới mắc. Hai số đo này giúp chúng ta mô tả được hiện trạng của bệnh, hoặc khả năng mắc bệnh trong từng dân số một. Để xác định được nguyên nhân gây bệnh, chúng ta cần so sánh bệnh trạng của hai hoặc nhiều dân số khác nhau. Khi quan sát thấy một bệnh xảy ra ở một nhóm người có những thuộc tính riêng, chúng ta chưa có đủ bằng chứng để nói rằng bởi vì mang những thuộc tính đó nên những người trong nhóm đó mắc bệnh. Nói một cách khác, chúng ta chưa thể kết luận rằng những thuộc tính đó là nguyên nhân gây ra bệnh. Thí dụ, một dân số A có tỉ lệ hiện mắc của bệnh mạch vành là 45%, và hầu hết những người trong nhóm này là những người lớn tuổi, nam giới, và hút thuốc lá nhiều. Những yếu tố tuổi (lớn), giới tính (nam), và hút thuốc lá (có hút) cho dù là phổ biến trong dân số A, nhưng không phải là những bằng chứng để chúng ta có thể nói rằng chúng là những nguyên nhân khiến cho những cá nhân trong dân số A mắc bệnh mạch vành. Giả sử một dân số B, có tỉ lệ hiện mắc bệnh mạch vành là rất thấp so với tỉ lệ tương ứng ở A, thí dụ 5%, nhưng hầu hết những người bệnh mạch vành trong dân số B cũng là những người lớn tuổi, nam giới, và hút thuốc lá nhiều, thì những yếu tố tuổi, giới, hút thuốc lá không thể là những nguyên nhân để khiến cho dân số A mắc bệnh mạch vành nhiều hơn B. Như vậy, để xác định nguyên nhân của bệnh, chúng ta cần so sánh hai (hoặc nhiều) dân số có bệnh trạng khác nhau, và mang những thuộc tính khác nhau. Chỉ khi nào dân số A, mắc bệnh nhiều hơn dân số B, mang những thuộc tính khác với dân số B, thì những thuộc tính chỉ có ở A mà không có ở B mới có thể là những nguyên nhân gây ra bệnh cho dân số A. Trở lại thí dụ vừa nêu về bệnh mạch vành, giả sử rằng hầu hết những cá nhân trong dân số B không hút thuốc lá, khi đó chúng ta có thể nghĩ rằng hút thuốc lá là nguyên nhân gây ra bệnh mạch vành ở A, vì hút thuốc lá chỉ có trong A, nhưng không có trong B. 
+
+Để xác định được nguyên nhân gây bệnh, chúng ta sẽ sử dụng những số đo kết hợp, chúng còn được gọi là số đo liên quan, hay số đo hậu quả. Những số đo này được tính toán căn cứ vào sự so sánh những số đo bệnh trạng ở những dân số mang những thuộc tính khác nhau. Để so sánh hai số đo bệnh trạng, hay nói một cách khác, để xác định được số đo bệnh trạng nào là lớn hơn, chúng ta có thể chia hai số đo với nhau (số đo hậu quả), hoặc trừ chúng cho nhau (số đo tác động)
+
+## NHỮNG KHÁI NIỆM CẦN THIẾT {-}
+
+### Nguyên Nhân – Yếu Tố Nguy Cơ – Nguy Cơ – Yếu Tố Xác Định {-}
+
+**Nguyên nhân** gây bệnh là một yếu tố, thông qua một quá trình với những cơ chế cụ thể, có thể gây ra một bệnh lý đặc thù ở một người. Mycobacterium tuberculosis là nguyên nhân gây ra bệnh lao ở người, và bệnh lao ở một cá nhân bắt đầu bằng sự xâm nhập của M. tuberculosis vào cơ thể người qua một ngõ vào cụ thể, thí dụ đường hô hấp, và thông qua một cơ chế với nhiều bước khác nhau, chúng xâm nhập vào mô, từ đó gây ra những biến đổi trong tế bào để tạo ra những sang thương lao. Tuy nhiên, nhiều bằng chứng thực tế cho thấy rằng không phải ai nhiễm M. tuberculosis cũng sẽ bị lao. Những yếu tố khác giúp cho M. tuberculosis có thể gây ra bệnh lao ở một cá nhân là người đó có thể sống trong một môi trường ô nhiễm, bị suy dinh dưỡng, không chủng ngừa, hoặc rất nhiều những yếu tố khác chỉ có ở cá nhân đó mà không có ở những người khác. Những yếu tố này có thể được gọi là những **yếu tố nguy cơ** của bệnh, tức là những yếu tố khi hiện diện trong ta sẽ tăng khả năng mắc bệnh cho ta. Khả năng mắc bệnh còn được gọi là **nguy cơ** mắc bệnh, là xác suất xảy ra bệnh, được thể hiện bằng một tỉ lệ. Yếu tố nguyên nhân còn được gọi là yếu tố phơi nhiễm, và sự tiếp xúc với nó được gọi là sự phơi nhiễm. 
+
+Nguyên nhân hoặc yếu tố nguy cơ có thể được gọi là những **yếu tố xác định** của bệnh. Những khái niệm sâu hơn về nguyên nhân sẽ được phân tích và trình bày trong những chủ đề khác. Để thể hiện mối liên quan giữa hai biến số, chúng ta có thể trình bày những biến số đó với những giá trị của chúng trong một bảng gồm những hàng và cột. 
+
+Các nghiên cứu dịch tễ học tim hiểu sự kết hợp giữa hai yếu tố phơi nhiễm và bệnh. Đầu tiên là phân biệt giữa người có và những người không tiếp xúc với yếu tố nguy cơ (biến độc lập) thứ hai là phân biệt giữa người có mắc bệnh và người không có mắc bệnh (biến phụ thuộc) mà nghiên cứu đang cứu đang thực hiện. Tuy nhiên các nghiên cứu dịch tễ học có thể phức tạp bởi các yêu cầu khác, chẳng hạn, có thể phải phân tích một số biến độc lập với biến phụ thuộc bao gồm cả sự tương tác của các biến số độc lập. Đo lường mức độ nghiêm trọng khác nhau của tiếp xúc với yếu tố nguy cơ hay bệnh có thể cho các giá trị khác nhau thay vì đơn giản là có tiếp xúc và không tiếp xúc hay có bệnh và không bệnh. Ngoài ra, một điểm khác liên quan đến sự cần thiết đo lường mức độ khác nhau của mức độ tiếp xúc với yếu tố nguy cơ, thời gian tiếp xúc với yếu tố nguy cơ hoặc cả hai. Ví dụ: khi đo lường tiếp xúc với thuốc lá tính theo gói-năm, là con số trung bình gói thuốc hút mỗi ngày nhân với số năm hút thuốc. 
+
+Tuy nhiên, tùy thuộc vào yếu tố nguy cơ, có thể khó xác định thời điểm bắt đầu tiếp xúc. Điều này đúng với các yếu tố nguy cơ như lối sống ít vận động hoặc chế độ ăn uống quá mức. 
+
+Mặc dù có nhiều những phức tạp này, nhiều nghiên cứu dịch tễ học vẫn dựa vào khảo sát mối liên quan giữa có bệnh/không bệnh và có tiếp xúc/ không tiếp xúc thường được trình bày dưới dạng 2x2 tiêu chuẩn.
+
+Các nghiên cứu dịch tễ học phụ thuộc vào đo lường sự khác biệt. Trong các nghiên cứu đoàn hệ, sự khác biệt cần tìm thấy là so sánh tần suất bệnh giữa những người tiếp xúc với một yếu tố nguy cơ và tần suất bệnh ở những người không tiếp xúc với yếu tố nguy cơ tương tự. Trong nghiên cứu bệnh chứng, sự khác biệt cần tìm là so sánh tần suất có yếu tố nguy cơ ở nhóm người có bệnh so với nhóm không có bệnh. 
+
+Các yếu tố nguy cơ được khảo sát trong dịch tễ có thể kể đến bao gồm yếu tố dinh dưỡng (vd: chế độ ăn chất béo bão hòa), yếu tố môi trường (vd: ô nhiễm không khí), yếu tố hành vi (vd: hút thuốc lá), yếu tố về đặc điểm sinh lý (cholesterol huyết thanh cao), can thiệp y tế công cộng (vd: vắc-xin). 
+
+Mặc dù những số đo lường khác biệt có thể được xem xét dưới dạng tuyệt đối hay tương đối thì các đo lường được sử dụng phụ thuộc vào loại thiết kế nghiên cứu thực hiện. Các giải thích được trình bày ở những nội dung trong bài Nghiên cứu bệnh chứng. Cần nhớ rằng nghiên cứu bệnh chứng cho phép người điều tra chỉ có thể thu thập được một đo lường nguy cơ tương đối (relative measure of risk) trong khi nghiên cứu đoàn hệ và nghiên cứu can thiệp lại cho phép nhà nghiên cứu thu thập được cả đo lường nguy cơ tuyệt đối và tương đối (absolute and relative of risk). Sau khi tính toán so sánh khác biệt về nguy cơ, mức độ thống kê phải được xác định sau đó để đảm bảo rằng bất kỳ sự khác biệt quan sát nào có thể là có thật chứ không phải do cơ hội hay tình cờ (chance). Nội dung về cơ hội sẽ được trình bày rõ ràng hơn trong bài Cơ hội. 
+
+Bảng \@ref(tab:bang0401) trình bày những dữ kiện giả lập, thể hiện mối liên quan giữa mức độ uống rượu thay đổi khác nhau ở nam và nữ, và cho thấy nam giới có khuynh hướng uống rượu nhiều hơn nữ giới. Nếu các biến số là nhị giá, tức là chỉ có hai giá trị, bảng hàng và cột sẽ thu nhỏ lại thành bảng 2x2, tức là có 2 hàng và 2 cột. Bảng \@ref(tab:bang0401) trình bày mối liên quan giữa sự hiểu biết của bà mẹ về yếu tố truyền bệnh sốt xuất huyết dengue và hậu quả ở con. Hai biến số kiến thức và tình trạng bệnh là nhị giá, với hai giá trị là biết/không biết, và bệnh/không bệnh. Những dữ kiện của một bảng nhiều hàng và cột, hoặc một bảng 2x2, cho chúng ta hình dung được mối liên quan giữa hai biến số mà chúng ta quan tâm, cụ thể hơn, nó có thể cho chúng ta thấy được sự thay đổi của một biến số theo sự thay đổi của biến số còn lại. 
+
+```{r bang0401, echo = FALSE}
+data.frame(
+  gioitinh = c("Nam", "Nữ", "Tổng"),
+  khong= c("15 (10)", "100 (67)", "115"),
+  vua = c("45 (30)", "35 (23)", "80"),
+  nhieu = c("90 (60)", "15 (10)", "105"),
+  tong = c("150 (100)", "150 (100)", "300")
+) %>%
+  gt(caption = "Phân bố tần số của mức độ uống rượu theo giới tính, dữ kiện giả lập.") %>%
+  cols_label(gioitinh = "Cholesterol huyết thanh (mg/100ml)",
+             khong = "n (%)",
+             vua = "n (%)",
+             nhieu = "n (%)",
+             tong = "") %>%
+  tab_spanner(
+    label = "Không bao giờ",
+    columns = c(khong)
+  ) %>%
+  tab_spanner(
+    label = "Vừa phải",
+    columns = c(vua)
+  ) %>%
+  tab_spanner(
+    label = "Nhiều",
+    columns = c(nhieu)
+  ) %>%
+  tab_spanner(
+    label = "Tổng",
+    columns = c(tong)
+  ) %>%
+  tab_stubhead(label = "Mức độ uống rượu")
+```
+
+Bảng 2x2 được sử dụng phổ biến trong dịch tễ học phân tích để xác định nguyên nhân hoặc những yếu tố nguy cơ của bệnh. Để dễ tính toán và lý giải những số đo cần thiết, nên trình bày dữ kiện trong bảng 2x2 theo thứ tự, nguyên nhân ở hàng, bệnh ở cột, và có trước, không sau.
+
+```{r bang0402, echo = FALSE}
+data.frame(
+  biet = c("Biết", "Không biết", "Tổng"),
+  sxhd= c("54 (49)", "56 (51)", "110 (100)"),
+  ksxhd = c("58 (52)", "52 (48)", "110 (100)"),
+  tong = c("112", "108", "220")
+) %>%
+  gt(caption = "Phân bố tần số của kiến thức về sốt xuất huyết dengue ở những bà mẹ có và không có con mắc bệnh sốt xuất huyết dengue.") %>%
+  cols_label(biet = "Biết muỗi là yếu tố truyền bệnh",
+             sxhd = "SXHD \n n (%)",
+             ksxhd = "Không SXHD \n n (%)",
+             tong = "Tổng \n ") %>%
+  tab_source_note(source_note = "Nguồn: Nguyễn Đỗ Nguyên. Kiến thức, thái độ, thực hành về phòng chống sốt xuất huyết dengue của các bà mẹ ở nội thành TP. Hồ chí Minh. Y học TP. Hồ chí Minh. 1999. 3(2):119-124.")
+```
+
+```{r bang0403, echo = FALSE}
+data.frame(
+  nguyennhan = c("Có", "Không", "Tổng"),
+  co = c("a", "b", "a + b"),
+  khong = c("c", "d", "c + d"),
+  tong = c("a + c", "b + d", "a + b + c + d")
+) %>%
+  gt(caption = "Cấu trúc tổng quát của bảng 2x2.") %>%
+  cols_label(nguyennhan = "Nguyên nhân",
+             co = "Có",
+             khong = "Không",
+             tong = "Tổng") %>%
+  tab_spanner(
+    label = "Bệnh",
+    columns = c(co, khong, tong)
+  ) 
+```
+
+Cấu trúc tổng quát của bảng 2x2 được trình bày trong bảng \@ref(tab:bang0403), trong đó a là số người có tiếp xúc với yếu tố nguyên nhân (hay còn gọi là có phơi nhiễm) và có bệnh; b là số người có phơi nhiễm nhưng không bệnh; c là số người không phơi nhiễm nhưng có bệnh; và d là số người không phơi nhiễm và cũng không có bệnh.
+
+Chú thích các ô trong bảng: 
+
+* a = Người có phơi nhiễm với yếu tố đang khảo sát và có bệnh
+* b = Người có phơi nhiễm với yếu tố đang khảo sát nhưng không bệnh
+* c = Người không phơi nhiễm với yếu tố đang khảo sát nhưng có bệnh
+* d = Người không phơi nhiễm với yếu tố đang khảo sát và cũng không có bệnh
+* a + b = Tất cả người có phơi nhiễm
+* c + d = Tất cả người không phơi nhiễm
+* a + c = Tất cả người có bệnh
+* b + d = Tất cả người không bệnh
+* a + b + c + d = Toàn bộ người trong nghiên cứu
+
+Nguy cơ tương đối (RR: relative risk) hay còn được gọi là tỷ số nguy cơ (Risk ratio), chính là tỷ số giữa nguy cơ mắc bệnh ở nhóm có phơi nhiễm với nguy cơ mắc bệnh ở nhóm không phơi nhiễm. Nếu nguy cơ trong nhóm có phơi nhiễm và nguy cơ trong nhóm không phơi nhiễm bằng nhau thì RR =1. Nếu nguy cơ mắc bệnh ở hai nhóm là không như nhau, RR sẽ cho biết sự khác nhau như thế nào (nhiều hơn hay ít hơn; lớn hơn hay nhỏ hơn) giữa nguy cơ mắc bệnh ở nhóm có phơi nhiễm so với nhóm không phơi nhiễm. Nguy cơ mắc bệnh trong nhóm có phơi nhiễm thường là lớn hơn 1 nếu yếu tố tiếp xúc là có hại (vd: hút thuốc lá) hoặc nhỏ hơn 1 nếu yếu tố tiếp xúc là có lợi hay bảo vệ (vd: tiêm vắc – xin)
+
+## CÁC SỐ ĐO KẾT HỢP {-}
+
+### Nguy Cơ Tương Đối {-}
+
+Bảng \@ref(tab:bang0404) trình bày những dữ kiện của một nghiên cứu, quan sát một dân số gồm 876 người, trong đó có 422 người tăng cholesterol máu ( 245 mg/100ml), và 454 người có cholesterol máu bình thường (< 210 mg/100ml). Vào đầu thời khoảng quan sát, tất cả những người này chưa mắc bệnh mạch vành. Sau 6 năm theo dõi, trong nhóm những người tăng cholesterol máu, có 51 người mắc bệnh mạch vành, trong khi đó, con số tương ứng ở nhóm cholesterol máu bình thường là 16. Để trả lời câu hỏi rằng cholesterol máu cao có tăng nguy cơ mắc bệnh mạch vành hay không, hay nói một cách khác, giữa những người tăng cholesterol máu và những người có cholesterol máu bình thường ai có khả năng mắc bệnh mạch vành cao hơn, chúng ta sẽ so sánh số đo mắc bệnh của hai nhóm, như sau.
+
+Tỉ suất mới mắc bệnh mạch vành ở nhóm tăng cholesterol máu là:
+$R_1$ = 51/422 = 0,12 = 12% trong vòng 6 năm
+
+Tỉ suất mới mắc bệnh mạch vành ở nhóm cholesterol máu bình thường là:
+$R_0$ = 16/454 = 0,04 = 4% trong vòng 6 năm
+
+Chia $R_1$ cho $R_0$, ta có:
+$R_1$/$R_0$ = 0,12/0,04 = 3
+
+```{r bang0404, echo = FALSE}
+data.frame(
+  choles = c("$$\\geq 245$$", "$$< 210$$", "Tổng"),
+  co = c("51 (12.1)", "16 (3.5)", "67"),
+  khong = c("371 (87.9)", "438 (96.5)", "809"),
+  tong = c("422", "454", "876")
+) %>%
+  gt(caption = "Số đo mắc bệnh mạch vành ở người có cholesterol máu bình thường và cholesterol máu cao, được theo dõi trong vòng 6 năm.") %>%
+  cols_label(choles = "Cholesterol huyết thanh (mg/100ml)",
+             co = "Có \n n (%)",
+             khong = "Không \n n (%)",
+             tong = "Tổng") %>%
+  tab_spanner(
+    label = "Bệnh mạch vành",
+    columns = c(co, khong, tong)
+  ) 
+```
+
+Tỉ số $R_1$/$R_0$ là tỉ số giữa hai nguy cơ mới mắc của nhóm cholesterol máu cao và nhóm cholesterol máu bình thường, được gọi là tỉ số nguy cơ, và còn được gọi là nguy cơ tương đối mắc bệnh của nhóm cholesterol máu cao so với nhóm có cholesterol máu bình thường. Nguy cơ tương đối được viết tắt là RR, từ thuật ngữ tiếng Anh là relative risk hoặc risk ratio. Với trị số của RR bằng 3, chúng ta nói rằng người tăng cholesterol máu có nguy cơ mắc bệnh mạch vành cao gấp 3 lần so với người có cholesterol máu bình thường. Dựa vào bảng \@ref(tab:bang0403), chúng ta có thể xác định công thức để tính RR như sau:
+
+Nguy cơ mắc bệnh ở nhóm có phơi nhiễm là $R_1$ = a / (a + b)
+
+Nguy cơ mắc bệnh ở nhóm không phơi nhiễm là $R_0$ = c / (c + d)
+
+Vậy công thức để tính nguy cơ tương đối, dựa vào số mới mắc là nguy cơ, là:
+
+\begin{equation}
+RR = \frac{R_1}{R_0} = \frac{a/(a + b)}{c/(c + d)}
+
+(\#eq:rr)
+\end{equation}
+
+RR được tính dựa vào số mới mắc, có thể là nguy cơ, hoặc tỉ suất. Nếu số đo mới mắc là tỉ suất, RR là tỉ số tỉ suất, và cũng là nguy cơ tương đối. Bảng 4.5 trình bày những dữ kiện của tỉ suất bệnh mạch vành ở những phụ nữ sử dụng kích thích tố hậu mãn kinh. Đây cũng là một bảng 2x2, nhưng sự xuất hiện bệnh được đo lường bằng tỉ suất chứ không phải nguy cơ, có nghĩa là số mới mắc được ghi nhận theo khoảng thời gian nguy cơ được theo dõi trên từng đối tượng khác nhau. Ở bảng 2 x 2 lúc này, tổng hàng không trình bày tổng số người của từng nhóm có hoặc không có sử dụng thuốc, mà là tổng thời gian theo dõi của tất cả đối tượng trong từng nhóm, với đơn vị là năm-người. Những dữ kiện của cột “không bệnh mạch vành” cũng không được trình bày, vì thật sự chúng ta chỉ quan tâm đến số mắc bệnh để đưa vào công thức tính tỉ suất. Để so sánh khả năng mắc bệnh mạch vành ở hai nhóm phụ nữ có và không có sử dụng kích thích tố hậu mãn kinh, chúng ta tính toán như sau.
+
+Tỉ suất bệnh mạch vành ở nhóm sử dụng kích thích hậu mãn kinh là:
+$R_1$ = 30 người/54.308,7 năm-người = 0,5524/năm = 5,52/10.000/năm
+
+Tỉ suất bệnh mạch vành ở nhóm không sử dụng kích thích tố hậu mãn kinh là:
+$R_0$ = 60 người/51.477,5 năm-người = 0,11656/năm = 11,66/10.000/năm
+
+Tỉ số tỉ suất hay nguy cơ tương đối là:
+RR = $R_1$ / $R_0$ = (5,5/10.000/năm) : (11,66/10.000/năm) = 0,47
+
+Những dữ kiện này được lý giải như sau, hàng năm, trong số 10.000 phụ nữ có sử dụng kích thích tố hậu mãn kinh, có khoảng 6 người mắc bệnh mạch vành; trong khi ở 10.000 người không sử dụng kích thích tố hậu mãn kinh, có khoảng 12 người mắc bệnh. Như vậy, người sử dụng kích thích tố hậu mãn kinh giảm phân nữa nguy cơ mắc bệnh mạch vành so với người không sử dụng. 
+
+Một cách khác để xem xét và giải thích cho tỉ số tỉ suất hay nguy cơ tương đối là tính toán phần trăm tương đối tăng hoặc giảm nguy cơ mắc bệnh. Về cơ bản theo cách sắp xếp của bảng 2x2, nguy cơ của nhóm không phơi nhiễm được xem là 100%.
+
+Khi RR>1, điều này có nghĩa là khi so sánh nguy cơ/tỉ suất giữa nhóm có yếu tố phơi nhiễm (R1) với nhóm không có yếu tố phơi nhiễm (Ro) thì nguy cơ mắc bệnh là cao hơn ở nhóm có phơi nhiễm so với nhóm không phơi nhiễm.
+
+Đối với nghiên cứu về bệnh mạch vành và cholesterol máu tăng, nhóm có tăng cholesterol máu có nguy cơ mắc bệnh mạch vành tăng 200% so với nhóm không tăng cholesterol máu (100%). (Bảng \@ref(tab:bang0404))
+
+Phần trăm (%) tăng nguy cơ = (RR - 1) x 100 
+
+Khi RR<1, điều này có nghĩa là khi so sánh nguy cơ hay tỉ suất mắc bệnh giữa nhóm có yếu tố phơi nhiễm ($R_1$) với nhóm không có yếu tố phơi nhiễm (R0) thì nguy cơ mắc bệnh là thấp hơn ở nhóm có phơi nhiễm so với nhóm không phơi nhiễm. 
+
+Đối với nghiên cứu sử dụng kích thích tố hậu mãn kinh và bệnh mạch vành, những phụ nữ có sử dụng kích thích tố hậu mãn kinh đã giảm 53% nguy cơ mắc bệnh mạch vành so với những người không sử dụng kích thích tố này (Bảng \@ref(tab:bang0405))
+
+Phần trăm (%) giảm = (1 - RR) x 100
+
+```{r bang0405, echo = FALSE}
+data.frame(
+  sudung = c("Có", "Không", "Tổng"),
+  co = c("30", "60", "90"),
+  khong = c("---", "---", ""),
+  namnguoi = c("54,308.7", "51,477.5", "105,786.2")
+) %>%
+  gt(caption = "Số mới mắc bệnh mạch vành và sử dụng kích thích tố hậu mãn kinh ở phụ nữ.") %>%
+  cols_label(sudung = "Sử dụng kích thích tố hậu mãn kinh",
+             co = "Có",
+             khong = "Không",
+             namnguoi = "Năm-người") %>%
+  tab_spanner(
+    label = "Bệnh mạch vành",
+    columns = c(co, khong, namnguoi)
+  ) 
+```
+
+Bảng 2x2 để trình bày những dữ kiện của số đo mới mắc là tỉ suất có cấu trúc như trong bảng \@ref(tab:bang0406), trong đó a là số người có phơi nhiễm và mắc bệnh trong tổng thời gian theo dõi là $TGN_1$; và b là số người không phơi nhiễm và mắc bệnh trong tổng thời gian theo dõi là $TGN_0$. 
+
+```{r bang0406, echo = FALSE}
+data.frame(
+  nguyennhan = c("Có", "Không", "Tổng"),
+  co = c("a", "b", "a + b"),
+  khong = c("---", "---", ""),
+  namnguoi = c("$$TGN_1$$", "$$TGN_0$$", "$$TGN_1 + TGN_0$$")
+) %>%
+  gt(caption = "Bảng 2x2 trình bày dữ kiện mắc bệnh với số đo là tỉ suất.") %>%
+  cols_label(nguyennhan = "Nguyên nhân",
+             co = "Có",
+             khong = "Không",
+             namnguoi = "Năm-người") %>%
+  tab_spanner(
+    label = "Bệnh",
+    columns = c(co, khong, namnguoi)
+  ) 
+```
+
+Vậy công thức để tính RR dựa vào số mới mắc là tỉ suất, là:
+
+\begin{equation}
+RR = \frac{a/TGN_1}{b/TGN_0} 
+
+(\#eq:rr2)
+\end{equation}
+
+### Tỉ Số Số Chênh (Odd Ratio) {-}
+
+Một loại số đo bệnh trạng khác, ngoài số hiện mắc và số mới mắc, là số chênh, và được ký hiệu là O. 
+
+Số chênh được tính theo công thức sau:
+
+\begin{equation}
+\text{Số chênh} = \frac{\text{Nguy cơ}}{1 - \text{Nguy cơ}}
+
+(\#eq:sochenh)
+\end{equation}
+
+Theo công thức trên, số chênh luôn luôn có giá trị là một số dương. Nếu số chênh bằng 0, thì nguy cơ bằng 0, hay không có nguy cơ mắc bệnh. Nếu số chênh bằng 1, thì nguy cơ bằng 0,5. Nếu số chênh bằng $\infty$, thì nguy cơ bằng 1. 
+
+Như vậy, số chênh có thể đo lường được nguy cơ mắc bệnh của một người, và tỉ số của 2 số chênh có thể được dùng để so sánh khả năng mắc bệnh của hai người. Dựa theo những dữ kiện trong bảng 4.4, chúng ta thực hiện những phép tính sau đây:
+
+Số chênh bệnh mạch vành ở những người tăng cholesterol máu là:
+
+$O_1$ = $R_1$ : (1 – $R_1$) = (51/422) : [1 – (51/422)] = 51/(422 - 51) = 51/371; với $R_1$ là nguy cơ bệnh mạch vành ở những người tăng cholesterol máu.
+
+Số chênh bệnh mạch vành ở những người có cholesterol máu bình thường là:
+
+$O_0$ = $R_0$ : (1 – $R_0$) = (16/454) : [1 – (16/454)] = 16/(454 - 16) = 16/438; với $R_0$ là nguy cơ bệnh mạch vành ở những người có cholesterol máu bình thường.
+
+Tỉ số số chênh bệnh mạch vành trong hai nhóm là: 
+
+$O_1$ : $O_0$ = (51/371) : (16/438) = (51 x 438) : (371 x 16) = 3,76
+
+Với trị số của tỉ số số chênh bằng 3,76, chúng ta nói rằng người có cholesterol máu cao có nguy cơ mắc bệnh mạch vành cao gấp 3,76 lần hơn những người có cholesterol máu bình thường.
+
+Tỉ số số chênh được ký hiệu là OR. Liên hệ với bảng \@ref(tab:bang0403) và bảng \@ref(tab:bang0404), chúng ta thấy 51 là a (số người có phơi nhiễm và có bệnh); 438 là d (số người không phơi nhiễm và cũng không có bệnh); 371 là b (số người có phơi nhiễm nhưng không bệnh); và 16 là c (số người không phơi nhiễm nhưng có bệnh). Vậy công thức để tính OR là:
+
+\begin{equation}
+\text{OR} = \frac{ad}{bc}
+
+(\#eq:or)
+\end{equation}
+
+Trong công thức \@ref(eq:rr), chúng ta thấy rằng nếu bệnh là hiếm, a sẽ nhỏ, và (a + b) tương đương với b; tương tự, c sẽ nhỏ, và (c + d) tương đương với d. Khi đó:
+
+RR = [a/(a + b)] : [c/(c + d)] # (a/b) : (c/d) = ad/bc = OR
+
+Như vậy, khi loại bệnh được khảo sát là hiếm, OR là số ước lượng gần đúng cho RR.
+
+Một cách khác để có thể làm rõ OR như sau, đối với nghiên cứu bệnh chứng là nghiên cứu ngay từ giai đoạn thiết kế, nhà nghiên cứu chia dân số đó thành hai nhóm: nhóm có bệnh và nhóm không có bệnh. Sau đó phỏng vấn dân số nghiên cứu về phơi nhiễm trong quá khứ. Cách tiếp cận bệnh chứng cho phép chúng ta so sánh số chênh phơi nhiễm ở nhóm bệnh với số chênh phơi nhiễm trong nhóm chứng. 
+
+Số chênh phơi nhiễm ở nhóm bệnh = a/c
+
+Số chênh phơi nhiễm ở nhóm chứng = b/d
+
+Hoặc 
+
+Số chênh mắc bệnh ở nhóm phơi nhiễm = a/b
+
+Số chênh mắc bệnh ở nhóm không phơi nhiễm = c/d 
+
+Về mặt toán học sẽ không có sự khác biệt về tỷ số số chênh (OR) được tính bằng (a/c) : (b/d) hay (a/b) : (c/d) vì khi nhân chéo để tính toán thì cả hai công thức này đều cho ra cùng một công thức ad/bc
+
+OR có thể được sử dụng như ước tính tỉ số nguy cơ khi nguy cơ mắc bệnh trong dân số là nhỏ (<5%)
+
+Nguy cơ mắc bệnh trong nhóm phơi nhiễm là a/(a+b), trong khi tỷ lệ mắc bệnh trong nhóm tiếp xúc là a/b. Nếu a là nhỏ thì số chênh sẽ ước lượng gần đúng với nguy cơ. Ví dụ, nếu một bệnh cụ thể xảy ra, 1 trong nhóm 100 người trong thời gian theo dõi nhất định, nguy cơ mắc bệnh sẽ là 1/100 (0,0100) và số chênh mắc bệnh là 1/99 (0,0101). Nếu nguy cơ mắc bệnh là tương đối lớn (>5%) thì tỷ số số chênh không phải là một ước tính tốt.
+
+### Nguy Cơ Qui Trách {-}
+
+#### Nguy cơ qui trách {-}
+
+Một trong những ứng dụng hữu ích của dịch tễ học là ước tính gánh nặng bệnh tật gây ra bởi các yếu tố nguy cơ có thể thay đổi được. Điều này rất hữu ích cho việc phát triển chính sách y tế công cộng bởi vì những tác động của các yếu tố nguy cơ hoặc những can thiệp để giảm yếu tố nguy cơ có thể được so sánh với chi phí trong phân tích chi phí – hiệu quả của can thiệp. 
+
+Với những dữ kiện trong bảng \@ref(tab:bang0404), chúng ta đã tính được nguy cơ tương đối mắc bệnh mạch vành ở người tăng cholesterol máu so với người có cholesterol máu bình thường là 3, có nghĩa là người tăng cholesterol máu sẽ tăng nguy cơ mắc bệnh mạch vành cao gấp 3 lần hơn những người có cholesterol máu bình thường. Nói một cách khác, cholesterol máu cao là một yếu tố nguy cơ, hay là nguyên nhân gây ra bệnh mạch vành ở những người có cholesterol máu cao. Nhưng khi nhìn vào dữ kiện của bảng \@ref(tab:bang0404), chúng ta thấy rằng ở những người có cholesterol máu bình thường, vẫn có một số người mắc bệnh mạch vành. Mười sáu người mắc bệnh mạch vành trong số 454 người không tăng cholesterol máu chắc chắn không mắc bệnh vì nguyên nhân là cholesterol máu cao, mà có thể do những nguyên nhân khác. Như vậy, chúng ta có thể xem xét rằng trong số 51 người có cholesterol máu cao và mắc bệnh mạch vành, sẽ có một số mắc bệnh vì nguyên nhân là cholesterol máu tăng, và số còn lại mắc bệnh mạch vành do những nguyên nhân khác chứ không phải vì tăng cholesterol máu.
+
+Câu hỏi được đặt ra ở đây là, nếu cholesterol máu cao là nguyên nhân gây ra bệnh mạch vành, thì ở những người tăng cholesterol máu, có bao nhiêu người thật sự mắc bệnh mạch vành là vì cholesterol máu cao (chứ không vì nguyên nhân nào khác). Nói một cách khác, một người có thể mắc bệnh mạch vành bởi nhiều nguyên nhân khác nhau, thí dụ, tăng huyết áp, hút thuốc lá, cholesterol máu cao, v.v., thì riêng bản thân cholesterol máu cao đã góp phần bao nhiêu vào việc gây ra bệnh mạch vành của những người tăng cholesterol máu. Nói một cách khác nữa, cholesterol máu cao chịu bao nhiêu phần trách nhiệm trong việc gây ra bệnh mạch vành ở những người tăng cholesterol máu. Số đo nguy cơ qui trách, ký hiệu là AR, sẽ giúp chúng ta trả lời câu hỏi này, và công thức để tính nguy cơ qui trách như sau:
+
+\begin{equation}
+\text{AR} = R_1 - R_0
+
+(\#eq:ar)
+\end{equation}
+
+Theo những dữ kiện trong bảng \@ref(tab:bang0404), với $R_1$ = 12% trong 6 năm, và R0 = 4% trong 6 năm, chúng ta có:
+
+AR = $R_1$ – $R_0$ = 12% - 4% = 8% trong 6 năm, có nghĩa là nếu cholesterol máu cao gây ra bệnh mạch vành, thì trong vòng 6 năm, trong số 100 người tăng cholesterol máu sẽ có 8 người mắc bệnh mạch vành là thực sự do cholesterol máu cao. Từ đó, chúng ta suy ra rằng, nếu cholesterol máu cao gây ra bệnh mạch vành, thì ở 100 người tăng cholesterol máu nếu làm cho cholesterol máu trở lại bình thường, trong vòng 6 năm có thể giảm được 8 người mắc bệnh mạch vành.
+
+#### Phần trăm nguy cơ qui trách {-}
+
+Chúng ta có thể tính một số đo khác là phần trăm nguy cơ qui trách, cho phép chúng ta hình dung được tỉ lệ mắc bệnh ở nhóm phơi nhiễm được qui kết là do nguyên nhân mà chúng ta đang khảo sát. Phần trăm nguy cơ qui trách, được ký hiệu là AR%, và tính theo công thức sau:
+
+\begin{equation}
+\text{AR%} = \frac{AR}{R_1} = \frac{(R_1 - R_0)}{R_1}
+
+(\#eq:arp)
+\end{equation}
+
+Theo dữ kiện của bảng 11, phần trăm nguy cơ qui trách của cholesterol máu cao đối với bệnh mạch vành là:
+
+AR% = (0,12 – 0,04) : 0,12 = 0,67 = 67% 
+
+Chúng ta nói rằng, nếu cholesterol máu cao gây ra bệnh mạch vành, thì ở những người có cholesterol máu cao, chỉ có 67% trong số họ mắc bệnh mạch vành là thực sự do cholesterol máu cao. Từ đó, chúng ta có thể suy ra rằng, nếu cholesterol máu cao gây ra bệnh mạch vành, và nếu những người tăng cholesterol máu kiểm soát được cholesterol máu của mình, thì sẽ giảm được 67% bệnh mạch vành trong số họ.
+
+### Nguy Cơ Qui Trách Dân Số {-}
+
+#### Nguy cơ qui trách dân số {-}
+
+Nguy cơ qui trách cho chúng ta biết được số những trường hợp mắc bệnh ở nhóm người phơi nhiễm là thực sự do nguyên nhân (hay yếu tố phơi nhiễm) mà chúng ta đang khảo sát. Để biết được số những trường hợp mắc bệnh do nguyên nhân đó trong toàn bộ dân số, bao gồm những người có và không có phơi nhiễm, chúng ta sử dụng một số đo gọi là nguy cơ qui trách dân số. Nguy cơ qui trách dân số, được ký hiệu là PAR, và tính theo công thức sau:
+
+\begin{equation}
+\text{PAR} = R_T - R_0
+
+(\#eq:par)
+\end{equation}
+
+với $R_T$ là nguy cơ mắc bệnh trong toàn bộ dân số, gồm cả những người phơi nhiễm và không phơi nhiễm. Theo những dữ kiện trong bảng \@ref(tab:bang0404), dân số toàn bộ là 876, trong đó có 67 người mắc bệnh mạch vành, vậy $R_T$ = 67 : 876 = 0,076 trong vòng 6 năm. Nguy cơ qui trách dân số sẽ là:
+
+PAR =  $R_T$ – $R_0$  = 0,076 – 0,04 = 0,036 trong vòng 6 năm, hay là 36/1.000 trong 6 năm. Chúng ta nói rằng, nếu cholesterol máu cao gây ra bệnh mạch vành, thì trong 1.000 người của toàn dân số (gồm những người có cholesterol máu cao và cholesterol máu bình thường), chỉ có 36 trường hợp bệnh mạch vành là thực sự do cholesterol máu cao. Suy ra, nếu trong toàn dân số không còn ai bị cholesterol máu cao, thì trong 6 năm, cứ mỗi 1.000 người sẽ giảm được 36 trường hợp bệnh mạch vành.
+
+#### Phần trăm nguy cơ qui trách dân số {-}
+
+Tương tự như đối với nguy cơ qui trách, chúng ta có thể tính một số đo khác là phần trăm nguy cơ qui trách dân số, cho phép chúng ta hình dung được tỉ lệ mắc bệnh trong toàn bộ dân số, bao gồm những người có và không phơi nhiễm, được qui kết là do nguyên nhân mà chúng ta đang khảo sát. Phần trăm nguy cơ qui trách dân số, được ký hiệu là PAR%, và tính theo công thức sau.
+
+\begin{equation}
+\text{PAR%} = \frac{PAR}{R_T} = \frac{(R_T - R_0)}{R_T}
+
+(\#eq:parp)
+\end{equation}
+
+Theo những dữ kiện trong bảng \@ref(tab:bang0404), phần trăm nguy cơ qui trách dân số của cholesterol máu cao đối với bệnh mạch vành (hay phần trăm nguy cơ qui trách của cholesterol máu cao đối với bệnh mạch vành trong toàn bộ dân số) là:
+
+PAR% = PAR / RT = 0,036 : 0,076 = 0,47 = 47%
+
+Chúng ta nói rằng nếu cholesterol máu cao gây ra bệnh mạch vành, thì trong toàn bộ dân số gồm những người có cholesterol máu cao và cholesterol máu bình thường, chỉ có 47% những trường hợp bệnh mạch vành là thật sự do cholesterol máu cao. Suy ra, nếu trong toàn bộ dân số không còn ai bị cholesterol máu cao, tỉ suất bệnh mạch vành sẽ giảm 47%.
+
+## Ý NGHĨA CỦA SỐ ĐO KẾT HỢP {-}
+
+### Nguy Cơ Tương Đối và Tỉ Số Số Chênh {-}
+
+Nguy cơ tương đối và tỉ số số chênh được tính theo những công thức khác nhau, nhưng có công dụng và ý nghĩa giống nhau. Chúng giúp cho chúng ta đo lường được mức độ kết hợp giữa nguyên nhân và bệnh. Mức độ kết hợp nhân quả được thể hiện qua giá trị bằng số của RR hoặc OR. Nếu RR (hoặc OR) bằng 1, có nghĩa là nguy cơ mắc bệnh ở nhóm có phơi nhiễm và nhóm không phơi nhiễm là bằng nhau, hay nói một cách khác, yếu tố phơi nhiễm không có liên quan gì đến bệnh, hay nói một cách khác nữa, nó không là nguyên nhân gây ra bệnh. Do đó, RR và OR còn được gọi là số đo liên quan. Giả sử, trong những thí dụ trên về bệnh mạch vành và cholesterol máu cao, nếu RR = 1, điều này có nghĩa là người có cholesterol máu cao và người có cholesterol máu bình thường đều có khả năng mắc bệnh mạch vành như nhau. Nói một cách khác, cholestreol máu cao không có liên quan gì đến nguy cơ mắc bệnh mạch vành của một người, còn có nghĩa là cholesterol máu cao không là nguyên nhân gây ra bệnh mạch vành. Nếu RR (hoặc OR) có trị số khác 1, thì nguy cơ mắc bệnh ở nhóm phơi nhiễm là khác với nguy cơ mắc bệnh ở nhóm không phơi nhiễm. Trở lại thí dụ về cholesterol máu cao và bệnh mạch vành trên đây, RR = 3 cho thấy rằng bởi vì có cholesterol máu cao nên những người tăng cholesterol máu phải gánh chịu một hậu quả là nguy cơ mắc bệnh mạch vành của họ tăng gấp 3 lần so với những người có cholesterol máu bình thường. Số đo kết hợp hay liên quan, do đó, còn được gọi là số đo hậu quả. Nếu RR (hoặc OR) có trị số nhỏ hơn 1, thì nguy cơ mắc bệnh của những người có phơi nhiễm là thấp hơn so với những người không phơi nhiễm.
+
+```{r bang0407, echo = FALSE}
+data.frame(
+  hdtl = c("$$2.500+ kcalo$$", "$$< 2.500 kcalo$$", "Tổng"),
+  benh = c(141, 144, 285),
+  chung = c(208, 112, 320),
+  tong = c(349, 256, 605)
+) %>%
+  gt(caption = "Nghiên cứu bệnh-chứng về mối liên quan giữa vận động thể lực và nhồi máu cơ tim.") %>%
+  cols_label(hdtl = "Hoạt động thể lực",
+             benh = "Bệnh",
+             chung = "Chứng",
+             tong = "Tổng") 
+```
+
+Bảng \@ref(tab:bang0407) trình bày những dữ kiện của một nghiên cứu bệnh-chứng về mối liên quan giữa vận động thể lực và nhồi máu cơ tim. Người có tăng vận động thể lực khi trong một ngày tiêu hao một khối năng lượng từ 2.500 kcalo trở lên. Nếu một cá nhân tiêu hao dưới 2.500 kcalo trong một ngày thì được coi là ít vận động thể lực. Mối liên quan giữa vận động thể lực và nhồi máu cơ tim được đo lường bằng tỉ số số chênh được tính theo công thức (3), là OR = ad / bc = (141 x 112) : (208 x 144) = 0,53
+Trị số của OR bằng 0,53 ; có nghĩa là nguy cơ nhồi máu cơ tim ở những người tăng vận động thể lực là thấp hơn nguy cơ đó ở những người ít vận động thể lực, cụ thể là bằng 0,53 lần nguy cơ của những người ít vận động thể lực. Nói một cách khác, nhờ tăng vận động thể lực, những người đó được bảo vệ chống lại nhồi máu cơ tim. Vận động thể lực là nguyên nhân giảm nguy cơ nhồi máu cơ tim ở những người có vận động, nhưng trong trường hợp này, với số đo kết hợp có trị số nhỏ hơn 1, chúng ta không gọi yếu tố nguyên nhân đó là yếu tố nguy cơ mà là yếu tố bảo vệ. Trong thực hành y khoa, không phải lúc nào chúng ta cũng đi tìm những yếu tố nguyên nhân gây bệnh, mà chúng ta cũng rất quan tâm đi tìm những yếu tố giúp chúng ta chống lại bệnh tật. Khi đó, chúng ta mong đợi trị số của số đo kết hợp sẽ nhỏ hơn 1.
+
+Tóm lại, nguy cơ tương đối và tỉ số số chênh giúp chúng ta đo lường mức độ liên quan giữa yếu tố nguyên nhân và bệnh. Nguy cơ tương đối, RR, được tính toán dựa trên số đo bệnh trạng là số mới mắc (nguy cơ hoặc tỉ suất), và được sử dụng trong những nghiên cứu đoàn hệ. Nghiên cứu bệnh-chứng không thể đo lường được một cách trực tiếp nguy cơ mắc bệnh, nhưng trong trường hợp loại bệnh mà chúng ta khảo sát là hiếm, thì tỉ số số chênh OR có trị số gần bằng RR, tức là chúng ta có thể sử dụng OR để đo lường nguy cơ mắc bệnh tương đối của người có phơi nhiểm so với người không phơi nhiễm.
+
+### Nguy Cơ Qui Trách {-}
+
+Như đã trình bày trong phần mở đầu, để so sánh nguy cơ mắc bệnh ở những người có và không có nguyên nhân, chúng ta có thể chia hoặc trừ số đo bệnh trạng ở hai dân số đó cho nhau. Bản chất của nguy cơ qui trách là một số đo kết hợp, và chính là hiệu số giữa số mới mắc của nhóm phơi nhiễm với số mới mắc của nhóm không phơi nhiễm. Nguy cơ qui trách giúp chúng ta xác định được, nếu một yếu tố nào đó là nguyên nhân gây ra bệnh, thì bản thân nó chịu bao nhiêu phần trách nhiệm trong việc tạo ra bệnh, vì bệnh đó còn có thể được gây ra do những nguyên nhân khác. Là hiệu số nguy cơ, nguy cơ qui trách còn cho thấy nguy cơ thặng dư mà những người có phơi nhiễm phải gánh chịu so với những người không phơi nhiễm. Với số đo nguy cơ qui trách của cholesterol huyết thanh cao với bệnh mạch vành là 8% trong vòng 6 năm, chúng ta có thể lý giải rằng bệnh mạch vành có thể được gây ra bởi nhiều nguyên nhân, thí dụ, hút thuốc lá, tăng huyết áp, v.v. ; riêng những người có cholesterol máu cao sẽ chịu một nguy cơ thặng dư để mắc bệnh mạch vành trong vòng 6 năm là 8%.
+
+Nguy cơ qui trách có ý nghĩa quan trọng trong lĩnh vực y tế công cộng, thể hiện tác động thật sự của một yếu tố nguyên nhân trong việc tạo ra một bệnh, đồng thời, nó cũng cho chúng ta thấy được mức độ cải thiện của tình trạng bệnh nếu yếu tố nguyên nhân bị loại bỏ. Với khái niệm đó, nguy cơ qui trách còn được gọi là số đo tác động. Những khái niệm vừa được trình bày đòi hỏi những giả định cần có khi lý giải những số đo tác động. Thứ nhất, phải có sự kết hợp nhân quả giữa yếu tố được coi là nguyên nhân và bệnh (cholesterol máu cao và bệnh mạch vành có liên quan nhân quả, tức là cholesterol máu cao chính là nguyên nhân gây ra bệnh mạch vành). Thứ hai, có thể loại bỏ được hoàn toàn yếu tố nguyên nhân đó trong thực tế (không còn ai có cholesterol máu cao trong một cộng đồng). Thứ ba, khi loại bỏ yếu tố nguyên nhân, sẽ hết nguy cơ mắc bệnh (một người bị tăng cholesterol máu có nguy cơ bị bệnh mạch vành, nếu làm cho cholesterol máu của họ trở lại bình thường, họ sẽ chắc chắn không còn nguy cơ bị bệnh mạch vành vì cholesterol máu cao).
+
+Hai số đo tác động đo lường tác động của yếu tố nguyên nhân ở hai nhóm khác nhau. Nguy cơ qui trách đo lường tác động của yếu tố nguyên nhân ở nhóm những người phơi nhiễm, tức là có tiếp xúc với yếu tố nguyên nhân. Nguy cơ qui trách dân số đo lường tác động của yếu tố nguyên nhân trên toàn bộ dân số, bao gồm cả người phơi nhiễm và không phơi nhiễm. Nguy cơ qui trách và nguy cơ qui trách dân số được tính toán dựa vào số đo mắc bệnh là số mới mắc. Khi bệnh trạng không thể được đo lường bằng nguy cơ, thí dụ trong nghiên cứu bệnh-chứng, đôi khi chúng ta cũng có thể tính được nguy cơ qui trách và nguy cơ qui trách dân số. Những công thức liên quan trong trường hợp này sẽ được trình bày trong bài nghiên cứu bệnh-chứng.
+
+```{r bang0408, echo = FALSE}
+data.frame(
+  nguyennhan = c("Có", "Không", "Tổng"),
+  co = c("a", "c", "a + c"),
+  khong = c("b", "d", "b + d"),
+  tong = c("a + b", "c + d", "a + b + c + d")
+) %>%
+  gt(caption = "Bảng 2x2.") %>%
+  cols_label(nguyennhan = "Nguyên nhân",
+             co = "Có",
+             khong = "Không",
+             tong = "Tổng") 
+```
+
+```{r bang0409, echo = FALSE}
+data.frame(
+  doluong = c("Nguy cơ tương đối RR", "Tỷ số số chênh OR", "Nguy cơ qui trách/ Hiệu số nguy cơ AR", "Phần trăm nguy cơ qui trách AR%", "Nguy cơ quy trách dân số PAR", "Phần trăm nguy cơ qui trách"),
+  congthuc = c("Nguy cơ (Nhóm phơi nhiễm)/Nguy cơ (Nhóm không phơi nhiễm) = [a/(a+b)]/[c/(c+d)]", 
+               "= (a/b)/(c/d) = (a/c)/(b/d) = ad/bc",
+               "= Nguy cơ (nhóm phơi nhiễm) – Nguy cơ (Nhóm không phơi nhiễm) = [a/(a+b) – [c/(c+d)]",
+               "= [Nguy cơ (phơi nhiễm) – Nguy cơ (không phơi nhiễm)] / Nguy cơ (phơi nhiễm) = (RR-1)/RRx100 = (OR-1)/ORx100",
+               "= Nguy cơ (tổng) – Nguy cơ (không phơi nhiễm)",
+               "= [Nguy cơ (tổng) – Nguy cơ (không phơi nhiễm)]/Nguy cơ (Tổng) x 100 = [(Pe (RR-1)]/[1+(Pe)(RR-1)]x 100 Trong đó Pe là tỷ lệ của dân số phơi nhiễm với yếu tố nguy cơ")
+) %>%
+  gt(caption = "") 
+```
+
+## KẾT LUẬN {-}
+
+Khi bàn về bất kỳ một hiện tượng sức khỏe nào ở con người, chúng ta cần phải trả lời, theo thứ tự, ba câu hỏi : 1) Hiện tượng sức khỏe đó xảy ra phổ biến như thế nào; 2) Nguyên nhân nào gây ra hiện tượng sức khỏe đó; 3) Nếu can thiệp vào nguyên nhân, mức độ mà tình trạng sức khỏe của cộng đồng sẽ được cải thiện là bao nhiêu.
+
+Để trả lời câu hỏi thứ nhất, hiện tượng sức khỏe xảy ra phổ biến như thế nào, chúng ta có thể sử dụng những số đo mắc bệnh và tử vong, còn gọi là số đo bệnh trạng. Hai loại số đo bệnh trạng là số hiện mắc và số mới mắc. Số hiện mắc cho chúng ta thấy được trạng thái hiện có của bệnh. Số mới mắc cho chúng ta biết được khả năng, hay nguy cơ, mắc bệnh ở những người chưa mắc bệnh.
+
+Để trả lời câu hỏi thứ nhì, nguyên nhân nào gây ra hiện tượng sức khỏe đó, chúng ta sử dụng những số đo kết hợp, còn gọi là số đo hậu quả. Hai số đo thường dùng là nguy cơ tương đối và tỉ số số chênh. Nguy cơ tương đối được tính dựa trên số đo bệnh trạng là số mới mắc, trong nghiên cứu đoàn hệ. Nghiên cứu bệnh-chứng không đo lường trực tiếp nguy cơ mắc bệnh, nhưng nếu bệnh là hiếm, tỉ số số chênh là số ước lượng gần đúng cho nguy cơ tương đối. Tùy theo giá trị bằng số của số đo kết hợp, chúng ta có thể xác định được yếu tố mà chúng ta đang khảo sát có thực sự là nguyên nhân của hiện tượng sức khỏe (nếu số đo kết hợp có trị số khác 1), hoặc không phải (nếu số đo kết hợp  bằng 1). Một yếu tố nguyên nhân có thể là yếu tố nguy cơ (nếu số đo kết hợp lớn hơn 1), hoặc là yếu tố bảo vệ (nếu số đo kết hợp nhỏ hơn 1).
+
+Để trả lời câu hỏi thứ ba, nếu can thiệp vào nguyên nhân, mức độ mà tình trạng sức khỏe của cộng đồng sẽ được cải thiện là bao nhiêu, chúng ta có thể sử dụng một loại số đo kết hợp còn được gọi là số đo tác động, đó là nguy cơ qui trách. Khi đã xác định được một yếu tố là nguyên nhân gây ra một hiện tượng sức khỏe, nguy cơ qui trách cho chúng ta đo lường được mức độ tác động của nguyên nhân đó trong việc gây ra hiện tượng sức khỏe là bao nhiêu, và đồng thời cũng đo lường được mức độ mà tình trạng sức khỏe sẽ được cải thiện, nếu loại bỏ được nguyên nhân. 
+
+## Tài liệu tham khảo đề nghị đọc thêm {-}
+
+1.	Hennekens HC., Buring EJ. Epidemiology in Medicine. Little, Brown and Company. USA, 1987. Chapter 4.
+
+2.	Mausner SJ., Bahn KA. Epidemiology. An Introductory Text. W. B. Saunders Company. USA, 1974. Chapter 13.
+
+3.	Rothman JK. Modern Epidemiology. Little, Brown and Company. USA. 1986. Chapter 4. 
+
+4.	Ahlbom A., Norell S. Introduction to Modern Epidemiology. Epidemiology Resources Inc. USA. 1990. Chapter 5.
+
+5.	Friedman GD. Primer of epidemiology. McGraw-Hill Book Company. USA. 1987. Chapter 2.
+
+6.	Kleinbaum GD., Kupper LL., Morgenstern H. Epidemiologic Research: Principles and Quantitative Methods. Van Nostrand Reinhold Company. New York. 1982. Chapters 8, 9.
+
+## Bài tập {-}
+
+1.	Một khảo sát về bệnh nghề nghiệp được tiến hành tại một xí nghiệp sản xuất linh kiện điện tử. Trong tổng số 1.200 công nhân khỏe mạnh được tuyển, 75% đã làm việc từ 5 năm. Qua khảo sát, người ta nhận thấy 60% trong nhóm này bị rối loạn thị giác. Tỉ lệ tuân thủ những qui định về bảo vệ mắt ở hai nhóm có rối loạn thị giác và không có rối loạn thị giác là 20% và 90%, tương ứng. Phân tích dữ kiện và lý giải kết quả. 
+
+2.	Ban giám đốc một nhà máy có nhiều tiếng ồn đã phát nút chặn tai cho công nhân và mong rằng họ sẽ sử dụng. Tuy nhiên, bác sĩ y tế cơ quan thấy rằng có 100 trong số 500 công nhân của nhà máy đã không sử dụng nút chặn tai, vì họ cho rằng chẳng ích lợi gì mà lại gây khó chịu. Trong một đợt khám sức khỏe, tất cả công nhân được đo thính lực. Trong số những người bị giảm thính lực, có 16 người đã có đeo nút chặn và 40 người đã không sử dụng nút chặn. Tất cả công nhân đã có thính lực hoàn toàn bình thường khi được khám tuyển vào nhà máy vào bốn năm trước. 
+
+-	Tính nguy cơ tương đối giảm thính lực ở những người không sử dụng nút chặn tai so với những người có sử dụng. Lý giải kết quả.
+
+-	Tính nguy cơ giảm thính lực được qui trách vì không sử dụng nút chặn tai. Lý giải kết quả.
+
+-	Tính tỉ lệ giảm thính lực được qui trách vì không sử dụng nút chặn tai ở những người không sử dụng nút chặn tai. Lý giải kết quả.
+
+-	Tính tỉ lệ giảm thính lực được qui trách vì không sử dụng nút chặn tai trong tập thể công nhân. Lý giải kết quả.
+
+3.	Năm 1980, 100 trẻ sinh nhẹ cân được so sánh với 300 trẻ sinh thường tại cùng một bệnh viện vào cùng một thời gian. Phân bố tần số về tình trạng thai và mức uống rượu của mẹ trong ba tháng đầu của thai kỳ được trình bày trong bảng 4.8.
+
+    3.1.	Tính nguy cơ sinh nhẹ cân của một trẻ có mẹ uống rượu trong ba tháng đầu của thai kỳ so với một trẻ có mẹ không uống rượu. Lý giải kết quả.
+    
+    3.2.	Tính nguy cơ sinh nhẹ cân của một trẻ có mẹ uống rượu, theo những mức độ uống khác nhau, so với trẻ có mẹ không uống rượu. Lý giải kết quả.
+    
+    
+4.	Trong một sàng lọc, 1.329 nam tuổi 40-59 được xét nghiệm cholesterol máu và huyết áp tâm thu, và sau đó được theo dõi trong 6 năm để xem sự xuất hiện của bệnh mạch vành (BMV). Ở đầu giai đoạn, tất cả mọi người đều không có BMV. Tính và lý giải nguy cơ tương đối mắc bệnh mạch vành của nhóm “Nam có cholesterol huyết thanh dưới 220mg/100ml, và huyết áp tâm thu dưới 147mmHg” so với những nhóm dưới đây (Bảng 4.9, đã được sử dụng trong bài Số Hiện Mắc và Số Mới Mắc)
+
+    4.1.	Nam có cholesterol huyết thanh trên 260mg/100ml, và huyết áp tâm thu dưới 147mmHg.
+    
+    4.2.	Nam có cholesterol huyết thanh dưới 220mg/100ml, và huyết áp tâm thu trên 167mmHg.
+    
+    4.3.	Nam có cholesterol huyết thanh trên 260mg/100ml, và huyết áp tâm thu trên 167mmHg.
+
+
+

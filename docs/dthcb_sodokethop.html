@@ -1,0 +1,4153 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chương 4 Số Đo Kết Hợp | Dịch tễ học cơ bản</title>
+  <meta name="description" content="Chương 4 Số Đo Kết Hợp | Dịch tễ học cơ bản" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chương 4 Số Đo Kết Hợp | Dịch tễ học cơ bản" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Chương 4 Số Đo Kết Hợp | Dịch tễ học cơ bản" />
+  <meta name="github-repo" content="lampk/EPI" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chương 4 Số Đo Kết Hợp | Dịch tễ học cơ bản" />
+  
+  <meta name="twitter:description" content="Chương 4 Số Đo Kết Hợp | Dịch tễ học cơ bản" />
+  
+
+<meta name="author" content="Bộ môn Dịch tễ học - Khoa Y tế công cộng - Đại học Y Dược TP Hồ Chí Minh" />
+
+
+<meta name="date" content="2021-10-14" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="dthcb_hienmac_moimac.html"/>
+<link rel="next" href="dthcb_thietke.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6NP3MF25W3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6NP3MF25W3');
+</script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="include/webex.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Dịch tễ học cơ bản</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Lời giới thiệu</a></li>
+<li class="chapter" data-level="1" data-path="dthcb_gioithieu.html"><a href="dthcb_gioithieu.html"><i class="fa fa-check"></i><b>1</b> Giới thiệu về Dịch tễ học</a>
+<ul>
+<li class="chapter" data-level="" data-path="dthcb_gioithieu.html"><a href="dthcb_gioithieu.html#mục-tiêu-bài-giảng"><i class="fa fa-check"></i>Mục tiêu bài giảng</a></li>
+<li class="chapter" data-level="" data-path="dthcb_gioithieu.html"><a href="dthcb_gioithieu.html#giới-thiệu"><i class="fa fa-check"></i>Giới thiệu</a></li>
+<li class="chapter" data-level="" data-path="dthcb_gioithieu.html"><a href="dthcb_gioithieu.html#lịch-sử-diễn-tiến-của-dịch-tễ-học"><i class="fa fa-check"></i>Lịch sử diễn tiến của Dịch tễ học</a></li>
+<li class="chapter" data-level="" data-path="dthcb_gioithieu.html"><a href="dthcb_gioithieu.html#định-nghĩa-của-dịch-tễ-học"><i class="fa fa-check"></i>Định nghĩa của Dịch tễ học</a></li>
+<li class="chapter" data-level="" data-path="dthcb_gioithieu.html"><a href="dthcb_gioithieu.html#đối-tượng-nghiên-cứu-của-dịch-tễ-học"><i class="fa fa-check"></i>Đối tượng nghiên cứu của Dịch tễ học</a></li>
+<li class="chapter" data-level="" data-path="dthcb_gioithieu.html"><a href="dthcb_gioithieu.html#những-nội-dung-cơ-bản-của-dịch-tễ-học"><i class="fa fa-check"></i>Những nội dung cơ bản của Dịch tễ học</a>
+<ul>
+<li class="chapter" data-level="" data-path="dthcb_gioithieu.html"><a href="dthcb_gioithieu.html#mục-đích-của-dịch-tễ-học"><i class="fa fa-check"></i>Mục Đích Của Dịch Tễ Học</a></li>
+<li class="chapter" data-level="" data-path="dthcb_gioithieu.html"><a href="dthcb_gioithieu.html#những-chiến-lược-nghiên-cứu-của-dịch-tễ-học"><i class="fa fa-check"></i>Những Chiến Lược Nghiên Cứu Của Dịch Tễ Học</a></li>
+<li class="chapter" data-level="" data-path="dthcb_gioithieu.html"><a href="dthcb_gioithieu.html#những-nội-dung-hoạt-động-của-dịch-tễ-học"><i class="fa fa-check"></i>Những Nội Dung Hoạt Động Của Dịch Tễ Học</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="dthcb_gioithieu.html"><a href="dthcb_gioithieu.html#những-ứng-dụng-của-dịch-tễ-học"><i class="fa fa-check"></i>Những ứng dụng của Dịch tễ học</a>
+<ul>
+<li class="chapter" data-level="" data-path="dthcb_gioithieu.html"><a href="dthcb_gioithieu.html#đánh-giá-sức-khoẻ-của-cộng-đồng-hoặc-của-dân-số"><i class="fa fa-check"></i>Đánh Giá Sức Khoẻ Của Cộng Đồng Hoặc Của Dân Số</a></li>
+<li class="chapter" data-level="" data-path="dthcb_gioithieu.html"><a href="dthcb_gioithieu.html#những-quyết-định-cá-nhân"><i class="fa fa-check"></i>Những Quyết Định Cá Nhân</a></li>
+<li class="chapter" data-level="" data-path="dthcb_gioithieu.html"><a href="dthcb_gioithieu.html#bổ-sung-cho-y-học-lâm-sàng"><i class="fa fa-check"></i>Bổ Sung Cho Y Học Lâm Sàng</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="dthcb_gioithieu.html"><a href="dthcb_gioithieu.html#kết-luận"><i class="fa fa-check"></i>Kết luận</a></li>
+<li class="chapter" data-level="" data-path="dthcb_gioithieu.html"><a href="dthcb_gioithieu.html#tài-liệu-tham-khảo-đề-nghị-đọc-thêm"><i class="fa fa-check"></i>Tài liệu tham khảo đề nghị đọc thêm</a></li>
+<li class="chapter" data-level="" data-path="dthcb_gioithieu.html"><a href="dthcb_gioithieu.html#bài-tập"><i class="fa fa-check"></i>Bài tập</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="dthcb_dich2.html"><a href="dthcb_dich2.html"><i class="fa fa-check"></i><b>2</b> Bệnh và sự xuất hiện dịch</a>
+<ul>
+<li class="chapter" data-level="" data-path="dthcb_dich2.html"><a href="dthcb_dich2.html#mục-tiêu-bài-giảng-1"><i class="fa fa-check"></i>Mục tiêu bài giảng</a></li>
+<li class="chapter" data-level="" data-path="dthcb_dich2.html"><a href="dthcb_dich2.html#giới-thiệu-1"><i class="fa fa-check"></i>Giới Thiệu</a></li>
+<li class="chapter" data-level="" data-path="dthcb_dich2.html"><a href="dthcb_dich2.html#lịch-sử-tự-nhiên-của-bệnh"><i class="fa fa-check"></i>LỊCH SỬ TỰ NHIÊN CỦA BỆNH</a>
+<ul>
+<li class="chapter" data-level="" data-path="dthcb_dich2.html"><a href="dthcb_dich2.html#những-ứng-dụng-của-lịch-sử-tự-nhiên-của-bệnh"><i class="fa fa-check"></i>Những Ứng Dụng Của Lịch Sử Tự Nhiên Của Bệnh</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="dthcb_dich2.html"><a href="dthcb_dich2.html#dây-chuyền-lây"><i class="fa fa-check"></i>DÂY CHUYỀN LÂY</a>
+<ul>
+<li class="chapter" data-level="" data-path="dthcb_dich2.html"><a href="dthcb_dich2.html#tam-giác-dịch-tễ-học"><i class="fa fa-check"></i>Tam Giác Dịch Tễ Học</a></li>
+<li class="chapter" data-level="" data-path="dthcb_dich2.html"><a href="dthcb_dich2.html#dây-chuyền-lây-1"><i class="fa fa-check"></i>Dây Chuyền Lây</a></li>
+<li class="chapter" data-level="" data-path="dthcb_dich2.html"><a href="dthcb_dich2.html#những-ứng-dụng-của-dây-chuyền-lây"><i class="fa fa-check"></i>Những Ứng Dụng Của Dây Chuyền Lây</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="dthcb_dich2.html"><a href="dthcb_dich2.html#sự-xuất-hiện-bệnh-thành-dịch"><i class="fa fa-check"></i>SỰ XUẤT HIỆN BỆNH THÀNH DỊCH</a>
+<ul>
+<li class="chapter" data-level="" data-path="dthcb_dich2.html"><a href="dthcb_dich2.html#mức-độ-bệnh"><i class="fa fa-check"></i>Mức Độ Bệnh</a></li>
+<li class="chapter" data-level="" data-path="dthcb_dich2.html"><a href="dthcb_dich2.html#các-mô-hình-dịch"><i class="fa fa-check"></i>Các Mô Hình Dịch</a></li>
+<li class="chapter" data-level="" data-path="dthcb_dich2.html"><a href="dthcb_dich2.html#định-nghĩa-trường-hợp"><i class="fa fa-check"></i>Định Nghĩa Trường Hợp</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="dthcb_dich2.html"><a href="dthcb_dich2.html#tài-liệu-tham-khảo-đề-nghị-đọc-thêm-1"><i class="fa fa-check"></i>Tài liệu tham khảo đề nghị đọc thêm</a></li>
+<li class="chapter" data-level="" data-path="dthcb_dich2.html"><a href="dthcb_dich2.html#bài-tập-1"><i class="fa fa-check"></i>Bài tập</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="dthcb_hienmac_moimac.html"><a href="dthcb_hienmac_moimac.html"><i class="fa fa-check"></i><b>3</b> Số Hiện Mắc và Số Mới Mắc</a>
+<ul>
+<li class="chapter" data-level="" data-path="dthcb_hienmac_moimac.html"><a href="dthcb_hienmac_moimac.html#mục-tiêu-bài-giảng-2"><i class="fa fa-check"></i>Mục tiêu bài giảng</a></li>
+<li class="chapter" data-level="" data-path="dthcb_hienmac_moimac.html"><a href="dthcb_hienmac_moimac.html#giới-thiệu-2"><i class="fa fa-check"></i>Giới thiệu</a></li>
+<li class="chapter" data-level="" data-path="dthcb_hienmac_moimac.html"><a href="dthcb_hienmac_moimac.html#ba-loại-số-đo-lường-trong-dịch-tễ-học"><i class="fa fa-check"></i>BA LOẠI SỐ ĐO LƯỜNG TRONG DỊCH TỄ HỌC</a>
+<ul>
+<li class="chapter" data-level="" data-path="dthcb_hienmac_moimac.html"><a href="dthcb_hienmac_moimac.html#những-số-đo-lường-về-tần-số-bệnh"><i class="fa fa-check"></i>Những Số Đo Lường Về Tần Số Bệnh</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="dthcb_hienmac_moimac.html"><a href="dthcb_hienmac_moimac.html#số-hiện-mắc"><i class="fa fa-check"></i>SỐ HIỆN MẮC</a>
+<ul>
+<li class="chapter" data-level="" data-path="dthcb_hienmac_moimac.html"><a href="dthcb_hienmac_moimac.html#số-hiện-mắc-thời-điểm"><i class="fa fa-check"></i>Số Hiện Mắc Thời Điểm</a></li>
+<li class="chapter" data-level="" data-path="dthcb_hienmac_moimac.html"><a href="dthcb_hienmac_moimac.html#số-hiện-mắc-thời-khoảng"><i class="fa fa-check"></i>Số Hiện Mắc Thời Khoảng</a></li>
+<li class="chapter" data-level="" data-path="dthcb_hienmac_moimac.html"><a href="dthcb_hienmac_moimac.html#công-dụng-của-số-hiện-mắc"><i class="fa fa-check"></i>Công Dụng Của Số Hiện Mắc</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="dthcb_hienmac_moimac.html"><a href="dthcb_hienmac_moimac.html#số-mới-mắc"><i class="fa fa-check"></i>SỐ MỚI MẮC</a>
+<ul>
+<li class="chapter" data-level="" data-path="dthcb_hienmac_moimac.html"><a href="dthcb_hienmac_moimac.html#số-mới-mắc-tích-lũy-số-mới-mắc-dồn-nguy-cơ"><i class="fa fa-check"></i>Số Mới Mắc Tích Lũy (Số mới mắc dồn, NGUY CƠ)</a></li>
+<li class="chapter" data-level="" data-path="dthcb_hienmac_moimac.html"><a href="dthcb_hienmac_moimac.html#tỉ-suất-mới-mắc-tỉ-trọng-mới-mắc-tỉ-suất-trung-bình-tỉ-suất"><i class="fa fa-check"></i>Tỉ Suất Mới Mắc (Tỉ trọng mới mắc, Tỉ suất trung bình, TỈ SUẤT)</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="dthcb_hienmac_moimac.html"><a href="dthcb_hienmac_moimac.html#mối-liên-quan-giữa-số-mới-mắc-và-số-hiện-mắc"><i class="fa fa-check"></i>MỐI LIÊN QUAN GIỮA SỐ MỚI MẮC VÀ SỐ HIỆN MẮC</a></li>
+<li class="chapter" data-level="" data-path="dthcb_hienmac_moimac.html"><a href="dthcb_hienmac_moimac.html#những-số-đo-lường-sinh-bệnh-và-chết-thông-dụng-khác"><i class="fa fa-check"></i>NHỮNG SỐ ĐO LƯỜNG SINH, BỆNH, VÀ CHẾT THÔNG DỤNG KHÁC</a></li>
+<li class="chapter" data-level="" data-path="dthcb_hienmac_moimac.html"><a href="dthcb_hienmac_moimac.html#tài-liệu-tham-khảo-đề-nghị-đọc-thêm-2"><i class="fa fa-check"></i>Tài liệu tham khảo đề nghị đọc thêm</a></li>
+<li class="chapter" data-level="" data-path="dthcb_hienmac_moimac.html"><a href="dthcb_hienmac_moimac.html#câu-hỏi-trắc-nghiệm"><i class="fa fa-check"></i>Câu hỏi trắc nghiệm</a></li>
+<li class="chapter" data-level="" data-path="dthcb_hienmac_moimac.html"><a href="dthcb_hienmac_moimac.html#bài-tập-2"><i class="fa fa-check"></i>Bài tập</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="dthcb_sodokethop.html"><a href="dthcb_sodokethop.html"><i class="fa fa-check"></i><b>4</b> Số Đo Kết Hợp</a>
+<ul>
+<li class="chapter" data-level="" data-path="dthcb_sodokethop.html"><a href="dthcb_sodokethop.html#mục-tiêu-bài-giảng-3"><i class="fa fa-check"></i>Mục tiêu bài giảng</a></li>
+<li class="chapter" data-level="" data-path="dthcb_sodokethop.html"><a href="dthcb_sodokethop.html#giới-thiệu-3"><i class="fa fa-check"></i>Giới thiệu</a></li>
+<li class="chapter" data-level="" data-path="dthcb_sodokethop.html"><a href="dthcb_sodokethop.html#những-khái-niệm-cần-thiết"><i class="fa fa-check"></i>NHỮNG KHÁI NIỆM CẦN THIẾT</a>
+<ul>
+<li class="chapter" data-level="" data-path="dthcb_sodokethop.html"><a href="dthcb_sodokethop.html#nguyên-nhân-yếu-tố-nguy-cơ-nguy-cơ-yếu-tố-xác-định"><i class="fa fa-check"></i>Nguyên Nhân – Yếu Tố Nguy Cơ – Nguy Cơ – Yếu Tố Xác Định</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="dthcb_sodokethop.html"><a href="dthcb_sodokethop.html#các-số-đo-kết-hợp"><i class="fa fa-check"></i>CÁC SỐ ĐO KẾT HỢP</a>
+<ul>
+<li class="chapter" data-level="" data-path="dthcb_sodokethop.html"><a href="dthcb_sodokethop.html#nguy-cơ-tương-đối"><i class="fa fa-check"></i>Nguy Cơ Tương Đối</a></li>
+<li class="chapter" data-level="" data-path="dthcb_sodokethop.html"><a href="dthcb_sodokethop.html#tỉ-số-số-chênh-odd-ratio"><i class="fa fa-check"></i>Tỉ Số Số Chênh (Odd Ratio)</a></li>
+<li class="chapter" data-level="" data-path="dthcb_sodokethop.html"><a href="dthcb_sodokethop.html#nguy-cơ-qui-trách"><i class="fa fa-check"></i>Nguy Cơ Qui Trách</a></li>
+<li class="chapter" data-level="" data-path="dthcb_sodokethop.html"><a href="dthcb_sodokethop.html#nguy-cơ-qui-trách-dân-số"><i class="fa fa-check"></i>Nguy Cơ Qui Trách Dân Số</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="dthcb_sodokethop.html"><a href="dthcb_sodokethop.html#ý-nghĩa-của-số-đo-kết-hợp"><i class="fa fa-check"></i>Ý NGHĨA CỦA SỐ ĐO KẾT HỢP</a>
+<ul>
+<li class="chapter" data-level="" data-path="dthcb_sodokethop.html"><a href="dthcb_sodokethop.html#nguy-cơ-tương-đối-và-tỉ-số-số-chênh"><i class="fa fa-check"></i>Nguy Cơ Tương Đối và Tỉ Số Số Chênh</a></li>
+<li class="chapter" data-level="" data-path="dthcb_sodokethop.html"><a href="dthcb_sodokethop.html#nguy-cơ-qui-trách-2"><i class="fa fa-check"></i>Nguy Cơ Qui Trách</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="dthcb_sodokethop.html"><a href="dthcb_sodokethop.html#kết-luận-1"><i class="fa fa-check"></i>KẾT LUẬN</a></li>
+<li class="chapter" data-level="" data-path="dthcb_sodokethop.html"><a href="dthcb_sodokethop.html#tài-liệu-tham-khảo-đề-nghị-đọc-thêm-3"><i class="fa fa-check"></i>Tài liệu tham khảo đề nghị đọc thêm</a></li>
+<li class="chapter" data-level="" data-path="dthcb_sodokethop.html"><a href="dthcb_sodokethop.html#bài-tập-3"><i class="fa fa-check"></i>Bài tập</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="dthcb_thietke.html"><a href="dthcb_thietke.html"><i class="fa fa-check"></i><b>5</b> Những thiết kế nghiên cứu Dịch tễ học</a>
+<ul>
+<li class="chapter" data-level="" data-path="dthcb_thietke.html"><a href="dthcb_thietke.html#mục-tiêu-bài-giảng-4"><i class="fa fa-check"></i>Mục tiêu bài giảng</a></li>
+<li class="chapter" data-level="" data-path="dthcb_thietke.html"><a href="dthcb_thietke.html#giới-thiệu-4"><i class="fa fa-check"></i>Giới thiệu</a></li>
+<li class="chapter" data-level="" data-path="dthcb_thietke.html"><a href="dthcb_thietke.html#những-loại-thiết-kế-nghiên-cứu-dịch-tễ-học"><i class="fa fa-check"></i>NHỮNG LOẠI THIẾT KẾ NGHIÊN CỨU DỊCH TỄ HỌC</a></li>
+<li class="chapter" data-level="" data-path="dthcb_thietke.html"><a href="dthcb_thietke.html#nghiên-cứu-quan-sát"><i class="fa fa-check"></i>NGHIÊN CỨU QUAN SÁT</a>
+<ul>
+<li class="chapter" data-level="" data-path="dthcb_thietke.html"><a href="dthcb_thietke.html#nghiên-cứu-mô-tả"><i class="fa fa-check"></i>Nghiên Cứu Mô Tả</a></li>
+<li class="chapter" data-level="" data-path="dthcb_thietke.html"><a href="dthcb_thietke.html#nghiên-cứu-phân-tích"><i class="fa fa-check"></i>Nghiên Cứu Phân Tích</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="dthcb_thietke.html"><a href="dthcb_thietke.html#nghiên-cứu-can-thiệp"><i class="fa fa-check"></i>NGHIÊN CỨU CAN THIỆP</a>
+<ul>
+<li class="chapter" data-level="" data-path="dthcb_thietke.html"><a href="dthcb_thietke.html#thử-nghiệm-lâm-sàng"><i class="fa fa-check"></i>Thử nghiệm lâm sàng</a></li>
+<li class="chapter" data-level="" data-path="dthcb_thietke.html"><a href="dthcb_thietke.html#thử-nghiệm-thực-địa"><i class="fa fa-check"></i>Thử nghiệm thực địa</a></li>
+<li class="chapter" data-level="" data-path="dthcb_thietke.html"><a href="dthcb_thietke.html#thử-nghiệm-can-thiệp-cộng-đồng"><i class="fa fa-check"></i>Thử nghiệm can thiệp cộng đồng</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="dthcb_thietke.html"><a href="dthcb_thietke.html#những-điểm-lưu-ý-quan-trọng"><i class="fa fa-check"></i>NHỮNG ĐIỂM LƯU Ý QUAN TRỌNG</a></li>
+<li class="chapter" data-level="" data-path="dthcb_thietke.html"><a href="dthcb_thietke.html#bài-tập-4"><i class="fa fa-check"></i>Bài tập</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="dthcb_ncmota.html"><a href="dthcb_ncmota.html"><i class="fa fa-check"></i><b>6</b> Dịch tễ học mô tả</a></li>
+<li class="chapter" data-level="7" data-path="dthcb_nccatngang.html"><a href="dthcb_nccatngang.html"><i class="fa fa-check"></i><b>7</b> Nghiên cứu cắt ngang</a></li>
+<li class="chapter" data-level="8" data-path="dthcb_ncbenhchung.html"><a href="dthcb_ncbenhchung.html"><i class="fa fa-check"></i><b>8</b> Nghiên cứu Bệnh-Chứng</a></li>
+<li class="chapter" data-level="9" data-path="dthcb_ncdh.html"><a href="dthcb_ncdh.html"><i class="fa fa-check"></i><b>9</b> Nghiên cứu Đoàn hệ</a></li>
+<li class="chapter" data-level="10" data-path="dthcb_ncct.html"><a href="dthcb_ncct.html"><i class="fa fa-check"></i><b>10</b> Dịch tễ học can thiệp</a></li>
+<li class="chapter" data-level="11" data-path="dthcb_trinhbay.html"><a href="dthcb_trinhbay.html"><i class="fa fa-check"></i><b>11</b> Trình bày dữ kiện Dịch tễ học</a></li>
+<li class="chapter" data-level="12" data-path="dthcb_cohoi.html"><a href="dthcb_cohoi.html"><i class="fa fa-check"></i><b>12</b> Ảnh Hưởng Của Cơ hội Trong Những Nghiên Cứu Dịch Tễ Học</a></li>
+<li class="chapter" data-level="13" data-path="dthls_sailech.html"><a href="dthls_sailech.html"><i class="fa fa-check"></i><b>13</b> Ảnh Hưởng Của Sai Lệch Trong Những Nghiên Cứu Dịch Tễ Học</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="dthls_sailech.html"><a href="dthls_sailech.html#mục-tiêu"><i class="fa fa-check"></i><b>13.1</b> Mục tiêu</a></li>
+<li class="chapter" data-level="13.2" data-path="dthls_sailech.html"><a href="dthls_sailech.html#vì-sao-cần-nghiên-cứu-lâm-sàng-về-phương-pháp-điều-trị"><i class="fa fa-check"></i><b>13.2</b> Vì sao cần nghiên cứu lâm sàng về phương pháp điều trị?</a></li>
+<li class="chapter" data-level="13.3" data-path="dthls_sailech.html"><a href="dthls_sailech.html#làm-thế-nào-để-đánh-giá-hiệu-quả-điều-trị"><i class="fa fa-check"></i><b>13.3</b> Làm thế nào để đánh giá hiệu quả điều trị?</a></li>
+<li class="chapter" data-level="13.4" data-path="dthls_sailech.html"><a href="dthls_sailech.html#thử-nghiệm-lâm-sàng-ngẫu-nhiên"><i class="fa fa-check"></i><b>13.4</b> Thử nghiệm lâm sàng ngẫu nhiên</a>
+<ul>
+<li class="chapter" data-level="13.4.1" data-path="dthls_sailech.html"><a href="dthls_sailech.html#vì-sao-cần-tiến-hành-vì-sao-có-thể-phân-ngẫu-nhiên"><i class="fa fa-check"></i><b>13.4.1</b> Vì sao cần tiến hành &amp; vì sao có thể phân ngẫu nhiên?</a></li>
+<li class="chapter" data-level="13.4.2" data-path="dthls_sailech.html"><a href="dthls_sailech.html#mẫu"><i class="fa fa-check"></i><b>13.4.2</b> Mẫu</a></li>
+</ul></li>
+<li class="chapter" data-level="13.5" data-path="dthls_sailech.html"><a href="dthls_sailech.html#các-vấn-đề-về-đạo-đức-khi-tiến-hành-một-nghiên-cứu-lâm-sàng-về-điều-trị"><i class="fa fa-check"></i><b>13.5</b> Các vấn đề về đạo đức khi tiến hành một nghiên cứu lâm sàng về điều trị</a></li>
+<li class="chapter" data-level="13.6" data-path="dthls_sailech.html"><a href="dthls_sailech.html#các-câu-hỏi-nghiên-cứu-liên-quan-đến-phương-pháp-điều-trị"><i class="fa fa-check"></i><b>13.6</b> Các câu hỏi nghiên cứu liên quan đến phương pháp điều trị</a>
+<ul>
+<li class="chapter" data-level="13.6.1" data-path="dthls_sailech.html"><a href="dthls_sailech.html#dân-số-nghiên-cứu"><i class="fa fa-check"></i><b>13.6.1</b> Dân số nghiên cứu</a></li>
+<li class="chapter" data-level="13.6.2" data-path="dthls_sailech.html"><a href="dthls_sailech.html#điều-trị"><i class="fa fa-check"></i><b>13.6.2</b> Điều trị</a></li>
+<li class="chapter" data-level="13.6.3" data-path="dthls_sailech.html"><a href="dthls_sailech.html#nhóm-so-sánh"><i class="fa fa-check"></i><b>13.6.3</b> Nhóm so sánh</a></li>
+<li class="chapter" data-level="13.6.4" data-path="dthls_sailech.html"><a href="dthls_sailech.html#kết-cuộc"><i class="fa fa-check"></i><b>13.6.4</b> Kết cuộc</a></li>
+</ul></li>
+<li class="chapter" data-level="13.7" data-path="dthls_sailech.html"><a href="dthls_sailech.html#các-dạng-nghiên-cứu-lâm-sàng-giúp-đánh-giá-một-phương-pháp-điều-trị"><i class="fa fa-check"></i><b>13.7</b> Các dạng nghiên cứu lâm sàng giúp đánh giá một phương pháp điều trị</a></li>
+<li class="chapter" data-level="13.8" data-path="dthls_sailech.html"><a href="dthls_sailech.html#cách-đọc-và-đánh-giá-một-nghiên-cứu-về-điều-trị"><i class="fa fa-check"></i><b>13.8</b> Cách đọc và đánh giá một nghiên cứu về điều trị</a></li>
+<li class="chapter" data-level="13.9" data-path="dthls_sailech.html"><a href="dthls_sailech.html#ví-dụ-thực-tế-nghiên-cứu-về-điều-trị-covid-19"><i class="fa fa-check"></i><b>13.9</b> Ví dụ thực tế: nghiên cứu về điều trị COVID-19</a></li>
+<li class="chapter" data-level="13.10" data-path="dthls_sailech.html"><a href="dthls_sailech.html#bài-tập-5"><i class="fa fa-check"></i><b>13.10</b> Bài tập</a>
+<ul>
+<li class="chapter" data-level="13.10.1" data-path="dthls_sailech.html"><a href="dthls_sailech.html#điền-vào-chỗ-trống"><i class="fa fa-check"></i><b>13.10.1</b> Điền vào chỗ trống</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="dthcb_nhieu.html"><a href="dthcb_nhieu.html"><i class="fa fa-check"></i><b>14</b> Yếu tố gây nhiễu</a></li>
+<li class="chapter" data-level="15" data-path="dthcb_sdnq.html"><a href="dthcb_sdnq.html"><i class="fa fa-check"></i><b>15</b> Suy diễn nhân quả</a></li>
+<li class="divider"></li>
+<li><a href="./">Bộ môn Dịch tễ học - Khoa YTCC - ĐHYD TPHCM</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Dịch tễ học cơ bản</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="dthcb_sodokethop" class="section level1" number="4">
+<h1><span class="header-section-number">Chương 4</span> Số Đo Kết Hợp</h1>
+<div id="mục-tiêu-bài-giảng-3" class="section level2 unnumbered">
+<h2>Mục tiêu bài giảng</h2>
+<p>Sau khi học xong bài này, học viên có thể</p>
+<ul>
+<li><p>Tính toán được những số đo kết hợp, gồm nguy cơ tương đối, tỉ số số chênh, nguy cơ qui trách, và nguy cơ qui trách dân số.</p></li>
+<li><p>Lý giải được ý nghĩa của những số đo nói trên để xác định được một nguyên nhân gây bệnh, và lượng giá được tác động của nguyên nhân đó đối với tình trạng sức khỏe của một cộng đồng.</p></li>
+</ul>
+</div>
+<div id="giới-thiệu-3" class="section level2 unnumbered">
+<h2>Giới thiệu</h2>
+<p>Để mô tả sự xuất hiện của một hiện tượng sức khỏe, chúng ta sử dụng những số đo bệnh trạng hoặc tử vong, đó là số hiện mắc và số mới mắc. Hai số đo này giúp chúng ta mô tả được hiện trạng của bệnh, hoặc khả năng mắc bệnh trong từng dân số một. Để xác định được nguyên nhân gây bệnh, chúng ta cần so sánh bệnh trạng của hai hoặc nhiều dân số khác nhau. Khi quan sát thấy một bệnh xảy ra ở một nhóm người có những thuộc tính riêng, chúng ta chưa có đủ bằng chứng để nói rằng bởi vì mang những thuộc tính đó nên những người trong nhóm đó mắc bệnh. Nói một cách khác, chúng ta chưa thể kết luận rằng những thuộc tính đó là nguyên nhân gây ra bệnh. Thí dụ, một dân số A có tỉ lệ hiện mắc của bệnh mạch vành là 45%, và hầu hết những người trong nhóm này là những người lớn tuổi, nam giới, và hút thuốc lá nhiều. Những yếu tố tuổi (lớn), giới tính (nam), và hút thuốc lá (có hút) cho dù là phổ biến trong dân số A, nhưng không phải là những bằng chứng để chúng ta có thể nói rằng chúng là những nguyên nhân khiến cho những cá nhân trong dân số A mắc bệnh mạch vành. Giả sử một dân số B, có tỉ lệ hiện mắc bệnh mạch vành là rất thấp so với tỉ lệ tương ứng ở A, thí dụ 5%, nhưng hầu hết những người bệnh mạch vành trong dân số B cũng là những người lớn tuổi, nam giới, và hút thuốc lá nhiều, thì những yếu tố tuổi, giới, hút thuốc lá không thể là những nguyên nhân để khiến cho dân số A mắc bệnh mạch vành nhiều hơn B. Như vậy, để xác định nguyên nhân của bệnh, chúng ta cần so sánh hai (hoặc nhiều) dân số có bệnh trạng khác nhau, và mang những thuộc tính khác nhau. Chỉ khi nào dân số A, mắc bệnh nhiều hơn dân số B, mang những thuộc tính khác với dân số B, thì những thuộc tính chỉ có ở A mà không có ở B mới có thể là những nguyên nhân gây ra bệnh cho dân số A. Trở lại thí dụ vừa nêu về bệnh mạch vành, giả sử rằng hầu hết những cá nhân trong dân số B không hút thuốc lá, khi đó chúng ta có thể nghĩ rằng hút thuốc lá là nguyên nhân gây ra bệnh mạch vành ở A, vì hút thuốc lá chỉ có trong A, nhưng không có trong B.</p>
+<p>Để xác định được nguyên nhân gây bệnh, chúng ta sẽ sử dụng những số đo kết hợp, chúng còn được gọi là số đo liên quan, hay số đo hậu quả. Những số đo này được tính toán căn cứ vào sự so sánh những số đo bệnh trạng ở những dân số mang những thuộc tính khác nhau. Để so sánh hai số đo bệnh trạng, hay nói một cách khác, để xác định được số đo bệnh trạng nào là lớn hơn, chúng ta có thể chia hai số đo với nhau (số đo hậu quả), hoặc trừ chúng cho nhau (số đo tác động)</p>
+</div>
+<div id="những-khái-niệm-cần-thiết" class="section level2 unnumbered">
+<h2>NHỮNG KHÁI NIỆM CẦN THIẾT</h2>
+<div id="nguyên-nhân-yếu-tố-nguy-cơ-nguy-cơ-yếu-tố-xác-định" class="section level3 unnumbered">
+<h3>Nguyên Nhân – Yếu Tố Nguy Cơ – Nguy Cơ – Yếu Tố Xác Định</h3>
+<p><strong>Nguyên nhân</strong> gây bệnh là một yếu tố, thông qua một quá trình với những cơ chế cụ thể, có thể gây ra một bệnh lý đặc thù ở một người. Mycobacterium tuberculosis là nguyên nhân gây ra bệnh lao ở người, và bệnh lao ở một cá nhân bắt đầu bằng sự xâm nhập của M. tuberculosis vào cơ thể người qua một ngõ vào cụ thể, thí dụ đường hô hấp, và thông qua một cơ chế với nhiều bước khác nhau, chúng xâm nhập vào mô, từ đó gây ra những biến đổi trong tế bào để tạo ra những sang thương lao. Tuy nhiên, nhiều bằng chứng thực tế cho thấy rằng không phải ai nhiễm M. tuberculosis cũng sẽ bị lao. Những yếu tố khác giúp cho M. tuberculosis có thể gây ra bệnh lao ở một cá nhân là người đó có thể sống trong một môi trường ô nhiễm, bị suy dinh dưỡng, không chủng ngừa, hoặc rất nhiều những yếu tố khác chỉ có ở cá nhân đó mà không có ở những người khác. Những yếu tố này có thể được gọi là những <strong>yếu tố nguy cơ</strong> của bệnh, tức là những yếu tố khi hiện diện trong ta sẽ tăng khả năng mắc bệnh cho ta. Khả năng mắc bệnh còn được gọi là <strong>nguy cơ</strong> mắc bệnh, là xác suất xảy ra bệnh, được thể hiện bằng một tỉ lệ. Yếu tố nguyên nhân còn được gọi là yếu tố phơi nhiễm, và sự tiếp xúc với nó được gọi là sự phơi nhiễm.</p>
+<p>Nguyên nhân hoặc yếu tố nguy cơ có thể được gọi là những <strong>yếu tố xác định</strong> của bệnh. Những khái niệm sâu hơn về nguyên nhân sẽ được phân tích và trình bày trong những chủ đề khác. Để thể hiện mối liên quan giữa hai biến số, chúng ta có thể trình bày những biến số đó với những giá trị của chúng trong một bảng gồm những hàng và cột.</p>
+<p>Các nghiên cứu dịch tễ học tim hiểu sự kết hợp giữa hai yếu tố phơi nhiễm và bệnh. Đầu tiên là phân biệt giữa người có và những người không tiếp xúc với yếu tố nguy cơ (biến độc lập) thứ hai là phân biệt giữa người có mắc bệnh và người không có mắc bệnh (biến phụ thuộc) mà nghiên cứu đang cứu đang thực hiện. Tuy nhiên các nghiên cứu dịch tễ học có thể phức tạp bởi các yêu cầu khác, chẳng hạn, có thể phải phân tích một số biến độc lập với biến phụ thuộc bao gồm cả sự tương tác của các biến số độc lập. Đo lường mức độ nghiêm trọng khác nhau của tiếp xúc với yếu tố nguy cơ hay bệnh có thể cho các giá trị khác nhau thay vì đơn giản là có tiếp xúc và không tiếp xúc hay có bệnh và không bệnh. Ngoài ra, một điểm khác liên quan đến sự cần thiết đo lường mức độ khác nhau của mức độ tiếp xúc với yếu tố nguy cơ, thời gian tiếp xúc với yếu tố nguy cơ hoặc cả hai. Ví dụ: khi đo lường tiếp xúc với thuốc lá tính theo gói-năm, là con số trung bình gói thuốc hút mỗi ngày nhân với số năm hút thuốc.</p>
+<p>Tuy nhiên, tùy thuộc vào yếu tố nguy cơ, có thể khó xác định thời điểm bắt đầu tiếp xúc. Điều này đúng với các yếu tố nguy cơ như lối sống ít vận động hoặc chế độ ăn uống quá mức.</p>
+<p>Mặc dù có nhiều những phức tạp này, nhiều nghiên cứu dịch tễ học vẫn dựa vào khảo sát mối liên quan giữa có bệnh/không bệnh và có tiếp xúc/ không tiếp xúc thường được trình bày dưới dạng 2x2 tiêu chuẩn.</p>
+<p>Các nghiên cứu dịch tễ học phụ thuộc vào đo lường sự khác biệt. Trong các nghiên cứu đoàn hệ, sự khác biệt cần tìm thấy là so sánh tần suất bệnh giữa những người tiếp xúc với một yếu tố nguy cơ và tần suất bệnh ở những người không tiếp xúc với yếu tố nguy cơ tương tự. Trong nghiên cứu bệnh chứng, sự khác biệt cần tìm là so sánh tần suất có yếu tố nguy cơ ở nhóm người có bệnh so với nhóm không có bệnh.</p>
+<p>Các yếu tố nguy cơ được khảo sát trong dịch tễ có thể kể đến bao gồm yếu tố dinh dưỡng (vd: chế độ ăn chất béo bão hòa), yếu tố môi trường (vd: ô nhiễm không khí), yếu tố hành vi (vd: hút thuốc lá), yếu tố về đặc điểm sinh lý (cholesterol huyết thanh cao), can thiệp y tế công cộng (vd: vắc-xin).</p>
+<p>Mặc dù những số đo lường khác biệt có thể được xem xét dưới dạng tuyệt đối hay tương đối thì các đo lường được sử dụng phụ thuộc vào loại thiết kế nghiên cứu thực hiện. Các giải thích được trình bày ở những nội dung trong bài Nghiên cứu bệnh chứng. Cần nhớ rằng nghiên cứu bệnh chứng cho phép người điều tra chỉ có thể thu thập được một đo lường nguy cơ tương đối (relative measure of risk) trong khi nghiên cứu đoàn hệ và nghiên cứu can thiệp lại cho phép nhà nghiên cứu thu thập được cả đo lường nguy cơ tuyệt đối và tương đối (absolute and relative of risk). Sau khi tính toán so sánh khác biệt về nguy cơ, mức độ thống kê phải được xác định sau đó để đảm bảo rằng bất kỳ sự khác biệt quan sát nào có thể là có thật chứ không phải do cơ hội hay tình cờ (chance). Nội dung về cơ hội sẽ được trình bày rõ ràng hơn trong bài Cơ hội.</p>
+<p>Bảng <a href="dthcb_sodokethop.html#tab:bang0401">4.1</a> trình bày những dữ kiện giả lập, thể hiện mối liên quan giữa mức độ uống rượu thay đổi khác nhau ở nam và nữ, và cho thấy nam giới có khuynh hướng uống rượu nhiều hơn nữ giới. Nếu các biến số là nhị giá, tức là chỉ có hai giá trị, bảng hàng và cột sẽ thu nhỏ lại thành bảng 2x2, tức là có 2 hàng và 2 cột. Bảng <a href="dthcb_sodokethop.html#tab:bang0401">4.1</a> trình bày mối liên quan giữa sự hiểu biết của bà mẹ về yếu tố truyền bệnh sốt xuất huyết dengue và hậu quả ở con. Hai biến số kiến thức và tình trạng bệnh là nhị giá, với hai giá trị là biết/không biết, và bệnh/không bệnh. Những dữ kiện của một bảng nhiều hàng và cột, hoặc một bảng 2x2, cho chúng ta hình dung được mối liên quan giữa hai biến số mà chúng ta quan tâm, cụ thể hơn, nó có thể cho chúng ta thấy được sự thay đổi của một biến số theo sự thay đổi của biến số còn lại.</p>
+<div id="qnynyejbfm" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#qnynyejbfm .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#qnynyejbfm .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qnynyejbfm .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#qnynyejbfm .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#qnynyejbfm .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qnynyejbfm .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qnynyejbfm .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#qnynyejbfm .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#qnynyejbfm .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#qnynyejbfm .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#qnynyejbfm .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#qnynyejbfm .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#qnynyejbfm .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#qnynyejbfm .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#qnynyejbfm .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#qnynyejbfm .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#qnynyejbfm .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#qnynyejbfm .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qnynyejbfm .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#qnynyejbfm .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qnynyejbfm .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#qnynyejbfm .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#qnynyejbfm .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qnynyejbfm .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qnynyejbfm .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#qnynyejbfm .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qnynyejbfm .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#qnynyejbfm .gt_left {
+  text-align: left;
+}
+
+#qnynyejbfm .gt_center {
+  text-align: center;
+}
+
+#qnynyejbfm .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#qnynyejbfm .gt_font_normal {
+  font-weight: normal;
+}
+
+#qnynyejbfm .gt_font_bold {
+  font-weight: bold;
+}
+
+#qnynyejbfm .gt_font_italic {
+  font-style: italic;
+}
+
+#qnynyejbfm .gt_super {
+  font-size: 65%;
+}
+
+#qnynyejbfm .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+</style>
+<table class="gt_table">
+  <caption><span id="tab:bang0401">Bảng 4.1: </span>Phân bố tần số của mức độ uống rượu theo giới tính, dữ kiện giả lập.</caption>
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1">Cholesterol huyết thanh (mg/100ml)</th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="1">
+        <span class="gt_column_spanner">Không bao giờ</span>
+      </th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="1">
+        <span class="gt_column_spanner">Vừa phải</span>
+      </th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="1">
+        <span class="gt_column_spanner">Nhiều</span>
+      </th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="1">
+        <span class="gt_column_spanner">Tổng</span>
+      </th>
+    </tr>
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">n (%)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">n (%)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">n (%)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"></th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left">Nam</td>
+<td class="gt_row gt_left">15 (10)</td>
+<td class="gt_row gt_left">45 (30)</td>
+<td class="gt_row gt_left">90 (60)</td>
+<td class="gt_row gt_left">150 (100)</td></tr>
+    <tr><td class="gt_row gt_left">Nữ</td>
+<td class="gt_row gt_left">100 (67)</td>
+<td class="gt_row gt_left">35 (23)</td>
+<td class="gt_row gt_left">15 (10)</td>
+<td class="gt_row gt_left">150 (100)</td></tr>
+    <tr><td class="gt_row gt_left">Tổng</td>
+<td class="gt_row gt_left">115</td>
+<td class="gt_row gt_left">80</td>
+<td class="gt_row gt_left">105</td>
+<td class="gt_row gt_left">300</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+<p>Bảng 2x2 được sử dụng phổ biến trong dịch tễ học phân tích để xác định nguyên nhân hoặc những yếu tố nguy cơ của bệnh. Để dễ tính toán và lý giải những số đo cần thiết, nên trình bày dữ kiện trong bảng 2x2 theo thứ tự, nguyên nhân ở hàng, bệnh ở cột, và có trước, không sau.</p>
+<div id="pjowjrgjpo" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#pjowjrgjpo .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#pjowjrgjpo .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#pjowjrgjpo .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#pjowjrgjpo .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#pjowjrgjpo .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#pjowjrgjpo .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#pjowjrgjpo .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#pjowjrgjpo .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#pjowjrgjpo .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#pjowjrgjpo .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#pjowjrgjpo .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#pjowjrgjpo .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#pjowjrgjpo .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#pjowjrgjpo .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#pjowjrgjpo .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#pjowjrgjpo .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#pjowjrgjpo .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#pjowjrgjpo .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#pjowjrgjpo .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#pjowjrgjpo .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#pjowjrgjpo .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#pjowjrgjpo .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#pjowjrgjpo .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#pjowjrgjpo .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#pjowjrgjpo .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#pjowjrgjpo .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#pjowjrgjpo .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#pjowjrgjpo .gt_left {
+  text-align: left;
+}
+
+#pjowjrgjpo .gt_center {
+  text-align: center;
+}
+
+#pjowjrgjpo .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#pjowjrgjpo .gt_font_normal {
+  font-weight: normal;
+}
+
+#pjowjrgjpo .gt_font_bold {
+  font-weight: bold;
+}
+
+#pjowjrgjpo .gt_font_italic {
+  font-style: italic;
+}
+
+#pjowjrgjpo .gt_super {
+  font-size: 65%;
+}
+
+#pjowjrgjpo .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+</style>
+<table class="gt_table">
+  <caption><span id="tab:bang0402">Bảng 4.2: </span>Phân bố tần số của kiến thức về sốt xuất huyết dengue ở những bà mẹ có và không có con mắc bệnh sốt xuất huyết dengue.</caption>
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Biết muỗi là yếu tố truyền bệnh</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">SXHD 
+ n (%)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Không SXHD 
+ n (%)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Tổng 
+ </th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left">Biết</td>
+<td class="gt_row gt_left">54 (49)</td>
+<td class="gt_row gt_left">58 (52)</td>
+<td class="gt_row gt_left">112</td></tr>
+    <tr><td class="gt_row gt_left">Không biết</td>
+<td class="gt_row gt_left">56 (51)</td>
+<td class="gt_row gt_left">52 (48)</td>
+<td class="gt_row gt_left">108</td></tr>
+    <tr><td class="gt_row gt_left">Tổng</td>
+<td class="gt_row gt_left">110 (100)</td>
+<td class="gt_row gt_left">110 (100)</td>
+<td class="gt_row gt_left">220</td></tr>
+  </tbody>
+  <tfoot class="gt_sourcenotes">
+    <tr>
+      <td class="gt_sourcenote" colspan="4">Nguồn: Nguyễn Đỗ Nguyên. Kiến thức, thái độ, thực hành về phòng chống sốt xuất huyết dengue của các bà mẹ ở nội thành TP. Hồ chí Minh. Y học TP. Hồ chí Minh. 1999. 3(2):119-124.</td>
+    </tr>
+  </tfoot>
+  
+</table>
+</div>
+<div id="hbqxcrisrq" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#hbqxcrisrq .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#hbqxcrisrq .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#hbqxcrisrq .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#hbqxcrisrq .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#hbqxcrisrq .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#hbqxcrisrq .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#hbqxcrisrq .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#hbqxcrisrq .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#hbqxcrisrq .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#hbqxcrisrq .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#hbqxcrisrq .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#hbqxcrisrq .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#hbqxcrisrq .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#hbqxcrisrq .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#hbqxcrisrq .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#hbqxcrisrq .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#hbqxcrisrq .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#hbqxcrisrq .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#hbqxcrisrq .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#hbqxcrisrq .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#hbqxcrisrq .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#hbqxcrisrq .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#hbqxcrisrq .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#hbqxcrisrq .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#hbqxcrisrq .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#hbqxcrisrq .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#hbqxcrisrq .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#hbqxcrisrq .gt_left {
+  text-align: left;
+}
+
+#hbqxcrisrq .gt_center {
+  text-align: center;
+}
+
+#hbqxcrisrq .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#hbqxcrisrq .gt_font_normal {
+  font-weight: normal;
+}
+
+#hbqxcrisrq .gt_font_bold {
+  font-weight: bold;
+}
+
+#hbqxcrisrq .gt_font_italic {
+  font-style: italic;
+}
+
+#hbqxcrisrq .gt_super {
+  font-size: 65%;
+}
+
+#hbqxcrisrq .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+</style>
+<table class="gt_table">
+  <caption><span id="tab:bang0403">Bảng 4.3: </span>Cấu trúc tổng quát của bảng 2x2.</caption>
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1">Nguyên nhân</th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="3">
+        <span class="gt_column_spanner">Bệnh</span>
+      </th>
+    </tr>
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Có</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Không</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Tổng</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left">Có</td>
+<td class="gt_row gt_left">a</td>
+<td class="gt_row gt_left">c</td>
+<td class="gt_row gt_left">a + c</td></tr>
+    <tr><td class="gt_row gt_left">Không</td>
+<td class="gt_row gt_left">b</td>
+<td class="gt_row gt_left">d</td>
+<td class="gt_row gt_left">b + d</td></tr>
+    <tr><td class="gt_row gt_left">Tổng</td>
+<td class="gt_row gt_left">a + b</td>
+<td class="gt_row gt_left">c + d</td>
+<td class="gt_row gt_left">a + b + c + d</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+<p>Cấu trúc tổng quát của bảng 2x2 được trình bày trong bảng <a href="dthcb_sodokethop.html#tab:bang0403">4.3</a>, trong đó a là số người có tiếp xúc với yếu tố nguyên nhân (hay còn gọi là có phơi nhiễm) và có bệnh; b là số người có phơi nhiễm nhưng không bệnh; c là số người không phơi nhiễm nhưng có bệnh; và d là số người không phơi nhiễm và cũng không có bệnh.</p>
+<p>Chú thích các ô trong bảng:</p>
+<ul>
+<li>a = Người có phơi nhiễm với yếu tố đang khảo sát và có bệnh</li>
+<li>b = Người có phơi nhiễm với yếu tố đang khảo sát nhưng không bệnh</li>
+<li>c = Người không phơi nhiễm với yếu tố đang khảo sát nhưng có bệnh</li>
+<li>d = Người không phơi nhiễm với yếu tố đang khảo sát và cũng không có bệnh</li>
+<li>a + b = Tất cả người có phơi nhiễm</li>
+<li>c + d = Tất cả người không phơi nhiễm</li>
+<li>a + c = Tất cả người có bệnh</li>
+<li>b + d = Tất cả người không bệnh</li>
+<li>a + b + c + d = Toàn bộ người trong nghiên cứu</li>
+</ul>
+<p>Nguy cơ tương đối (RR: relative risk) hay còn được gọi là tỷ số nguy cơ (Risk ratio), chính là tỷ số giữa nguy cơ mắc bệnh ở nhóm có phơi nhiễm với nguy cơ mắc bệnh ở nhóm không phơi nhiễm. Nếu nguy cơ trong nhóm có phơi nhiễm và nguy cơ trong nhóm không phơi nhiễm bằng nhau thì RR =1. Nếu nguy cơ mắc bệnh ở hai nhóm là không như nhau, RR sẽ cho biết sự khác nhau như thế nào (nhiều hơn hay ít hơn; lớn hơn hay nhỏ hơn) giữa nguy cơ mắc bệnh ở nhóm có phơi nhiễm so với nhóm không phơi nhiễm. Nguy cơ mắc bệnh trong nhóm có phơi nhiễm thường là lớn hơn 1 nếu yếu tố tiếp xúc là có hại (vd: hút thuốc lá) hoặc nhỏ hơn 1 nếu yếu tố tiếp xúc là có lợi hay bảo vệ (vd: tiêm vắc – xin)</p>
+</div>
+</div>
+<div id="các-số-đo-kết-hợp" class="section level2 unnumbered">
+<h2>CÁC SỐ ĐO KẾT HỢP</h2>
+<div id="nguy-cơ-tương-đối" class="section level3 unnumbered">
+<h3>Nguy Cơ Tương Đối</h3>
+<p>Bảng <a href="dthcb_sodokethop.html#tab:bang0404">4.4</a> trình bày những dữ kiện của một nghiên cứu, quan sát một dân số gồm 876 người, trong đó có 422 người tăng cholesterol máu ( 245 mg/100ml), và 454 người có cholesterol máu bình thường (&lt; 210 mg/100ml). Vào đầu thời khoảng quan sát, tất cả những người này chưa mắc bệnh mạch vành. Sau 6 năm theo dõi, trong nhóm những người tăng cholesterol máu, có 51 người mắc bệnh mạch vành, trong khi đó, con số tương ứng ở nhóm cholesterol máu bình thường là 16. Để trả lời câu hỏi rằng cholesterol máu cao có tăng nguy cơ mắc bệnh mạch vành hay không, hay nói một cách khác, giữa những người tăng cholesterol máu và những người có cholesterol máu bình thường ai có khả năng mắc bệnh mạch vành cao hơn, chúng ta sẽ so sánh số đo mắc bệnh của hai nhóm, như sau.</p>
+<p>Tỉ suất mới mắc bệnh mạch vành ở nhóm tăng cholesterol máu là:
+<span class="math inline">\(R_1\)</span> = 51/422 = 0,12 = 12% trong vòng 6 năm</p>
+<p>Tỉ suất mới mắc bệnh mạch vành ở nhóm cholesterol máu bình thường là:
+<span class="math inline">\(R_0\)</span> = 16/454 = 0,04 = 4% trong vòng 6 năm</p>
+<p>Chia <span class="math inline">\(R_1\)</span> cho <span class="math inline">\(R_0\)</span>, ta có:
+<span class="math inline">\(R_1\)</span>/<span class="math inline">\(R_0\)</span> = 0,12/0,04 = 3</p>
+<div id="kivztaqwsz" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#kivztaqwsz .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#kivztaqwsz .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#kivztaqwsz .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#kivztaqwsz .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#kivztaqwsz .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kivztaqwsz .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#kivztaqwsz .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#kivztaqwsz .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#kivztaqwsz .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#kivztaqwsz .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#kivztaqwsz .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#kivztaqwsz .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#kivztaqwsz .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#kivztaqwsz .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#kivztaqwsz .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#kivztaqwsz .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#kivztaqwsz .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#kivztaqwsz .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kivztaqwsz .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#kivztaqwsz .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kivztaqwsz .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#kivztaqwsz .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#kivztaqwsz .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kivztaqwsz .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#kivztaqwsz .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#kivztaqwsz .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#kivztaqwsz .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#kivztaqwsz .gt_left {
+  text-align: left;
+}
+
+#kivztaqwsz .gt_center {
+  text-align: center;
+}
+
+#kivztaqwsz .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#kivztaqwsz .gt_font_normal {
+  font-weight: normal;
+}
+
+#kivztaqwsz .gt_font_bold {
+  font-weight: bold;
+}
+
+#kivztaqwsz .gt_font_italic {
+  font-style: italic;
+}
+
+#kivztaqwsz .gt_super {
+  font-size: 65%;
+}
+
+#kivztaqwsz .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+</style>
+<table class="gt_table">
+  <caption><span id="tab:bang0404">Bảng 4.4: </span>Số đo mắc bệnh mạch vành ở người có cholesterol máu bình thường và cholesterol máu cao, được theo dõi trong vòng 6 năm.</caption>
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1">Cholesterol huyết thanh (mg/100ml)</th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="3">
+        <span class="gt_column_spanner">Bệnh mạch vành</span>
+      </th>
+    </tr>
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Có 
+ n (%)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Không 
+ n (%)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Tổng</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left">$$\geq 245$$</td>
+<td class="gt_row gt_left">51 (12.1)</td>
+<td class="gt_row gt_left">371 (87.9)</td>
+<td class="gt_row gt_left">422</td></tr>
+    <tr><td class="gt_row gt_left">$$&lt; 210$$</td>
+<td class="gt_row gt_left">16 (3.5)</td>
+<td class="gt_row gt_left">438 (96.5)</td>
+<td class="gt_row gt_left">454</td></tr>
+    <tr><td class="gt_row gt_left">Tổng</td>
+<td class="gt_row gt_left">67</td>
+<td class="gt_row gt_left">809</td>
+<td class="gt_row gt_left">876</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+<p>Tỉ số <span class="math inline">\(R_1\)</span>/<span class="math inline">\(R_0\)</span> là tỉ số giữa hai nguy cơ mới mắc của nhóm cholesterol máu cao và nhóm cholesterol máu bình thường, được gọi là tỉ số nguy cơ, và còn được gọi là nguy cơ tương đối mắc bệnh của nhóm cholesterol máu cao so với nhóm có cholesterol máu bình thường. Nguy cơ tương đối được viết tắt là RR, từ thuật ngữ tiếng Anh là relative risk hoặc risk ratio. Với trị số của RR bằng 3, chúng ta nói rằng người tăng cholesterol máu có nguy cơ mắc bệnh mạch vành cao gấp 3 lần so với người có cholesterol máu bình thường. Dựa vào bảng <a href="dthcb_sodokethop.html#tab:bang0403">4.3</a>, chúng ta có thể xác định công thức để tính RR như sau:</p>
+<p>Nguy cơ mắc bệnh ở nhóm có phơi nhiễm là <span class="math inline">\(R_1\)</span> = a / (a + b)</p>
+<p>Nguy cơ mắc bệnh ở nhóm không phơi nhiễm là <span class="math inline">\(R_0\)</span> = c / (c + d)</p>
+<p>Vậy công thức để tính nguy cơ tương đối, dựa vào số mới mắc là nguy cơ, là:</p>
+<p><span class="math display" id="eq:rr">\[\begin{equation}
+RR = \frac{R_1}{R_0} = \frac{a/(a + b)}{c/(c + d)}
+
+\tag{4.1}
+\end{equation}\]</span></p>
+<p>RR được tính dựa vào số mới mắc, có thể là nguy cơ, hoặc tỉ suất. Nếu số đo mới mắc là tỉ suất, RR là tỉ số tỉ suất, và cũng là nguy cơ tương đối. Bảng 4.5 trình bày những dữ kiện của tỉ suất bệnh mạch vành ở những phụ nữ sử dụng kích thích tố hậu mãn kinh. Đây cũng là một bảng 2x2, nhưng sự xuất hiện bệnh được đo lường bằng tỉ suất chứ không phải nguy cơ, có nghĩa là số mới mắc được ghi nhận theo khoảng thời gian nguy cơ được theo dõi trên từng đối tượng khác nhau. Ở bảng 2 x 2 lúc này, tổng hàng không trình bày tổng số người của từng nhóm có hoặc không có sử dụng thuốc, mà là tổng thời gian theo dõi của tất cả đối tượng trong từng nhóm, với đơn vị là năm-người. Những dữ kiện của cột “không bệnh mạch vành” cũng không được trình bày, vì thật sự chúng ta chỉ quan tâm đến số mắc bệnh để đưa vào công thức tính tỉ suất. Để so sánh khả năng mắc bệnh mạch vành ở hai nhóm phụ nữ có và không có sử dụng kích thích tố hậu mãn kinh, chúng ta tính toán như sau.</p>
+<p>Tỉ suất bệnh mạch vành ở nhóm sử dụng kích thích hậu mãn kinh là:
+<span class="math inline">\(R_1\)</span> = 30 người/54.308,7 năm-người = 0,5524/năm = 5,52/10.000/năm</p>
+<p>Tỉ suất bệnh mạch vành ở nhóm không sử dụng kích thích tố hậu mãn kinh là:
+<span class="math inline">\(R_0\)</span> = 60 người/51.477,5 năm-người = 0,11656/năm = 11,66/10.000/năm</p>
+<p>Tỉ số tỉ suất hay nguy cơ tương đối là:
+RR = <span class="math inline">\(R_1\)</span> / <span class="math inline">\(R_0\)</span> = (5,5/10.000/năm) : (11,66/10.000/năm) = 0,47</p>
+<p>Những dữ kiện này được lý giải như sau, hàng năm, trong số 10.000 phụ nữ có sử dụng kích thích tố hậu mãn kinh, có khoảng 6 người mắc bệnh mạch vành; trong khi ở 10.000 người không sử dụng kích thích tố hậu mãn kinh, có khoảng 12 người mắc bệnh. Như vậy, người sử dụng kích thích tố hậu mãn kinh giảm phân nữa nguy cơ mắc bệnh mạch vành so với người không sử dụng.</p>
+<p>Một cách khác để xem xét và giải thích cho tỉ số tỉ suất hay nguy cơ tương đối là tính toán phần trăm tương đối tăng hoặc giảm nguy cơ mắc bệnh. Về cơ bản theo cách sắp xếp của bảng 2x2, nguy cơ của nhóm không phơi nhiễm được xem là 100%.</p>
+<p>Khi RR&gt;1, điều này có nghĩa là khi so sánh nguy cơ/tỉ suất giữa nhóm có yếu tố phơi nhiễm (R1) với nhóm không có yếu tố phơi nhiễm (Ro) thì nguy cơ mắc bệnh là cao hơn ở nhóm có phơi nhiễm so với nhóm không phơi nhiễm.</p>
+<p>Đối với nghiên cứu về bệnh mạch vành và cholesterol máu tăng, nhóm có tăng cholesterol máu có nguy cơ mắc bệnh mạch vành tăng 200% so với nhóm không tăng cholesterol máu (100%). (Bảng <a href="dthcb_sodokethop.html#tab:bang0404">4.4</a>)</p>
+<p>Phần trăm (%) tăng nguy cơ = (RR - 1) x 100</p>
+<p>Khi RR&lt;1, điều này có nghĩa là khi so sánh nguy cơ hay tỉ suất mắc bệnh giữa nhóm có yếu tố phơi nhiễm (<span class="math inline">\(R_1\)</span>) với nhóm không có yếu tố phơi nhiễm (R0) thì nguy cơ mắc bệnh là thấp hơn ở nhóm có phơi nhiễm so với nhóm không phơi nhiễm.</p>
+<p>Đối với nghiên cứu sử dụng kích thích tố hậu mãn kinh và bệnh mạch vành, những phụ nữ có sử dụng kích thích tố hậu mãn kinh đã giảm 53% nguy cơ mắc bệnh mạch vành so với những người không sử dụng kích thích tố này (Bảng <a href="dthcb_sodokethop.html#tab:bang0405">4.5</a>)</p>
+<p>Phần trăm (%) giảm = (1 - RR) x 100</p>
+<div id="ynoxygtjuf" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#ynoxygtjuf .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#ynoxygtjuf .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ynoxygtjuf .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#ynoxygtjuf .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#ynoxygtjuf .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ynoxygtjuf .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ynoxygtjuf .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#ynoxygtjuf .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#ynoxygtjuf .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#ynoxygtjuf .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#ynoxygtjuf .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#ynoxygtjuf .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#ynoxygtjuf .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#ynoxygtjuf .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#ynoxygtjuf .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#ynoxygtjuf .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#ynoxygtjuf .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#ynoxygtjuf .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ynoxygtjuf .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#ynoxygtjuf .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ynoxygtjuf .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#ynoxygtjuf .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#ynoxygtjuf .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ynoxygtjuf .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ynoxygtjuf .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#ynoxygtjuf .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ynoxygtjuf .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#ynoxygtjuf .gt_left {
+  text-align: left;
+}
+
+#ynoxygtjuf .gt_center {
+  text-align: center;
+}
+
+#ynoxygtjuf .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#ynoxygtjuf .gt_font_normal {
+  font-weight: normal;
+}
+
+#ynoxygtjuf .gt_font_bold {
+  font-weight: bold;
+}
+
+#ynoxygtjuf .gt_font_italic {
+  font-style: italic;
+}
+
+#ynoxygtjuf .gt_super {
+  font-size: 65%;
+}
+
+#ynoxygtjuf .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+</style>
+<table class="gt_table">
+  <caption><span id="tab:bang0405">Bảng 4.5: </span>Số mới mắc bệnh mạch vành và sử dụng kích thích tố hậu mãn kinh ở phụ nữ.</caption>
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1">Sử dụng kích thích tố hậu mãn kinh</th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="3">
+        <span class="gt_column_spanner">Bệnh mạch vành</span>
+      </th>
+    </tr>
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Có</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Không</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Năm-người</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left">Có</td>
+<td class="gt_row gt_left">30</td>
+<td class="gt_row gt_left">---</td>
+<td class="gt_row gt_left">54,308.7</td></tr>
+    <tr><td class="gt_row gt_left">Không</td>
+<td class="gt_row gt_left">60</td>
+<td class="gt_row gt_left">---</td>
+<td class="gt_row gt_left">51,477.5</td></tr>
+    <tr><td class="gt_row gt_left">Tổng</td>
+<td class="gt_row gt_left">90</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">105,786.2</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+<p>Bảng 2x2 để trình bày những dữ kiện của số đo mới mắc là tỉ suất có cấu trúc như trong bảng <a href="dthcb_sodokethop.html#tab:bang0406">4.6</a>, trong đó a là số người có phơi nhiễm và mắc bệnh trong tổng thời gian theo dõi là <span class="math inline">\(TGN_1\)</span>; và b là số người không phơi nhiễm và mắc bệnh trong tổng thời gian theo dõi là <span class="math inline">\(TGN_0\)</span>.</p>
+<div id="nhgsaahyio" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#nhgsaahyio .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#nhgsaahyio .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#nhgsaahyio .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#nhgsaahyio .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#nhgsaahyio .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#nhgsaahyio .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#nhgsaahyio .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#nhgsaahyio .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#nhgsaahyio .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#nhgsaahyio .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#nhgsaahyio .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#nhgsaahyio .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#nhgsaahyio .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#nhgsaahyio .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#nhgsaahyio .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#nhgsaahyio .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#nhgsaahyio .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#nhgsaahyio .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nhgsaahyio .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#nhgsaahyio .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nhgsaahyio .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#nhgsaahyio .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#nhgsaahyio .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#nhgsaahyio .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#nhgsaahyio .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#nhgsaahyio .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#nhgsaahyio .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#nhgsaahyio .gt_left {
+  text-align: left;
+}
+
+#nhgsaahyio .gt_center {
+  text-align: center;
+}
+
+#nhgsaahyio .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#nhgsaahyio .gt_font_normal {
+  font-weight: normal;
+}
+
+#nhgsaahyio .gt_font_bold {
+  font-weight: bold;
+}
+
+#nhgsaahyio .gt_font_italic {
+  font-style: italic;
+}
+
+#nhgsaahyio .gt_super {
+  font-size: 65%;
+}
+
+#nhgsaahyio .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+</style>
+<table class="gt_table">
+  <caption><span id="tab:bang0406">Bảng 4.6: </span>Bảng 2x2 trình bày dữ kiện mắc bệnh với số đo là tỉ suất.</caption>
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1">Nguyên nhân</th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="3">
+        <span class="gt_column_spanner">Bệnh</span>
+      </th>
+    </tr>
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Có</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Không</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Năm-người</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left">Có</td>
+<td class="gt_row gt_left">a</td>
+<td class="gt_row gt_left">---</td>
+<td class="gt_row gt_left">$$TGN_1$$</td></tr>
+    <tr><td class="gt_row gt_left">Không</td>
+<td class="gt_row gt_left">b</td>
+<td class="gt_row gt_left">---</td>
+<td class="gt_row gt_left">$$TGN_0$$</td></tr>
+    <tr><td class="gt_row gt_left">Tổng</td>
+<td class="gt_row gt_left">a + b</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">$$TGN_1 + TGN_0$$</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+<p>Vậy công thức để tính RR dựa vào số mới mắc là tỉ suất, là:</p>
+<p><span class="math display" id="eq:rr2">\[\begin{equation}
+RR = \frac{a/TGN_1}{b/TGN_0} 
+
+\tag{4.2}
+\end{equation}\]</span></p>
+</div>
+<div id="tỉ-số-số-chênh-odd-ratio" class="section level3 unnumbered">
+<h3>Tỉ Số Số Chênh (Odd Ratio)</h3>
+<p>Một loại số đo bệnh trạng khác, ngoài số hiện mắc và số mới mắc, là số chênh, và được ký hiệu là O.</p>
+<p>Số chênh được tính theo công thức sau:</p>
+<p><span class="math display" id="eq:sochenh">\[\begin{equation}
+\text{Số chênh} = \frac{\text{Nguy cơ}}{1 - \text{Nguy cơ}}
+
+\tag{4.3}
+\end{equation}\]</span></p>
+<p>Theo công thức trên, số chênh luôn luôn có giá trị là một số dương. Nếu số chênh bằng 0, thì nguy cơ bằng 0, hay không có nguy cơ mắc bệnh. Nếu số chênh bằng 1, thì nguy cơ bằng 0,5. Nếu số chênh bằng <span class="math inline">\(\infty\)</span>, thì nguy cơ bằng 1.</p>
+<p>Như vậy, số chênh có thể đo lường được nguy cơ mắc bệnh của một người, và tỉ số của 2 số chênh có thể được dùng để so sánh khả năng mắc bệnh của hai người. Dựa theo những dữ kiện trong bảng 4.4, chúng ta thực hiện những phép tính sau đây:</p>
+<p>Số chênh bệnh mạch vành ở những người tăng cholesterol máu là:</p>
+<p><span class="math inline">\(O_1\)</span> = <span class="math inline">\(R_1\)</span> : (1 – <span class="math inline">\(R_1\)</span>) = (51/422) : [1 – (51/422)] = 51/(422 - 51) = 51/371; với <span class="math inline">\(R_1\)</span> là nguy cơ bệnh mạch vành ở những người tăng cholesterol máu.</p>
+<p>Số chênh bệnh mạch vành ở những người có cholesterol máu bình thường là:</p>
+<p><span class="math inline">\(O_0\)</span> = <span class="math inline">\(R_0\)</span> : (1 – <span class="math inline">\(R_0\)</span>) = (16/454) : [1 – (16/454)] = 16/(454 - 16) = 16/438; với <span class="math inline">\(R_0\)</span> là nguy cơ bệnh mạch vành ở những người có cholesterol máu bình thường.</p>
+<p>Tỉ số số chênh bệnh mạch vành trong hai nhóm là:</p>
+<p><span class="math inline">\(O_1\)</span> : <span class="math inline">\(O_0\)</span> = (51/371) : (16/438) = (51 x 438) : (371 x 16) = 3,76</p>
+<p>Với trị số của tỉ số số chênh bằng 3,76, chúng ta nói rằng người có cholesterol máu cao có nguy cơ mắc bệnh mạch vành cao gấp 3,76 lần hơn những người có cholesterol máu bình thường.</p>
+<p>Tỉ số số chênh được ký hiệu là OR. Liên hệ với bảng <a href="dthcb_sodokethop.html#tab:bang0403">4.3</a> và bảng <a href="dthcb_sodokethop.html#tab:bang0404">4.4</a>, chúng ta thấy 51 là a (số người có phơi nhiễm và có bệnh); 438 là d (số người không phơi nhiễm và cũng không có bệnh); 371 là b (số người có phơi nhiễm nhưng không bệnh); và 16 là c (số người không phơi nhiễm nhưng có bệnh). Vậy công thức để tính OR là:</p>
+<p><span class="math display" id="eq:or">\[\begin{equation}
+\text{OR} = \frac{ad}{bc}
+
+\tag{4.4}
+\end{equation}\]</span></p>
+<p>Trong công thức <a href="dthcb_sodokethop.html#eq:rr">(4.1)</a>, chúng ta thấy rằng nếu bệnh là hiếm, a sẽ nhỏ, và (a + b) tương đương với b; tương tự, c sẽ nhỏ, và (c + d) tương đương với d. Khi đó:</p>
+<p>RR = [a/(a + b)] : [c/(c + d)] # (a/b) : (c/d) = ad/bc = OR</p>
+<p>Như vậy, khi loại bệnh được khảo sát là hiếm, OR là số ước lượng gần đúng cho RR.</p>
+<p>Một cách khác để có thể làm rõ OR như sau, đối với nghiên cứu bệnh chứng là nghiên cứu ngay từ giai đoạn thiết kế, nhà nghiên cứu chia dân số đó thành hai nhóm: nhóm có bệnh và nhóm không có bệnh. Sau đó phỏng vấn dân số nghiên cứu về phơi nhiễm trong quá khứ. Cách tiếp cận bệnh chứng cho phép chúng ta so sánh số chênh phơi nhiễm ở nhóm bệnh với số chênh phơi nhiễm trong nhóm chứng.</p>
+<p>Số chênh phơi nhiễm ở nhóm bệnh = a/c</p>
+<p>Số chênh phơi nhiễm ở nhóm chứng = b/d</p>
+<p>Hoặc</p>
+<p>Số chênh mắc bệnh ở nhóm phơi nhiễm = a/b</p>
+<p>Số chênh mắc bệnh ở nhóm không phơi nhiễm = c/d</p>
+<p>Về mặt toán học sẽ không có sự khác biệt về tỷ số số chênh (OR) được tính bằng (a/c) : (b/d) hay (a/b) : (c/d) vì khi nhân chéo để tính toán thì cả hai công thức này đều cho ra cùng một công thức ad/bc</p>
+<p>OR có thể được sử dụng như ước tính tỉ số nguy cơ khi nguy cơ mắc bệnh trong dân số là nhỏ (&lt;5%)</p>
+<p>Nguy cơ mắc bệnh trong nhóm phơi nhiễm là a/(a+b), trong khi tỷ lệ mắc bệnh trong nhóm tiếp xúc là a/b. Nếu a là nhỏ thì số chênh sẽ ước lượng gần đúng với nguy cơ. Ví dụ, nếu một bệnh cụ thể xảy ra, 1 trong nhóm 100 người trong thời gian theo dõi nhất định, nguy cơ mắc bệnh sẽ là 1/100 (0,0100) và số chênh mắc bệnh là 1/99 (0,0101). Nếu nguy cơ mắc bệnh là tương đối lớn (&gt;5%) thì tỷ số số chênh không phải là một ước tính tốt.</p>
+</div>
+<div id="nguy-cơ-qui-trách" class="section level3 unnumbered">
+<h3>Nguy Cơ Qui Trách</h3>
+<div id="nguy-cơ-qui-trách-1" class="section level4 unnumbered">
+<h4>Nguy cơ qui trách</h4>
+<p>Một trong những ứng dụng hữu ích của dịch tễ học là ước tính gánh nặng bệnh tật gây ra bởi các yếu tố nguy cơ có thể thay đổi được. Điều này rất hữu ích cho việc phát triển chính sách y tế công cộng bởi vì những tác động của các yếu tố nguy cơ hoặc những can thiệp để giảm yếu tố nguy cơ có thể được so sánh với chi phí trong phân tích chi phí – hiệu quả của can thiệp.</p>
+<p>Với những dữ kiện trong bảng <a href="dthcb_sodokethop.html#tab:bang0404">4.4</a>, chúng ta đã tính được nguy cơ tương đối mắc bệnh mạch vành ở người tăng cholesterol máu so với người có cholesterol máu bình thường là 3, có nghĩa là người tăng cholesterol máu sẽ tăng nguy cơ mắc bệnh mạch vành cao gấp 3 lần hơn những người có cholesterol máu bình thường. Nói một cách khác, cholesterol máu cao là một yếu tố nguy cơ, hay là nguyên nhân gây ra bệnh mạch vành ở những người có cholesterol máu cao. Nhưng khi nhìn vào dữ kiện của bảng <a href="dthcb_sodokethop.html#tab:bang0404">4.4</a>, chúng ta thấy rằng ở những người có cholesterol máu bình thường, vẫn có một số người mắc bệnh mạch vành. Mười sáu người mắc bệnh mạch vành trong số 454 người không tăng cholesterol máu chắc chắn không mắc bệnh vì nguyên nhân là cholesterol máu cao, mà có thể do những nguyên nhân khác. Như vậy, chúng ta có thể xem xét rằng trong số 51 người có cholesterol máu cao và mắc bệnh mạch vành, sẽ có một số mắc bệnh vì nguyên nhân là cholesterol máu tăng, và số còn lại mắc bệnh mạch vành do những nguyên nhân khác chứ không phải vì tăng cholesterol máu.</p>
+<p>Câu hỏi được đặt ra ở đây là, nếu cholesterol máu cao là nguyên nhân gây ra bệnh mạch vành, thì ở những người tăng cholesterol máu, có bao nhiêu người thật sự mắc bệnh mạch vành là vì cholesterol máu cao (chứ không vì nguyên nhân nào khác). Nói một cách khác, một người có thể mắc bệnh mạch vành bởi nhiều nguyên nhân khác nhau, thí dụ, tăng huyết áp, hút thuốc lá, cholesterol máu cao, v.v., thì riêng bản thân cholesterol máu cao đã góp phần bao nhiêu vào việc gây ra bệnh mạch vành của những người tăng cholesterol máu. Nói một cách khác nữa, cholesterol máu cao chịu bao nhiêu phần trách nhiệm trong việc gây ra bệnh mạch vành ở những người tăng cholesterol máu. Số đo nguy cơ qui trách, ký hiệu là AR, sẽ giúp chúng ta trả lời câu hỏi này, và công thức để tính nguy cơ qui trách như sau:</p>
+<p><span class="math display" id="eq:ar">\[\begin{equation}
+\text{AR} = R_1 - R_0
+
+\tag{4.5}
+\end{equation}\]</span></p>
+<p>Theo những dữ kiện trong bảng <a href="dthcb_sodokethop.html#tab:bang0404">4.4</a>, với <span class="math inline">\(R_1\)</span> = 12% trong 6 năm, và R0 = 4% trong 6 năm, chúng ta có:</p>
+<p>AR = <span class="math inline">\(R_1\)</span> – <span class="math inline">\(R_0\)</span> = 12% - 4% = 8% trong 6 năm, có nghĩa là nếu cholesterol máu cao gây ra bệnh mạch vành, thì trong vòng 6 năm, trong số 100 người tăng cholesterol máu sẽ có 8 người mắc bệnh mạch vành là thực sự do cholesterol máu cao. Từ đó, chúng ta suy ra rằng, nếu cholesterol máu cao gây ra bệnh mạch vành, thì ở 100 người tăng cholesterol máu nếu làm cho cholesterol máu trở lại bình thường, trong vòng 6 năm có thể giảm được 8 người mắc bệnh mạch vành.</p>
+</div>
+<div id="phần-trăm-nguy-cơ-qui-trách" class="section level4 unnumbered">
+<h4>Phần trăm nguy cơ qui trách</h4>
+<p>Chúng ta có thể tính một số đo khác là phần trăm nguy cơ qui trách, cho phép chúng ta hình dung được tỉ lệ mắc bệnh ở nhóm phơi nhiễm được qui kết là do nguyên nhân mà chúng ta đang khảo sát. Phần trăm nguy cơ qui trách, được ký hiệu là AR%, và tính theo công thức sau:</p>
+<p><span class="math display" id="eq:arp">\[\begin{equation}
+\text{AR%} = \frac{AR}{R_1} = \frac{(R_1 - R_0)}{R_1}
+
+\tag{4.6}
+\end{equation}\]</span></p>
+<p>Theo dữ kiện của bảng 11, phần trăm nguy cơ qui trách của cholesterol máu cao đối với bệnh mạch vành là:</p>
+<p>AR% = (0,12 – 0,04) : 0,12 = 0,67 = 67%</p>
+<p>Chúng ta nói rằng, nếu cholesterol máu cao gây ra bệnh mạch vành, thì ở những người có cholesterol máu cao, chỉ có 67% trong số họ mắc bệnh mạch vành là thực sự do cholesterol máu cao. Từ đó, chúng ta có thể suy ra rằng, nếu cholesterol máu cao gây ra bệnh mạch vành, và nếu những người tăng cholesterol máu kiểm soát được cholesterol máu của mình, thì sẽ giảm được 67% bệnh mạch vành trong số họ.</p>
+</div>
+</div>
+<div id="nguy-cơ-qui-trách-dân-số" class="section level3 unnumbered">
+<h3>Nguy Cơ Qui Trách Dân Số</h3>
+<div id="nguy-cơ-qui-trách-dân-số-1" class="section level4 unnumbered">
+<h4>Nguy cơ qui trách dân số</h4>
+<p>Nguy cơ qui trách cho chúng ta biết được số những trường hợp mắc bệnh ở nhóm người phơi nhiễm là thực sự do nguyên nhân (hay yếu tố phơi nhiễm) mà chúng ta đang khảo sát. Để biết được số những trường hợp mắc bệnh do nguyên nhân đó trong toàn bộ dân số, bao gồm những người có và không có phơi nhiễm, chúng ta sử dụng một số đo gọi là nguy cơ qui trách dân số. Nguy cơ qui trách dân số, được ký hiệu là PAR, và tính theo công thức sau:</p>
+<p><span class="math display" id="eq:par">\[\begin{equation}
+\text{PAR} = R_T - R_0
+
+\tag{4.7}
+\end{equation}\]</span></p>
+<p>với <span class="math inline">\(R_T\)</span> là nguy cơ mắc bệnh trong toàn bộ dân số, gồm cả những người phơi nhiễm và không phơi nhiễm. Theo những dữ kiện trong bảng <a href="dthcb_sodokethop.html#tab:bang0404">4.4</a>, dân số toàn bộ là 876, trong đó có 67 người mắc bệnh mạch vành, vậy <span class="math inline">\(R_T\)</span> = 67 : 876 = 0,076 trong vòng 6 năm. Nguy cơ qui trách dân số sẽ là:</p>
+<p>PAR = <span class="math inline">\(R_T\)</span> – <span class="math inline">\(R_0\)</span> = 0,076 – 0,04 = 0,036 trong vòng 6 năm, hay là 36/1.000 trong 6 năm. Chúng ta nói rằng, nếu cholesterol máu cao gây ra bệnh mạch vành, thì trong 1.000 người của toàn dân số (gồm những người có cholesterol máu cao và cholesterol máu bình thường), chỉ có 36 trường hợp bệnh mạch vành là thực sự do cholesterol máu cao. Suy ra, nếu trong toàn dân số không còn ai bị cholesterol máu cao, thì trong 6 năm, cứ mỗi 1.000 người sẽ giảm được 36 trường hợp bệnh mạch vành.</p>
+</div>
+<div id="phần-trăm-nguy-cơ-qui-trách-dân-số" class="section level4 unnumbered">
+<h4>Phần trăm nguy cơ qui trách dân số</h4>
+<p>Tương tự như đối với nguy cơ qui trách, chúng ta có thể tính một số đo khác là phần trăm nguy cơ qui trách dân số, cho phép chúng ta hình dung được tỉ lệ mắc bệnh trong toàn bộ dân số, bao gồm những người có và không phơi nhiễm, được qui kết là do nguyên nhân mà chúng ta đang khảo sát. Phần trăm nguy cơ qui trách dân số, được ký hiệu là PAR%, và tính theo công thức sau.</p>
+<p><span class="math display" id="eq:parp">\[\begin{equation}
+\text{PAR%} = \frac{PAR}{R_T} = \frac{(R_T - R_0)}{R_T}
+
+\tag{4.8}
+\end{equation}\]</span></p>
+<p>Theo những dữ kiện trong bảng <a href="dthcb_sodokethop.html#tab:bang0404">4.4</a>, phần trăm nguy cơ qui trách dân số của cholesterol máu cao đối với bệnh mạch vành (hay phần trăm nguy cơ qui trách của cholesterol máu cao đối với bệnh mạch vành trong toàn bộ dân số) là:</p>
+<p>PAR% = PAR / RT = 0,036 : 0,076 = 0,47 = 47%</p>
+<p>Chúng ta nói rằng nếu cholesterol máu cao gây ra bệnh mạch vành, thì trong toàn bộ dân số gồm những người có cholesterol máu cao và cholesterol máu bình thường, chỉ có 47% những trường hợp bệnh mạch vành là thật sự do cholesterol máu cao. Suy ra, nếu trong toàn bộ dân số không còn ai bị cholesterol máu cao, tỉ suất bệnh mạch vành sẽ giảm 47%.</p>
+</div>
+</div>
+</div>
+<div id="ý-nghĩa-của-số-đo-kết-hợp" class="section level2 unnumbered">
+<h2>Ý NGHĨA CỦA SỐ ĐO KẾT HỢP</h2>
+<div id="nguy-cơ-tương-đối-và-tỉ-số-số-chênh" class="section level3 unnumbered">
+<h3>Nguy Cơ Tương Đối và Tỉ Số Số Chênh</h3>
+<p>Nguy cơ tương đối và tỉ số số chênh được tính theo những công thức khác nhau, nhưng có công dụng và ý nghĩa giống nhau. Chúng giúp cho chúng ta đo lường được mức độ kết hợp giữa nguyên nhân và bệnh. Mức độ kết hợp nhân quả được thể hiện qua giá trị bằng số của RR hoặc OR. Nếu RR (hoặc OR) bằng 1, có nghĩa là nguy cơ mắc bệnh ở nhóm có phơi nhiễm và nhóm không phơi nhiễm là bằng nhau, hay nói một cách khác, yếu tố phơi nhiễm không có liên quan gì đến bệnh, hay nói một cách khác nữa, nó không là nguyên nhân gây ra bệnh. Do đó, RR và OR còn được gọi là số đo liên quan. Giả sử, trong những thí dụ trên về bệnh mạch vành và cholesterol máu cao, nếu RR = 1, điều này có nghĩa là người có cholesterol máu cao và người có cholesterol máu bình thường đều có khả năng mắc bệnh mạch vành như nhau. Nói một cách khác, cholestreol máu cao không có liên quan gì đến nguy cơ mắc bệnh mạch vành của một người, còn có nghĩa là cholesterol máu cao không là nguyên nhân gây ra bệnh mạch vành. Nếu RR (hoặc OR) có trị số khác 1, thì nguy cơ mắc bệnh ở nhóm phơi nhiễm là khác với nguy cơ mắc bệnh ở nhóm không phơi nhiễm. Trở lại thí dụ về cholesterol máu cao và bệnh mạch vành trên đây, RR = 3 cho thấy rằng bởi vì có cholesterol máu cao nên những người tăng cholesterol máu phải gánh chịu một hậu quả là nguy cơ mắc bệnh mạch vành của họ tăng gấp 3 lần so với những người có cholesterol máu bình thường. Số đo kết hợp hay liên quan, do đó, còn được gọi là số đo hậu quả. Nếu RR (hoặc OR) có trị số nhỏ hơn 1, thì nguy cơ mắc bệnh của những người có phơi nhiễm là thấp hơn so với những người không phơi nhiễm.</p>
+<div id="gvfxfyoxtw" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#gvfxfyoxtw .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#gvfxfyoxtw .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#gvfxfyoxtw .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#gvfxfyoxtw .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#gvfxfyoxtw .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#gvfxfyoxtw .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#gvfxfyoxtw .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#gvfxfyoxtw .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#gvfxfyoxtw .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#gvfxfyoxtw .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#gvfxfyoxtw .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#gvfxfyoxtw .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#gvfxfyoxtw .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#gvfxfyoxtw .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#gvfxfyoxtw .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#gvfxfyoxtw .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#gvfxfyoxtw .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#gvfxfyoxtw .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gvfxfyoxtw .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#gvfxfyoxtw .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gvfxfyoxtw .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#gvfxfyoxtw .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#gvfxfyoxtw .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#gvfxfyoxtw .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#gvfxfyoxtw .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#gvfxfyoxtw .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#gvfxfyoxtw .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#gvfxfyoxtw .gt_left {
+  text-align: left;
+}
+
+#gvfxfyoxtw .gt_center {
+  text-align: center;
+}
+
+#gvfxfyoxtw .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#gvfxfyoxtw .gt_font_normal {
+  font-weight: normal;
+}
+
+#gvfxfyoxtw .gt_font_bold {
+  font-weight: bold;
+}
+
+#gvfxfyoxtw .gt_font_italic {
+  font-style: italic;
+}
+
+#gvfxfyoxtw .gt_super {
+  font-size: 65%;
+}
+
+#gvfxfyoxtw .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+</style>
+<table class="gt_table">
+  <caption><span id="tab:bang0407">Bảng 4.7: </span>Nghiên cứu bệnh-chứng về mối liên quan giữa vận động thể lực và nhồi máu cơ tim.</caption>
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Hoạt động thể lực</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">Bệnh</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">Chứng</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">Tổng</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left">$$2.500+ kcalo$$</td>
+<td class="gt_row gt_right">141</td>
+<td class="gt_row gt_right">208</td>
+<td class="gt_row gt_right">349</td></tr>
+    <tr><td class="gt_row gt_left">$$&lt; 2.500 kcalo$$</td>
+<td class="gt_row gt_right">144</td>
+<td class="gt_row gt_right">112</td>
+<td class="gt_row gt_right">256</td></tr>
+    <tr><td class="gt_row gt_left">Tổng</td>
+<td class="gt_row gt_right">285</td>
+<td class="gt_row gt_right">320</td>
+<td class="gt_row gt_right">605</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+<p>Bảng <a href="dthcb_sodokethop.html#tab:bang0407">4.7</a> trình bày những dữ kiện của một nghiên cứu bệnh-chứng về mối liên quan giữa vận động thể lực và nhồi máu cơ tim. Người có tăng vận động thể lực khi trong một ngày tiêu hao một khối năng lượng từ 2.500 kcalo trở lên. Nếu một cá nhân tiêu hao dưới 2.500 kcalo trong một ngày thì được coi là ít vận động thể lực. Mối liên quan giữa vận động thể lực và nhồi máu cơ tim được đo lường bằng tỉ số số chênh được tính theo công thức (3), là OR = ad / bc = (141 x 112) : (208 x 144) = 0,53
+Trị số của OR bằng 0,53 ; có nghĩa là nguy cơ nhồi máu cơ tim ở những người tăng vận động thể lực là thấp hơn nguy cơ đó ở những người ít vận động thể lực, cụ thể là bằng 0,53 lần nguy cơ của những người ít vận động thể lực. Nói một cách khác, nhờ tăng vận động thể lực, những người đó được bảo vệ chống lại nhồi máu cơ tim. Vận động thể lực là nguyên nhân giảm nguy cơ nhồi máu cơ tim ở những người có vận động, nhưng trong trường hợp này, với số đo kết hợp có trị số nhỏ hơn 1, chúng ta không gọi yếu tố nguyên nhân đó là yếu tố nguy cơ mà là yếu tố bảo vệ. Trong thực hành y khoa, không phải lúc nào chúng ta cũng đi tìm những yếu tố nguyên nhân gây bệnh, mà chúng ta cũng rất quan tâm đi tìm những yếu tố giúp chúng ta chống lại bệnh tật. Khi đó, chúng ta mong đợi trị số của số đo kết hợp sẽ nhỏ hơn 1.</p>
+<p>Tóm lại, nguy cơ tương đối và tỉ số số chênh giúp chúng ta đo lường mức độ liên quan giữa yếu tố nguyên nhân và bệnh. Nguy cơ tương đối, RR, được tính toán dựa trên số đo bệnh trạng là số mới mắc (nguy cơ hoặc tỉ suất), và được sử dụng trong những nghiên cứu đoàn hệ. Nghiên cứu bệnh-chứng không thể đo lường được một cách trực tiếp nguy cơ mắc bệnh, nhưng trong trường hợp loại bệnh mà chúng ta khảo sát là hiếm, thì tỉ số số chênh OR có trị số gần bằng RR, tức là chúng ta có thể sử dụng OR để đo lường nguy cơ mắc bệnh tương đối của người có phơi nhiểm so với người không phơi nhiễm.</p>
+</div>
+<div id="nguy-cơ-qui-trách-2" class="section level3 unnumbered">
+<h3>Nguy Cơ Qui Trách</h3>
+<p>Như đã trình bày trong phần mở đầu, để so sánh nguy cơ mắc bệnh ở những người có và không có nguyên nhân, chúng ta có thể chia hoặc trừ số đo bệnh trạng ở hai dân số đó cho nhau. Bản chất của nguy cơ qui trách là một số đo kết hợp, và chính là hiệu số giữa số mới mắc của nhóm phơi nhiễm với số mới mắc của nhóm không phơi nhiễm. Nguy cơ qui trách giúp chúng ta xác định được, nếu một yếu tố nào đó là nguyên nhân gây ra bệnh, thì bản thân nó chịu bao nhiêu phần trách nhiệm trong việc tạo ra bệnh, vì bệnh đó còn có thể được gây ra do những nguyên nhân khác. Là hiệu số nguy cơ, nguy cơ qui trách còn cho thấy nguy cơ thặng dư mà những người có phơi nhiễm phải gánh chịu so với những người không phơi nhiễm. Với số đo nguy cơ qui trách của cholesterol huyết thanh cao với bệnh mạch vành là 8% trong vòng 6 năm, chúng ta có thể lý giải rằng bệnh mạch vành có thể được gây ra bởi nhiều nguyên nhân, thí dụ, hút thuốc lá, tăng huyết áp, v.v. ; riêng những người có cholesterol máu cao sẽ chịu một nguy cơ thặng dư để mắc bệnh mạch vành trong vòng 6 năm là 8%.</p>
+<p>Nguy cơ qui trách có ý nghĩa quan trọng trong lĩnh vực y tế công cộng, thể hiện tác động thật sự của một yếu tố nguyên nhân trong việc tạo ra một bệnh, đồng thời, nó cũng cho chúng ta thấy được mức độ cải thiện của tình trạng bệnh nếu yếu tố nguyên nhân bị loại bỏ. Với khái niệm đó, nguy cơ qui trách còn được gọi là số đo tác động. Những khái niệm vừa được trình bày đòi hỏi những giả định cần có khi lý giải những số đo tác động. Thứ nhất, phải có sự kết hợp nhân quả giữa yếu tố được coi là nguyên nhân và bệnh (cholesterol máu cao và bệnh mạch vành có liên quan nhân quả, tức là cholesterol máu cao chính là nguyên nhân gây ra bệnh mạch vành). Thứ hai, có thể loại bỏ được hoàn toàn yếu tố nguyên nhân đó trong thực tế (không còn ai có cholesterol máu cao trong một cộng đồng). Thứ ba, khi loại bỏ yếu tố nguyên nhân, sẽ hết nguy cơ mắc bệnh (một người bị tăng cholesterol máu có nguy cơ bị bệnh mạch vành, nếu làm cho cholesterol máu của họ trở lại bình thường, họ sẽ chắc chắn không còn nguy cơ bị bệnh mạch vành vì cholesterol máu cao).</p>
+<p>Hai số đo tác động đo lường tác động của yếu tố nguyên nhân ở hai nhóm khác nhau. Nguy cơ qui trách đo lường tác động của yếu tố nguyên nhân ở nhóm những người phơi nhiễm, tức là có tiếp xúc với yếu tố nguyên nhân. Nguy cơ qui trách dân số đo lường tác động của yếu tố nguyên nhân trên toàn bộ dân số, bao gồm cả người phơi nhiễm và không phơi nhiễm. Nguy cơ qui trách và nguy cơ qui trách dân số được tính toán dựa vào số đo mắc bệnh là số mới mắc. Khi bệnh trạng không thể được đo lường bằng nguy cơ, thí dụ trong nghiên cứu bệnh-chứng, đôi khi chúng ta cũng có thể tính được nguy cơ qui trách và nguy cơ qui trách dân số. Những công thức liên quan trong trường hợp này sẽ được trình bày trong bài nghiên cứu bệnh-chứng.</p>
+<div id="swbhbkatyq" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#swbhbkatyq .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#swbhbkatyq .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#swbhbkatyq .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#swbhbkatyq .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#swbhbkatyq .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#swbhbkatyq .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#swbhbkatyq .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#swbhbkatyq .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#swbhbkatyq .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#swbhbkatyq .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#swbhbkatyq .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#swbhbkatyq .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#swbhbkatyq .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#swbhbkatyq .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#swbhbkatyq .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#swbhbkatyq .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#swbhbkatyq .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#swbhbkatyq .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#swbhbkatyq .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#swbhbkatyq .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#swbhbkatyq .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#swbhbkatyq .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#swbhbkatyq .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#swbhbkatyq .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#swbhbkatyq .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#swbhbkatyq .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#swbhbkatyq .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#swbhbkatyq .gt_left {
+  text-align: left;
+}
+
+#swbhbkatyq .gt_center {
+  text-align: center;
+}
+
+#swbhbkatyq .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#swbhbkatyq .gt_font_normal {
+  font-weight: normal;
+}
+
+#swbhbkatyq .gt_font_bold {
+  font-weight: bold;
+}
+
+#swbhbkatyq .gt_font_italic {
+  font-style: italic;
+}
+
+#swbhbkatyq .gt_super {
+  font-size: 65%;
+}
+
+#swbhbkatyq .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+</style>
+<table class="gt_table">
+  <caption><span id="tab:bang0408">Bảng 4.8: </span>Bảng 2x2.</caption>
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Nguyên nhân</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Có</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Không</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Tổng</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left">Có</td>
+<td class="gt_row gt_left">a</td>
+<td class="gt_row gt_left">b</td>
+<td class="gt_row gt_left">a + b</td></tr>
+    <tr><td class="gt_row gt_left">Không</td>
+<td class="gt_row gt_left">c</td>
+<td class="gt_row gt_left">d</td>
+<td class="gt_row gt_left">c + d</td></tr>
+    <tr><td class="gt_row gt_left">Tổng</td>
+<td class="gt_row gt_left">a + c</td>
+<td class="gt_row gt_left">b + d</td>
+<td class="gt_row gt_left">a + b + c + d</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+<div id="eppqlglocu" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#eppqlglocu .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#eppqlglocu .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#eppqlglocu .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#eppqlglocu .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#eppqlglocu .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#eppqlglocu .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#eppqlglocu .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#eppqlglocu .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#eppqlglocu .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#eppqlglocu .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#eppqlglocu .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#eppqlglocu .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#eppqlglocu .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#eppqlglocu .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#eppqlglocu .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#eppqlglocu .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#eppqlglocu .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#eppqlglocu .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#eppqlglocu .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#eppqlglocu .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#eppqlglocu .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#eppqlglocu .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#eppqlglocu .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#eppqlglocu .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#eppqlglocu .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#eppqlglocu .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#eppqlglocu .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#eppqlglocu .gt_left {
+  text-align: left;
+}
+
+#eppqlglocu .gt_center {
+  text-align: center;
+}
+
+#eppqlglocu .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#eppqlglocu .gt_font_normal {
+  font-weight: normal;
+}
+
+#eppqlglocu .gt_font_bold {
+  font-weight: bold;
+}
+
+#eppqlglocu .gt_font_italic {
+  font-style: italic;
+}
+
+#eppqlglocu .gt_super {
+  font-size: 65%;
+}
+
+#eppqlglocu .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+</style>
+<table class="gt_table">
+  <caption><span id="tab:bang0409">Bảng 4.9: </span></caption>
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">doluong</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">congthuc</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left">Nguy cơ tương đối RR</td>
+<td class="gt_row gt_left">Nguy cơ (Nhóm phơi nhiễm)/Nguy cơ (Nhóm không phơi nhiễm) = [a/(a+b)]/[c/(c+d)]</td></tr>
+    <tr><td class="gt_row gt_left">Tỷ số số chênh OR</td>
+<td class="gt_row gt_left">= (a/b)/(c/d) = (a/c)/(b/d) = ad/bc</td></tr>
+    <tr><td class="gt_row gt_left">Nguy cơ qui trách/ Hiệu số nguy cơ AR</td>
+<td class="gt_row gt_left">= Nguy cơ (nhóm phơi nhiễm) – Nguy cơ (Nhóm không phơi nhiễm) = [a/(a+b) – [c/(c+d)]</td></tr>
+    <tr><td class="gt_row gt_left">Phần trăm nguy cơ qui trách AR%</td>
+<td class="gt_row gt_left">= [Nguy cơ (phơi nhiễm) – Nguy cơ (không phơi nhiễm)] / Nguy cơ (phơi nhiễm) = (RR-1)/RRx100 = (OR-1)/ORx100</td></tr>
+    <tr><td class="gt_row gt_left">Nguy cơ quy trách dân số PAR</td>
+<td class="gt_row gt_left">= Nguy cơ (tổng) – Nguy cơ (không phơi nhiễm)</td></tr>
+    <tr><td class="gt_row gt_left">Phần trăm nguy cơ qui trách</td>
+<td class="gt_row gt_left">= [Nguy cơ (tổng) – Nguy cơ (không phơi nhiễm)]/Nguy cơ (Tổng) x 100 = [(Pe (RR-1)]/[1+(Pe)(RR-1)]x 100 Trong đó Pe là tỷ lệ của dân số phơi nhiễm với yếu tố nguy cơ</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+<div id="kết-luận-1" class="section level2 unnumbered">
+<h2>KẾT LUẬN</h2>
+<p>Khi bàn về bất kỳ một hiện tượng sức khỏe nào ở con người, chúng ta cần phải trả lời, theo thứ tự, ba câu hỏi : 1) Hiện tượng sức khỏe đó xảy ra phổ biến như thế nào; 2) Nguyên nhân nào gây ra hiện tượng sức khỏe đó; 3) Nếu can thiệp vào nguyên nhân, mức độ mà tình trạng sức khỏe của cộng đồng sẽ được cải thiện là bao nhiêu.</p>
+<p>Để trả lời câu hỏi thứ nhất, hiện tượng sức khỏe xảy ra phổ biến như thế nào, chúng ta có thể sử dụng những số đo mắc bệnh và tử vong, còn gọi là số đo bệnh trạng. Hai loại số đo bệnh trạng là số hiện mắc và số mới mắc. Số hiện mắc cho chúng ta thấy được trạng thái hiện có của bệnh. Số mới mắc cho chúng ta biết được khả năng, hay nguy cơ, mắc bệnh ở những người chưa mắc bệnh.</p>
+<p>Để trả lời câu hỏi thứ nhì, nguyên nhân nào gây ra hiện tượng sức khỏe đó, chúng ta sử dụng những số đo kết hợp, còn gọi là số đo hậu quả. Hai số đo thường dùng là nguy cơ tương đối và tỉ số số chênh. Nguy cơ tương đối được tính dựa trên số đo bệnh trạng là số mới mắc, trong nghiên cứu đoàn hệ. Nghiên cứu bệnh-chứng không đo lường trực tiếp nguy cơ mắc bệnh, nhưng nếu bệnh là hiếm, tỉ số số chênh là số ước lượng gần đúng cho nguy cơ tương đối. Tùy theo giá trị bằng số của số đo kết hợp, chúng ta có thể xác định được yếu tố mà chúng ta đang khảo sát có thực sự là nguyên nhân của hiện tượng sức khỏe (nếu số đo kết hợp có trị số khác 1), hoặc không phải (nếu số đo kết hợp bằng 1). Một yếu tố nguyên nhân có thể là yếu tố nguy cơ (nếu số đo kết hợp lớn hơn 1), hoặc là yếu tố bảo vệ (nếu số đo kết hợp nhỏ hơn 1).</p>
+<p>Để trả lời câu hỏi thứ ba, nếu can thiệp vào nguyên nhân, mức độ mà tình trạng sức khỏe của cộng đồng sẽ được cải thiện là bao nhiêu, chúng ta có thể sử dụng một loại số đo kết hợp còn được gọi là số đo tác động, đó là nguy cơ qui trách. Khi đã xác định được một yếu tố là nguyên nhân gây ra một hiện tượng sức khỏe, nguy cơ qui trách cho chúng ta đo lường được mức độ tác động của nguyên nhân đó trong việc gây ra hiện tượng sức khỏe là bao nhiêu, và đồng thời cũng đo lường được mức độ mà tình trạng sức khỏe sẽ được cải thiện, nếu loại bỏ được nguyên nhân.</p>
+</div>
+<div id="tài-liệu-tham-khảo-đề-nghị-đọc-thêm-3" class="section level2 unnumbered">
+<h2>Tài liệu tham khảo đề nghị đọc thêm</h2>
+<ol style="list-style-type: decimal">
+<li><p>Hennekens HC., Buring EJ. Epidemiology in Medicine. Little, Brown and Company. USA, 1987. Chapter 4.</p></li>
+<li><p>Mausner SJ., Bahn KA. Epidemiology. An Introductory Text. W. B. Saunders Company. USA, 1974. Chapter 13.</p></li>
+<li><p>Rothman JK. Modern Epidemiology. Little, Brown and Company. USA. 1986. Chapter 4.</p></li>
+<li><p>Ahlbom A., Norell S. Introduction to Modern Epidemiology. Epidemiology Resources Inc. USA. 1990. Chapter 5.</p></li>
+<li><p>Friedman GD. Primer of epidemiology. McGraw-Hill Book Company. USA. 1987. Chapter 2.</p></li>
+<li><p>Kleinbaum GD., Kupper LL., Morgenstern H. Epidemiologic Research: Principles and Quantitative Methods. Van Nostrand Reinhold Company. New York. 1982. Chapters 8, 9.</p></li>
+</ol>
+</div>
+<div id="bài-tập-3" class="section level2 unnumbered">
+<h2>Bài tập</h2>
+<ol style="list-style-type: decimal">
+<li><p>Một khảo sát về bệnh nghề nghiệp được tiến hành tại một xí nghiệp sản xuất linh kiện điện tử. Trong tổng số 1.200 công nhân khỏe mạnh được tuyển, 75% đã làm việc từ 5 năm. Qua khảo sát, người ta nhận thấy 60% trong nhóm này bị rối loạn thị giác. Tỉ lệ tuân thủ những qui định về bảo vệ mắt ở hai nhóm có rối loạn thị giác và không có rối loạn thị giác là 20% và 90%, tương ứng. Phân tích dữ kiện và lý giải kết quả.</p></li>
+<li><p>Ban giám đốc một nhà máy có nhiều tiếng ồn đã phát nút chặn tai cho công nhân và mong rằng họ sẽ sử dụng. Tuy nhiên, bác sĩ y tế cơ quan thấy rằng có 100 trong số 500 công nhân của nhà máy đã không sử dụng nút chặn tai, vì họ cho rằng chẳng ích lợi gì mà lại gây khó chịu. Trong một đợt khám sức khỏe, tất cả công nhân được đo thính lực. Trong số những người bị giảm thính lực, có 16 người đã có đeo nút chặn và 40 người đã không sử dụng nút chặn. Tất cả công nhân đã có thính lực hoàn toàn bình thường khi được khám tuyển vào nhà máy vào bốn năm trước.</p></li>
+</ol>
+<ul>
+<li><p>Tính nguy cơ tương đối giảm thính lực ở những người không sử dụng nút chặn tai so với những người có sử dụng. Lý giải kết quả.</p></li>
+<li><p>Tính nguy cơ giảm thính lực được qui trách vì không sử dụng nút chặn tai. Lý giải kết quả.</p></li>
+<li><p>Tính tỉ lệ giảm thính lực được qui trách vì không sử dụng nút chặn tai ở những người không sử dụng nút chặn tai. Lý giải kết quả.</p></li>
+<li><p>Tính tỉ lệ giảm thính lực được qui trách vì không sử dụng nút chặn tai trong tập thể công nhân. Lý giải kết quả.</p></li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Năm 1980, 100 trẻ sinh nhẹ cân được so sánh với 300 trẻ sinh thường tại cùng một bệnh viện vào cùng một thời gian. Phân bố tần số về tình trạng thai và mức uống rượu của mẹ trong ba tháng đầu của thai kỳ được trình bày trong bảng 4.8.</p>
+<p>3.1. Tính nguy cơ sinh nhẹ cân của một trẻ có mẹ uống rượu trong ba tháng đầu của thai kỳ so với một trẻ có mẹ không uống rượu. Lý giải kết quả.</p>
+<p>3.2. Tính nguy cơ sinh nhẹ cân của một trẻ có mẹ uống rượu, theo những mức độ uống khác nhau, so với trẻ có mẹ không uống rượu. Lý giải kết quả.</p></li>
+<li><p>Trong một sàng lọc, 1.329 nam tuổi 40-59 được xét nghiệm cholesterol máu và huyết áp tâm thu, và sau đó được theo dõi trong 6 năm để xem sự xuất hiện của bệnh mạch vành (BMV). Ở đầu giai đoạn, tất cả mọi người đều không có BMV. Tính và lý giải nguy cơ tương đối mắc bệnh mạch vành của nhóm “Nam có cholesterol huyết thanh dưới 220mg/100ml, và huyết áp tâm thu dưới 147mmHg” so với những nhóm dưới đây (Bảng 4.9, đã được sử dụng trong bài Số Hiện Mắc và Số Mới Mắc)</p>
+<p>4.1. Nam có cholesterol huyết thanh trên 260mg/100ml, và huyết áp tâm thu dưới 147mmHg.</p>
+<p>4.2. Nam có cholesterol huyết thanh dưới 220mg/100ml, và huyết áp tâm thu trên 167mmHg.</p>
+<p>4.3. Nam có cholesterol huyết thanh trên 260mg/100ml, và huyết áp tâm thu trên 167mmHg.</p></li>
+</ol>
+
+</div>
+</div>
+<script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  if (t = document.getElementById("webex-total_correct")) {
+    var correct = document.getElementsByClassName("webex-correct").length;
+    var solvemes = document.getElementsByClassName("webex-solveme").length;
+    var radiogroups = document.getElementsByClassName("webex-radiogroup").length;
+    var selects = document.getElementsByClassName("webex-select").length;
+    
+    t.innerHTML = correct + " of " + (solvemes + radiogroups + selects) + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+
+  if (my_answer == "") {
+    cl.remove("webex-correct");
+    cl.remove("webex-incorrect");
+  } else if (real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+    cl.remove("webex-incorrect");
+  } else {
+    cl.add("webex-incorrect");
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }
+  }
+
+  update_total_correct();
+}
+
+/* function for checking select answers */
+select_func = function(e) {
+  var cl = this.classList
+  
+  /* add style */
+  cl.remove("webex-incorrect");
+  cl.remove("webex-correct");
+  if (this.value == "answer") {
+    cl.add("webex-correct");
+  } else if (this.value != "blank") {
+    cl.add("webex-incorrect");
+  }
+  
+  update_total_correct();
+}
+
+/* function for checking radiogroups answers */
+radiogroups_func = function(e) {
+  var checked_button = document.querySelector('input[name=' + this.id + ']:checked');
+  var cl = checked_button.parentElement.classList;
+  var labels = checked_button.parentElement.parentElement.children;
+  
+  /* get rid of styles */
+  for (i = 0; i < labels.length; i++) {
+    labels[i].classList.remove("webex-incorrect");
+    labels[i].classList.remove("webex-correct");
+  }
+  
+  /* add style */
+  if (checked_button.value == "answer") {
+    cl.add("webex-correct");
+  } else {
+    cl.add("webex-incorrect");
+  }
+  
+  update_total_correct();
+}
+
+window.onload = function() {
+  console.log("onload");
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off");
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+  }
+  
+  /* set up radiogroups */
+  var radiogroups = document.getElementsByClassName("webex-radiogroup");
+  for (var i = 0; i < radiogroups.length; i++) {
+    radiogroups[i].onchange = radiogroups_func;
+  }
+  
+  /* set up selects */
+  var selects = document.getElementsByClassName("webex-select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].onchange = select_func;
+  }
+
+  update_total_correct();
+}
+
+</script>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="dthcb_hienmac_moimac.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="dthcb_thietke.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": {},
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

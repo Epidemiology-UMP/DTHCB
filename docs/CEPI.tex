@@ -1,0 +1,975 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Dịch tễ học lâm sàng},
+  pdfauthor={Phùng Khánh Lâm},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{Dịch tễ học lâm sàng}
+\author{Phùng Khánh Lâm}
+\date{2021-09-04}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{lux1eddi-giux1edbi-thiux1ec7u}{%
+\chapter*{Lời giới thiệu}\label{lux1eddi-giux1edbi-thiux1ec7u}}
+\addcontentsline{toc}{chapter}{Lời giới thiệu}
+
+\hypertarget{intro}{%
+\chapter{Giới thiệu Dịch tễ học lâm sàng}\label{intro}}
+
+\hypertarget{cuxe1c-khuxe1i-niux1ec7m-cux1a1-bux1ea3n}{%
+\section{Các khái niệm cơ bản}\label{cuxe1c-khuxe1i-niux1ec7m-cux1a1-bux1ea3n}}
+
+Các tính toán về xác suất bắt đầu với các \textbf{thử nghiệm (experiment)}. Mỗi thử nghiệm là một hoặc một chuỗi các hành động đưa đến kết quả. Các thử nghiệm này có thể được lặp đi lặp lại nhiều lần. Kết quả từ các thử nghiệm sẽ giúp tính toán các xác suất tương ứng.
+
+Kết quả của một thử nghiệm được gọi là \textbf{kết cục (outcome)}. Một thử nghiệm có thể có nhiều kết cục khác nhau. Tuy nhiên, trong mỗi một lần thử nghiệm, chúng ta chỉ có thể quan sát được duy nhất một kết cục.
+
+Tập hợp của tất cả các kết cục có thể có của một thử nghiệm được gọi là \textbf{không gian mẫu (sample space)}.
+
+\textbf{Biến cố (event)} là một sự kiện bao gồm một hoặc một vài kết cuộc trong không gian mẫu. Do đó biến cố là một tập hợp con của không gian mẫu. Một biến cố được xem là xảy ra (occurred) nếu kết cục thực tế quan sát thấy có chứa trong biến cố đó.
+
+\hypertarget{vuxed-dux1ee5-1-tung-mux1ed9t-ux111ux1ed3ng-xu-mux1ed9t-lux1ea7n-flip-a-coin-one-time}{%
+\subsection{Ví dụ 1: Tung một đồng xu một lần (flip a coin one time)}\label{vuxed-dux1ee5-1-tung-mux1ed9t-ux111ux1ed3ng-xu-mux1ed9t-lux1ea7n-flip-a-coin-one-time}}
+
+Ở đây, thử nghiệm là tung đồng xu một lần.
+
+Các kết cục có thể có của thử nghiệm này là được mặt sấp (\(S\)) hoặc mặt ngửa (\(N\)).
+
+Do đó, không gian mẫu sẽ là một tập hợp với 2 phần tử: \(S = \{\text{S},\text{N} \}\).
+
+Trên không gian mẫu này có thể định nghĩa nhiều biến cố khác nhau:
+
+\begin{itemize}
+\tightlist
+\item
+  Biến cố được mặt ngửa: \(A = \{\text{N}\}\)
+\item
+  Biến cố được mặt sấp: \(B = \{\text{S}\}\)
+\end{itemize}
+
+Nếu thực hiện thử nghiệm và kết quả được mặt sấp, như vậy biến cố \(A\) đã xảy ra.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figures/Picture01} 
+
+}
+
+\caption{Minh hoạ cho ví dụ 1}\label{fig:example1}
+\end{figure}
+
+\hypertarget{vuxed-dux1ee5-2-tung-mux1ed9t-ux111ux1ed3ng-xu-hai-lux1ea7n}{%
+\subsection{Ví dụ 2: Tung một đồng xu hai lần}\label{vuxed-dux1ee5-2-tung-mux1ed9t-ux111ux1ed3ng-xu-hai-lux1ea7n}}
+
+Ở đây, thử nghiệm là tung đồng xu hai lần.
+
+Các kết cục có thể có của thử nghiệm này là được 2 mặt sấp (\(SS\)), hoặc 2 mặt ngửa (\(NN\)), hoặc ngửa rồi sấp (\(NS\)), hoặc sấp rồi ngửa (\(SN\)).
+
+Do đó, không gian mẫu sẽ là một tập hợp với 4 phần tử: \(S = \{\text{SS},\text{NN},\text{NS},\text{SN}\}\).
+
+Trên không gian mẫu này có thể định nghĩa nhiều biến cố khác nhau, ví dụ như:
+
+\begin{itemize}
+\tightlist
+\item
+  Biến cố được mặt ngửa đầu tiên: \(A = \{\text{NN},\text{NS}\}\)
+\item
+  Biến cố được mặt thứ hai là mặt ngửa: \(B = \{\text{NN},\text{SN}\}\)
+\end{itemize}
+
+Nếu thực hiện thử nghiệm và kết quả được 2 mặt ngửa, như vậy cả biến cố \(A\) và biến cố \(B\) đều đã xảy ra.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figures/Picture02} 
+
+}
+
+\caption{Minh hoạ cho ví dụ 2}\label{fig:example2}
+\end{figure}
+
+\hypertarget{vuxed-dux1ee5-3-viuxeam-tux129nh-mux1ea1ch-phlebitis-sau-khi-sux1eed-dux1ee5ng-ux111ux1b0ux1eddng-truyux1ec1n-tux129nh-mux1ea1ch-ngoux1ea1i-biuxean-peripheral-intravenous-catheter}{%
+\subsection{Ví dụ 3: viêm tĩnh mạch (phlebitis) sau khi sử dụng đường truyền tĩnh mạch ngoại biên (peripheral intravenous catheter)}\label{vuxed-dux1ee5-3-viuxeam-tux129nh-mux1ea1ch-phlebitis-sau-khi-sux1eed-dux1ee5ng-ux111ux1b0ux1eddng-truyux1ec1n-tux129nh-mux1ea1ch-ngoux1ea1i-biuxean-peripheral-intravenous-catheter}}
+
+Ở đây, thử nghiệm là sử dụng đường truyền tĩnh mạch ngoại biên.
+
+Các kết cục có thể có của thử nghiệm này là bị viêm tĩnh mạch (\(\text{VTM+}\)) hoặc không bị viêm tĩnh mạch (\(\text{VTM-}\)).
+
+Do đó, không gian mẫu sẽ là một tập hợp với 2 thành phần: \(S = \{\text{VTM+},\text{VTM-}\}\).
+
+Trên không gian mẫu này có thể định nghĩa biến cố \(A\) là biến cố xảy ra viêm tĩnh mạch: \(A = \{VTM+\}\)
+
+Nếu một bệnh nhân được sử dụng đường truyền tĩnh mạch và sau đó bị viêm tĩnh mạch thì ta nói rằng biến cố \(A\) đã xảy ra.
+
+\hypertarget{luxfd-thuyux1ebft-vux1ec1-tux1eadp-hux1ee3p-sets}{%
+\subsection{Lý thuyết về tập hợp (sets)}\label{luxfd-thuyux1ebft-vux1ec1-tux1eadp-hux1ee3p-sets}}
+
+Với \(A\) và \(B\) là 2 biến cố được định nghĩa trên cùng không gian mẫu \(S\)
+
+\begin{itemize}
+\tightlist
+\item
+  Hợp (union) của \(A\) và \(B\) (\(A \cup B\)) là một biến cố xảy ra khi và chỉ khi \(A\) hay \(B\) xảy ra.
+\item
+  Giao (intersection) của \(A\) và \(B\) (\(A \cap B\)) là một biến cố xảy ra khi và chỉ khi \(A\) và \(B\) xảy ra.
+\item
+  Phần bù (complement) của \(A\) (\(A^c\)) là một biến cố xảy ra khi và chỉ khi \(A\) không xảy ra.
+\end{itemize}
+
+Quay trở lại ví dụ 2:
+
+\begin{itemize}
+\tightlist
+\item
+  Gọi \(C\) là biến cố có ít nhất 1 mặt ngửa: \(C = A \cup B = \{\text{NN},\text{NS},\text{SN}\}\)
+\item
+  Gọi \(D\) là biến cố cả 2 mặt đều là mặt ngửa: \(D = A \cap B = \{\text{NN}\}\)
+\item
+  Gọi \(E\) là biến cố có mặt sấp đầu tiên: \(E = A^c = \{\text{SN},\text{SS}\}\)
+\end{itemize}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figures/Picture03} 
+
+}
+
+\caption{Minh hoạ cho lý thuyết tập hợp}\label{fig:example3}
+\end{figure}
+
+\hypertarget{ux111ux1ecbnh-nghux129a-xuxe1c-suux1ea5t-probability}{%
+\section{Định nghĩa xác suất (probability)}\label{ux111ux1ecbnh-nghux129a-xuxe1c-suux1ea5t-probability}}
+
+\hypertarget{ux111ux1ecbnh-nghux129a-ux111ux1a1n-giux1ea3n-vux1ec1-xuxe1c-suux1ea5t-naive-definition-of-probability}{%
+\subsection{Định nghĩa đơn giản về xác suất (naive definition of probability)}\label{ux111ux1ecbnh-nghux129a-ux111ux1a1n-giux1ea3n-vux1ec1-xuxe1c-suux1ea5t-naive-definition-of-probability}}
+
+Gọi \(A\) là một biến cố trong một thử nghiệm với không gian mẫu \(S\).
+
+Xác suất xảy ra của \(A\) (định nghĩa đơn giản) là:
+
+\[
+P(A) = \frac{\text{Size of A}}{\text{Size of S}} = \frac{\text{Số lượng kết cục của A}}{\text{Tổng số kết cục trong S}}
+\]
+
+Trong ví dụ 2:
+
+\begin{itemize}
+\tightlist
+\item
+  \(P(A) = \frac{2}{4} = 0.5\)
+\item
+  \(P(B) = \frac{2}{4} = 0.5\)
+\item
+  \(P(C) = \frac{3}{4} = 0.75\)
+\item
+  \(P(D) = \frac{1}{4} = 0.25\)
+\item
+  \(P(E) = \frac{2}{4} = 0.5\)
+\end{itemize}
+
+\hypertarget{tuxednh-xuxe1c-suux1ea5t-theo-quy-tux1eafc-nhuxe2n-multiplication-rule}{%
+\subsection{Tính xác suất theo quy tắc nhân (multiplication rule)}\label{tuxednh-xuxe1c-suux1ea5t-theo-quy-tux1eafc-nhuxe2n-multiplication-rule}}
+
+Để tính xác suất (theo định nghĩa đơn giản) của biến cố \(A\), chúng ta cần đếm được số phần tử của \(A\) và số phần tử của \(B\). Trong nhiều trường hợp, những số lượng này rất lớn và do đó, không thể đếm trực tiếp theo cách thông thường được. Một cách đếm nhanh hơn là sử dụng \textbf{quy tắc nhân (multiplication rule)}:
+
+\begin{quote}
+Thực hiện một thử nghiệm phức tạp, kết hợp hai thử nghiệm \(A\) và \(B\). Giả sử thử nghiệm \(A\) có thể có \(a\) kết cục; và ứng với mỗi kết cục của \(A\), thử nghiệm \(B\) có \(b\) kết cục. Khi đó thử nghiệm phức tạp kết hợp \(A\) và \(B\) có thể có \(a \times b\) kết cục.
+\end{quote}
+
+\hypertarget{vuxed-dux1ee5-4-chux1ea1y-thi}{%
+\subsubsection{Ví dụ 4: Chạy thi}\label{vuxed-dux1ee5-4-chux1ea1y-thi}}
+
+\begin{quote}
+Có 10 người tham gia một cuộc thi chạy. Giả định rằng không có trường hợp đồng hạng và cả 10 người đều hoàn thành đường đua của mình. Khi đó luôn xác định được người xếp hạng nhất, nhì, ba. Có tất cả bao nhiêu cách chọn ra được người xếp hạng nhất, nhì, ba?
+\end{quote}
+
+Có tất cả 10 cách chọn người xếp hạng nhất.
+
+Sau khi chọn được người xếp hạng nhất, có 9 cách chọn người xếp hạng nhì.
+
+Sau khi đã chọn được người xếp hạng nhất và hạng nhì, có 8 cách chọn người xếp hạng ba.
+
+Như vậy có tất cả \(10 \times 9 \times 8 = 720\) cách chọn ra được người xếp hạng nhất, nhì, ba.
+
+\hypertarget{ux111ux1ecbnh-luxfd-vux1ec1-chux1ecdn-mux1eabu-lux1eb7p-lux1ea1i-sampling-with-replacement}{%
+\subsubsection{Định lý về chọn mẫu lặp lại (sampling with replacement)}\label{ux111ux1ecbnh-luxfd-vux1ec1-chux1ecdn-mux1eabu-lux1eb7p-lux1ea1i-sampling-with-replacement}}
+
+\begin{quote}
+Có \(n\) đối tượng và cần lần lượt chọn ra \(k\) phần tử từ các đối tượng này, theo kiểu \textbf{lặp lại} (một đối tượng đã được chọn vẫn có thể tiếp tục được chọn trong lần chọn tiếp theo). Khi đó sẽ có tất cả \(n^k\) cách chọn (có tính đến thứ tự).
+\end{quote}
+
+\hypertarget{ux111ux1ecbnh-luxfd-vux1ec1-chux1ecdn-mux1eabu-khuxf4ng-lux1eb7p-lux1ea1i-sampling-without-replacement}{%
+\subsubsection{Định lý về chọn mẫu không lặp lại (sampling without replacement)}\label{ux111ux1ecbnh-luxfd-vux1ec1-chux1ecdn-mux1eabu-khuxf4ng-lux1eb7p-lux1ea1i-sampling-without-replacement}}
+
+\begin{quote}
+Có \(n\) đối tượng và cần lần lượt chọn ra \(k\) phần tử từ các đối tượng này, theo kiểu \textbf{không lặp lại} (một đối tượng đã được chọn thì không thể được chọn trong lần chọn tiếp theo). Khi đó sẽ có tất cả \(n \times (n-1) \ldots (n-k+1)\) cách chọn (có tính đến thứ tự), với \(k \leq n\). Khi \(k=n\), số cách chọn là \(n \times (n-1) \ldots 1 = n!\)
+\end{quote}
+
+\hypertarget{vuxed-dux1ee5-5-the-last-banana}{%
+\subsection{Ví dụ 5: the last banana}\label{vuxed-dux1ee5-5-the-last-banana}}
+
+\begin{quote}
+Minh và Lan bị lạc trên hoang đảo. Đến ngày hôm nay thức ăn chỉ còn lại một quả chuối. Để phân định ai sẽ được ăn quả chuối, Minh và Lan quyết định cầu may bằng việc tung xúc sắc. Sau khi mỗi người tung xúc sắc của mình, điểm xúc sắc của hai người sẽ được so với nhau để xác định điểm cao nhất. Nếu điểm cao nhất là từ 1 đến 4 thì Minh thắng và được ăn quả chuối; nhưng nếu điểm cao nhất là 5 hay 6 thì Lan sẽ thắng. Hãy xác định xem giữa Minh và Lan thì ai có xác suất thắng cao hơn?
+\end{quote}
+
+Trong ví dụ này thử nghiệm là tung hai xúc sắc.
+
+Khi tung một xúc sắc có thể có 6 kết cục khác nhau. Theo quy tắc nhân, khi tung hai xúc sắc sẽ có tất cả \(6 \times 6 = 36\) kết cục khác nhau.
+
+Gọi \(A\) là biến cố điểm cao nhất trong một lần tung 2 xúc sắc là từ 1 đến 4.
+
+Gọi \(B\) là biến cố điểm cao nhất trong một lần tung 2 xúc sắc là từ 5 đến 6.
+
+Không gian mẫu, điểm cao nhất trong từng kết cục và khả năng xuất hiện của biến cố \(A\) và \(B\) trong không gian mẫu được trình bày ở hình sau:
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figures/Picture04} 
+
+}
+
+\caption{Minh hoạ cho ví dụ 5}\label{fig:example5}
+\end{figure}
+
+Như vậy xác suất \(A\) xảy ra là \(P(A) = \frac{16}{36} = 0.44\), còn xác suất \(B\) xảy ra là \(P(B) = \frac{20}{36} = 0.56\)
+
+Như vậy Lan có xác suất thắng cao hơn.
+
+Link Youtube cho ví dụ này: \url{https://youtu.be/Kgudt4PXs28}
+
+\hypertarget{hux1ea1n-chux1ebf-cux1ee7a-ux111ux1ecbnh-nghux129a-ux111ux1a1n-giux1ea3n-vux1ec1-xuxe1c-suux1ea5t}{%
+\subsection{Hạn chế của định nghĩa đơn giản về xác suất}\label{hux1ea1n-chux1ebf-cux1ee7a-ux111ux1ecbnh-nghux129a-ux111ux1a1n-giux1ea3n-vux1ec1-xuxe1c-suux1ea5t}}
+
+Định nghĩa đơn giản trên về xác suất có hai hạn chế chính:
+
+\begin{itemize}
+\tightlist
+\item
+  Không gian mẫu \(S\) phải hữu hạn (finite sample space)
+\item
+  Các kết cục có khả năng xảy ra như nhau (equally likely outcome)
+\end{itemize}
+
+\hypertarget{ux111ux1ecbnh-nghux129a-ux111ux1ea7y-ux111ux1ee7-vux1ec1-xuxe1c-suux1ea5t}{%
+\subsection{Định nghĩa đầy đủ về xác suất}\label{ux111ux1ecbnh-nghux129a-ux111ux1ea7y-ux111ux1ee7-vux1ec1-xuxe1c-suux1ea5t}}
+
+Một không gian xác suất (probability space) bao gồm một không gian mẫu \(S\) và một hàm số xác suất \(P\), trong đó hàm số xác suất \(P\) sẽ gán một số thực từ 0 đến 1 cho từng biến cố \(A\) trong \(S\). Hàm số \(P\) phải thoả mãn các tiên đề sau:
+
+\begin{itemize}
+\tightlist
+\item
+  \(P(\emptyset) = 0\) (xác suất của tập hợp rỗng bằng 0)
+\item
+  \(P(S) = 1\) (xác suất của không gian mẫu bằng 1)
+\item
+  Nếu \(A_1,A_2,\dots\) là các biến cố xung khắc (mutually exclusive or disjoint), thì: \(P(\bigcup\limits_{j=1}^{\infty} A_{j}) = \Sigma_{j=1}^{\infty}P(A_{j})\)
+\end{itemize}
+
+\hypertarget{cuxe1c-tuxednh-chux1ea5t-cux1ee7a-xuxe1c-suux1ea5t}{%
+\subsubsection{Các tính chất của xác suất}\label{cuxe1c-tuxednh-chux1ea5t-cux1ee7a-xuxe1c-suux1ea5t}}
+
+Với các biến cố \(A\) và \(B\) bất kỳ:
+
+\begin{itemize}
+\tightlist
+\item
+  \(P(A^c) = 1 - P(A)\)
+\item
+  Nếu \(A\) là tập hợp con của \(B\) (\(A \subseteq\) B) thì \(P(A) \leq P(B)\)
+\item
+  \(P(A \cup B) = P(A) + P(B) - P(A \cap B)\)
+\end{itemize}
+
+Định nghĩa và tính chất của xác suất được tóm tắt trong hình sau:
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figures/Picture05} 
+
+}
+
+\caption{Định nghĩa và tính chất của xác suất}\label{fig:generaldefinition}
+\end{figure}
+
+\hypertarget{diux1ec5n-giux1ea3i-uxfd-nghux129a-cux1ee7a-xuxe1c-suux1ea5t}{%
+\subsection{Diễn giải ý nghĩa của xác suất}\label{diux1ec5n-giux1ea3i-uxfd-nghux129a-cux1ee7a-xuxe1c-suux1ea5t}}
+
+\hypertarget{theo-trux1b0ux1eddng-phuxe1i-frequentist}{%
+\subsubsection{Theo trường phái frequentist}\label{theo-trux1b0ux1eddng-phuxe1i-frequentist}}
+
+Xác suất của một biến cố thể hiện tần số xuất hiện của biến cố đó khi lặp lại thử nghiệm nhiều lần. Ví dụ, xác suất được mặt ngửa khi tung một đồng xu bằng 50\%, nghĩa là nếu tung đồng xu rất nhiều lần, mặt ngửa sẽ xuất hiện trong khoảng 50\% số lần tung đó.
+
+\hypertarget{theo-trux1b0ux1eddng-phuxe1i-bayesian}{%
+\subsubsection{Theo trường phái Bayesian}\label{theo-trux1b0ux1eddng-phuxe1i-bayesian}}
+
+Xác suất của một biến cố phản ánh mức độ tin tưởng vào sự xuất hiện của biến cố đó, kể cả khi không thể lặp lại thử nghiệm.
+
+\hypertarget{xuxe1c-suux1ea5t-cuxf3-ux111iux1ec1u-kiux1ec7n}{%
+\section{Xác suất có điều kiện}\label{xuxe1c-suux1ea5t-cuxf3-ux111iux1ec1u-kiux1ec7n}}
+
+\hypertarget{ux111ux1ecbnh-nghux129a-xuxe1c-suux1ea5t-cuxf3-ux111iux1ec1u-kiux1ec7n}{%
+\subsection{Định nghĩa xác suất có điều kiện}\label{ux111ux1ecbnh-nghux129a-xuxe1c-suux1ea5t-cuxf3-ux111iux1ec1u-kiux1ec7n}}
+
+Nếu \(A\) và \(B\) là các biến cố với \(P(B) > 0\), xác suất của \(A\) khi biết \(B\) (\(P(A | B)\)) được tính bằng công thức
+
+\[
+P(A|B) = \frac{P(A \cap B)}{P(B)}
+\]
+\#\#\#\# Định lí về xác suất phần giao của hai biến cố
+
+Với các biến cố \(A\) và \(B\) có xác suất \(>0\) bất kỳ:
+
+\[
+P(A \cap B) = P(B) \times P(A|B) = P(A) \times P(B|A)
+\]
+
+\hypertarget{ux111ux1ecbnh-luxed-bayes-bayes-rule}{%
+\subsection{Định lí Bayes (Bayes' rule)}\label{ux111ux1ecbnh-luxed-bayes-bayes-rule}}
+
+Với các biến cố \(A\) và \(B\) bất kỳ và \(P(B) > 0\):
+
+\[
+P(A|B) = \frac{P(B|A)P(A)}{P(B)}
+\]
+\(P(A)\) được gọi là \textbf{xác suất tiền nghiệm (prior probability)} của \(A\), và \(P(A|B)\) được gọi là xác suất hậu nghiệm (posterior probability) của \(A\) sau khi biết \(B\) đã xảy ra.
+
+\hypertarget{luux1eadt-xuxe1c-suux1ea5t-touxe0n-phux1ea7n-law-of-total-probability}{%
+\subsection{Luật xác suất toàn phần (law of total probability)}\label{luux1eadt-xuxe1c-suux1ea5t-touxe0n-phux1ea7n-law-of-total-probability}}
+
+Gọi \(A_1,\ldots,A_n\) là các phần của không gian mẫu \(S\) (nghĩa là \(A_1,\ldots,A_n\) xung khắc với nhau, và hợp của chúng là \(S\)) và xác suất của các phần này đều \(>0\) (\(P(A_i) > 0\) với mọi \(i\))
+
+\[
+P(B) = \Sigma^n_{i = 1}P(B|A_i)P(A_i)
+\]
+
+Nói cách khác, để tính xác suất không điều kiện của \(B\), cần chia không gian mẫu \(S\) thành các phần không trùng lắp \(A_i\), sau đó tính xác suất có điều kiện của \(B\) trong từng phần, cuối cùng lấy tổng các tích số của xác suất có điều kiện đó với xác suất của từng phần.
+
+\hypertarget{sux1ef1-ux111ux1ed9c-lux1eadp-cux1ee7a-cuxe1c-biux1ebfn-cux1ed1-independence-of-events}{%
+\subsection{Sự độc lập của các biến cố (Independence of events)}\label{sux1ef1-ux111ux1ed9c-lux1eadp-cux1ee7a-cuxe1c-biux1ebfn-cux1ed1-independence-of-events}}
+
+Hai biến cố \(A\) và \(B\) độc lập với nhau nếu
+
+\[
+P(A \cap B) = P(A) \times P(B)
+\]
+nói cách khác
+
+\[
+P(A|B) = P(A)
+\]
+
+Lưu ý, \textbf{độc lập (independence)} khác với \textbf{xung khắc (mutually exclusive/disjoint)}. Khi \(A\) và \(B\) xung khắc với nhau, chúng không độc lập với nhau, trừ khi \(P(A) = 0\) hay \(P(B) = 0\) (vì khi biết \(A\) xảy ra sẽ dễ dàng suy ra \(B\) không xảy ra).
+
+\hypertarget{biux1ebfn-sux1ed1-ngux1eabu-nhiuxean-random-variables}{%
+\section{Biến số ngẫu nhiên (Random variables)}\label{biux1ebfn-sux1ed1-ngux1eabu-nhiuxean-random-variables}}
+
+\begin{quote}
+Cho một thử nghiệm với không gian mẫu \(S\), một \textbf{biến số ngẫu nhiên} là một hàm số kết nối từ không gian mẫu \(S\) sang tập hợp số thực \(R\)
+\end{quote}
+
+Nói cách khác, biến số ngẫu nhiên \(X\) gán một giá trị \(X(s)\) cho mỗi kết cục \(s\) của thử nghiệm.
+
+\hypertarget{vuxed-dux1ee5}{%
+\subsection{Ví dụ:}\label{vuxed-dux1ee5}}
+
+Quay trở lại với thử nghiệm tung 2 đồng xu.
+
+Không gian mẫu bao gồm 4 kết cục: \(S = \{SS, NN, SN, NS\}\)
+
+Dưới đây là một số biến số ngẫu nhiên có thể được định nghĩa trên không gian mẫu này:
+
+\begin{itemize}
+\item
+  \(X\) là số mặt ngửa. Đây là một biến số ngẫu nhiên với 3 giá trị có thể có: 0, 1, 2. Biến số này gán 2 cho kết cục \(NN\) (\(X(NN) = 2\)), 1 cho kết cục \(NS\) hay \(SN\) (\(X(NS) = X(SN) = 1\)) và 0 cho kết cục \(SS\) (\(X(SS) = 0\))
+\item
+  \(Y\) là số mặt sấp. Có thể định nghĩa biến số ngẫu nhiên này bằng: \(Y(s) = 2 - X(s)\)
+\item
+  \(I = 1\) nếu được mặt ngửa đầu tiên và \(I = 0\) trong những trường hợp khác. Đây là một biến số ngẫu nhiên với 2 giá trị: 0, 1. Biến số này gán 1 cho kết cục \(NN\) hay \(NS\) (\(I(NN) = I(NS) = 1\)), và gán 0 cho kết cục \(SN\) hay \(SS\) (\(I(SN) = I(SS) = 0\))
+\end{itemize}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figures/Picture06} 
+
+}
+
+\caption{Minh hoạ cho biến số ngẫu nhiên}\label{fig:unnamed-chunk-2}
+\end{figure}
+
+\hypertarget{loux1ea1i-biux1ebfn-sux1ed1-ngux1eabu-nhiuxean}{%
+\subsection{Loại biến số ngẫu nhiên}\label{loux1ea1i-biux1ebfn-sux1ed1-ngux1eabu-nhiuxean}}
+
+Có hai loại biến số ngẫu nhiên: \textbf{biến số ngẫu nhiên rời rạc (discrete random variables)} và \textbf{biến số ngẫu nhiên liên tục (continuous random variables)}.
+
+\hypertarget{biux1ebfn-sux1ed1-ngux1eabu-nhiuxean-rux1eddi-rux1ea1c-discrete-random-variables}{%
+\subsubsection{Biến số ngẫu nhiên rời rạc (discrete random variables)}\label{biux1ebfn-sux1ed1-ngux1eabu-nhiuxean-rux1eddi-rux1ea1c-discrete-random-variables}}
+
+\begin{quote}
+Một biến số ngẫu nhiên X được xem là rời rạc nếu tập hợp các giá trị có thể có của X là một tập hợp hữu hạn hoặc vô hạn nhưng đếm được.
+\end{quote}
+
+\begin{quote}
+Một biến số ngẫu nhiên X được xem là liên tục nếu X có thể có bất kỳ giá trị nào trong một khoảng trên trục số
+\end{quote}
+
+\hypertarget{phuxe2n-phux1ed1i-xuxe1c-suux1ea5t-probability-distribution}{%
+\section{Phân phối xác suất (Probability distribution)}\label{phuxe2n-phux1ed1i-xuxe1c-suux1ea5t-probability-distribution}}
+
+Phân phối của một biến số ngẫu nhiên mô tả xác suất của mọi biến cố liên quan đến biến số ngẫu nhiên.
+
+\hypertarget{phuxe2n-phux1ed1i-cux1ee7a-biux1ebfn-sux1ed1-ngux1eabu-nhiuxean-rux1eddi-rux1ea1c}{%
+\subsection{Phân phối của biến số ngẫu nhiên rời rạc}\label{phuxe2n-phux1ed1i-cux1ee7a-biux1ebfn-sux1ed1-ngux1eabu-nhiuxean-rux1eddi-rux1ea1c}}
+
+\hypertarget{huxe0m-khux1ed1i-xuxe1c-suux1ea5t-probability-mass-function-pmf}{%
+\subsubsection{Hàm khối xác suất (Probability mass function, PMF)}\label{huxe0m-khux1ed1i-xuxe1c-suux1ea5t-probability-mass-function-pmf}}
+
+Là hàm số \(p_X\) xác định bởi \(p_X(x) = P(X = x)\).
+
+\hypertarget{tuxednh-chux1ea5t-cux1ee7a-pmf}{%
+\subsubsection{Tính chất của PMF}\label{tuxednh-chux1ea5t-cux1ee7a-pmf}}
+
+Cho \(X\) là biến số ngẫu nhiên rời rạc với các giá trị có thể có là \(x_1, x_2, \ldots\). PMF \(p_X\) của \(X\) phải thoả mãn hai tiêu chí sau:
+
+\begin{itemize}
+\tightlist
+\item
+  Không âm: \(p_X(x) > 0\) cho một vài giá trị \(x\) và \(p_X(x) = 0\) cho các giá trị còn lại
+\item
+  Tổng bằng 1: \(\Sigma^\infty_{j = 1}p_X(x_j) = 1\)
+\end{itemize}
+
+\hypertarget{vuxed-dux1ee5-1}{%
+\subsubsection{Ví dụ}\label{vuxed-dux1ee5-1}}
+
+Tìm hàm khối xác suất của các biến số ngẫu nhiên sau trong thử nghiệm tung 2 đồng xu:
+
+\begin{itemize}
+\tightlist
+\item
+  \(X\) là số mặt ngửa
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(p_X(0) = P(X = 0) = 1/4\)
+  \item
+    \(p_X(1) = P(X = 1) = 1/2\)
+  \item
+    \(p_X(2) = P(X = 2) = 1/4\)
+  \item
+    \(p_X(x) = 0\) cho mọi giá trị khác của \(x\)
+  \end{itemize}
+\item
+  \(Y\) là số mặt sấp
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(p_Y(0) = P(Y = 0) = 1/4\)
+  \item
+    \(p_Y(1) = P(Y = 1) = 1/2\)
+  \item
+    \(p_Y(2) = P(Y = 2) = 1/4\)
+  \item
+    \(p_Y(y) = 0\) cho mọi giá trị khác của \(y\)
+  \end{itemize}
+\item
+  \(I = 1\) nếu được mặt ngửa đầu tiên và \(I = 0\) trong những trường hợp khác
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(p_I(0) = P(I = 0) = 1/2\)
+  \item
+    \(p_I(1) = P(I = 1) = 1/2\)
+  \item
+    \(p_I(i) = 0\) cho mọi giá trị khác của \(i\)
+  \end{itemize}
+\end{itemize}
+
+Các hàm khối xác suất này được minh hoạ trong hình sau:
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figures/Picture07} 
+
+}
+
+\caption{Minh hoạ cho hàm khối xác suất}\label{fig:unnamed-chunk-3}
+\end{figure}
+
+\hypertarget{vuxed-dux1ee5-2}{%
+\subsubsection{Ví dụ:}\label{vuxed-dux1ee5-2}}
+
+Tung 2 xúc sắc \(A\) và \(B\). Xác định PMF của các biến số ngẫu nhiên sau:
+
+\begin{itemize}
+\tightlist
+\item
+  \(X\) là điểm số của xúc sắc \(A\).
+\item
+  \(Y\) là điểm số của xúc sắc \(B\)
+\item
+  \(Z = 7 - X\)
+\item
+  \(T = X + Y\)
+\end{itemize}
+
+PMF của \(T\) được minh hoạ trong hình sau:
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figures/Picture08} 
+
+}
+
+\caption{Minh hoạ cho PMF của $T$}\label{fig:unnamed-chunk-4}
+\end{figure}
+
+\hypertarget{vuxed-dux1ee5-3}{%
+\subsubsection{Ví dụ:}\label{vuxed-dux1ee5-3}}
+
+Với ví dụ trên, tính xác suất tổng điểm của 2 xúc sắc (\(T\)) có giá trị từ 1 đến 4
+
+\(P(1 \leq T \leq 4) = P(T = 2) + P(T = 3) + P(T = 4) = 6/36\)
+
+\hypertarget{phuxe2n-phux1ed1i-bernoulli-bernoulli-distribution}{%
+\subsubsection{Phân phối Bernoulli (Bernoulli distribution)}\label{phuxe2n-phux1ed1i-bernoulli-bernoulli-distribution}}
+
+Một biến số ngẫu nhiên \(X\) có phân phối Bernoulli với tham số \(p\) nếu \(P(X = 1) = p\) và \(P(X = 0) = 1 - p\), với \(0 < p < 1\). Ta có thể ký hiệu là \(X \sim Bern(p)\)
+
+Mọi biến số ngẫu nhiên chỉ có 2 giá trị \(0\) và \(1\) đều có phân phối Bernoulli với tham số \(p\) \(Bern(p)\), với \(p\) là xác suất biến số ngẫu nhiên có giá trị bằng \(1\).
+
+\begin{quote}
+Thử nghiệm Bernoulli (Bernoulli trial): Một thử nghiệm mà kết quả chỉ có 1 trong 2 kết cục: ``thành công'' hay ``thất bại'' được gọi là một thử nghiệm Bernoulli. Một biến số ngẫu nhiên Bernoulli có thể xem là chỉ tố của thành công trong một thử nghiệm Bernoulli.
+\end{quote}
+
+\hypertarget{phuxe2n-phux1ed1i-nhux1ecb-thux1ee9c-binomial-distribution}{%
+\subsubsection{Phân phối nhị thức (Binomial distribution)}\label{phuxe2n-phux1ed1i-nhux1ecb-thux1ee9c-binomial-distribution}}
+
+Thực hiện \(n\) thử nghiệm Bernoulli độc lập với nhau, mỗi thử nghiệm đều có xác suất thành công \(p\). Gọi \(X\) là tổng số lần thành công. Phân phối của \(X\) được gọi là phân phối nhị thức với các tham số là \(n\) và \(p\). Ta có thể ký hiệu là \(X \sim Bin(n, p)\)
+
+Nếu \(X \sim Bin(n, p)\), PMF của \(X\) là
+
+\[
+P(X = k) = {n \choose k} p^k (1-p)^{n-k}
+\]
+Với \({n \choose k} = \frac{n!}{k!(n-k)!}\)
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figures/Picture09} 
+
+}
+
+\caption{Minh hoạ cho PMF của phân phối nhị thức}\label{fig:unnamed-chunk-5}
+\end{figure}
+
+\hypertarget{huxe0m-phuxe2n-phux1ed1i-tuxedch-luux1ef9-cumulative-distribution-functions-cdf}{%
+\subsubsection{Hàm phân phối tích luỹ (Cumulative distribution functions, CDF)}\label{huxe0m-phuxe2n-phux1ed1i-tuxedch-luux1ef9-cumulative-distribution-functions-cdf}}
+
+Hàm phân phối tích luỹ (CDF) của một biến số ngẫu nhiên \(X\) là một hàm số \(F_X\) với \(F_X(x) = P(X \leq x)\)
+
+\hypertarget{tuxednh-chux1ea5t-cux1ee7a-cdf}{%
+\subsubsection{Tính chất của CDF}\label{tuxednh-chux1ea5t-cux1ee7a-cdf}}
+
+Bất kỳ hàm phân phối tích luỹ nào cũng có các tính chất sau:
+
+\begin{itemize}
+\tightlist
+\item
+  Tăng dần: nếu \(x_1 \leq x_2\) thì \(F(x_1) \leq F(x_2)\)
+\item
+  Có giới hạn là \(0\) và \(1\): \(\lim_{x\rightarrow -\infty}F(x) = 0\) và \(\lim_{x\rightarrow +\infty}F(x) = 1\)
+\end{itemize}
+
+Hình dưới đây minh hoạ cho PMF và CDF của phân phối \(Bin(4, 1/2)\)
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figures/Picture10} 
+
+}
+
+\caption{Minh hoạ cho PMF của phân phối nhị thức}\label{fig:unnamed-chunk-6}
+\end{figure}
+
+\hypertarget{kuxec-vux1ecdng-expectation}{%
+\subsubsection{Kì vọng (Expectation)}\label{kuxec-vux1ecdng-expectation}}
+
+Kì vọng giúp tóm tắt phân phối của biến số ngẫu nhiên. Có 2 loại kì vọng chính:
+
+\begin{itemize}
+\tightlist
+\item
+  Vọng trị (Expected value): mô tả vị trí trung tâm của phân phối
+\item
+  Phương sai (Variance): mô tả độ phân tán của phân phối
+\end{itemize}
+
+Vọng trị (expected value) của một biến số ngẫu nhiên rời rạc \(X\) với các giá trị có thể có \(x_1, x_2, \ldots\) được định nghĩa như sau:
+
+\[
+E(X) = \Sigma^\infty_{j = 1} x_j P(X = x_j)
+\]
+Một số tính chất của vọng trị
+
+\begin{itemize}
+\tightlist
+\item
+  Với mọi biến số ngẫu nhiên \(X\), \(Y\) và hằng số \(c\): \(E(X + Y) = E(X) + E(Y)\) và \(E(cX) = c E(X)\)
+\end{itemize}
+
+Vọng trị của phân phối Bernoulli: Nếu \(X \sim Bern(p)\) thì \(E(X) = p\)
+
+Vọng trị của phân phối nhị thức: Nếu \(X \sim Bin(n, p)\) thì \(E(X) = np\)
+
+Phương sai (variance) và độ lệch chuẩn (standard deviation) của một biến số ngẫu nhiên X được định nghĩa như sau:
+
+\[
+Var(X) = E(X - EX)^2 = E(X^2) - (EX)^2
+\]
+\[
+SD(X) = \sqrt{Var(X)}
+\]
+Phương sai của \(X\) đo lường trung bình bình phương khoảng cách trung bình từ các giá trị của \(X\) đến giá trị trung bình.
+
+Các tính chất của phương sai:
+
+\begin{itemize}
+\tightlist
+\item
+  \(Var(X + c) = Var(X)\)
+\item
+  \(Var(cX) = c^2 Var(X)\)
+\item
+  Nếu \(X\) và \(Y\) độc lập, \(Var(X + Y) = Var(X) + Var(Y)\)
+\end{itemize}
+
+Phương sai của phân phối Bernoulli: Nếu \(X \sim Bern(p)\) thì \(Var(X) = p(1-p)\)
+
+Phương sai của phân phối nhị thức: Nếu \(X \sim Bin(n, p)\) thì \(Var(X) = np(1-p)\)
+
+\hypertarget{phuxe2n-phux1ed1i-cux1ee7a-biux1ebfn-sux1ed1-ngux1eabu-nhiuxean-liuxean-tux1ee5c}{%
+\subsection{Phân phối của biến số ngẫu nhiên liên tục}\label{phuxe2n-phux1ed1i-cux1ee7a-biux1ebfn-sux1ed1-ngux1eabu-nhiuxean-liuxean-tux1ee5c}}
+
+\hypertarget{huxe0m-mux1eadt-ux111ux1ed9-xuxe1c-suux1ea5t-probability-density-function-pdf.}{%
+\subsubsection{Hàm mật độ xác suất (Probability density function, PDF).}\label{huxe0m-mux1eadt-ux111ux1ed9-xuxe1c-suux1ea5t-probability-density-function-pdf.}}
+
+Với biến số ngẫu nhiên \(X\) có CDF \(F\), hàm mật độ xác suất (PDF) của \(X\) là đạo hàm \(f\) của CDF: \(f(x) = F^\prime(x)\)
+
+Lưu ý, giá trị \(f(x)\) của PDF không phải là một xác suất (\(f(x)\) có thể \(>1\))
+
+Chuyển đổi từ PDF sang CDF: \(X\) là biến số ngẫu nhiên với PDF \(f\). Khi đó CDF của \(X\) có thể được tính bằng:
+
+\[
+F(x) = \int^x_{-\infty} f(t)dt
+\]
+và xác suất \(X\) nằm trong khoảng từ \(a\) đến \(b\) có thể được tính theo công thức
+
+\[
+P(a < X \leq b) = \int^b_{a} f(x)dx
+\]
+Một số tính chất của PDF
+
+\begin{itemize}
+\tightlist
+\item
+  Không âm: \(f(x) \geq 0\)
+\item
+  Có tích phân bằng 1: \(\int_{-\infty}^{\infty}f(x)dx = 1\)
+\end{itemize}
+
+Vọng trị của một biến số ngẫu nhiên \(X\) có PDF \(f\) là
+
+\[
+E(X) = \int_{-\infty}^{\infty} xf(x)dx
+\]
+\#\#\#\# Phân phối chuẩn tắc (standard normal distribution)
+
+Một biến số ngẫu nhiên \(Z\) có phân phối chuẩn tắc nếu có PDF
+
+\[
+\varphi(z) = \frac{1}{\sqrt{2\pi}}\exp^{-z^2/2}, -\infty < z < \infty
+\]
+\(Z\) có trung bình là \(0\) và phương sai là \(1\). Ta có thể ký hiệu: \(Z \sim N(0, 1)\)
+
+\hypertarget{phuxe2n-phux1ed1i-buxecnh-thux1b0ux1eddng-normal-distribution}{%
+\subsubsection{Phân phối bình thường (normal distribution)}\label{phuxe2n-phux1ed1i-buxecnh-thux1b0ux1eddng-normal-distribution}}
+
+Một biến số ngẫu nhiên \(Z\) có phân phối chuẩn tắc (\(Z \sim N(0, 1)\)) thì
+
+\[
+X = \mu + \sigma Z
+\]
+có phân phối bình thường với trung bình \(\mu\) và phương sai \(\sigma^2\). Ta có thể ký hiệu là \(X \sim N(\mu, \sigma^2)\)
+
+\hypertarget{ux1ee9ng-dux1ee5ng-cux1ee7a-xuxe1c-suux1ea5t-trong-chux1ea9n-ux111ouxe1n-vuxe0-ra-quyux1ebft-ux111ux1ecbnh-luxe2m-suxe0ng}{%
+\section{Ứng dụng của xác suất trong chẩn đoán và ra quyết định lâm sàng}\label{ux1ee9ng-dux1ee5ng-cux1ee7a-xuxe1c-suux1ea5t-trong-chux1ea9n-ux111ouxe1n-vuxe0-ra-quyux1ebft-ux111ux1ecbnh-luxe2m-suxe0ng}}
+
+\hypertarget{measure}{%
+\chapter{Các số đo trong nghiên cứu lâm sàng}\label{measure}}
+
+\hypertarget{bias}{%
+\chapter{Sai lệch trong nghiên cứu lâm sàng}\label{bias}}
+
+\hypertarget{design}{%
+\chapter{Các thiết kế trong nghiên cứu lâm sàng}\label{design}}
+
+\hypertarget{litsearch}{%
+\chapter{Tìm kiếm chứng cứ trong nghiên cứu lâm sàng}\label{litsearch}}
+
+\hypertarget{appraisal}{%
+\chapter{Phê bình y văn trong nghiên cứu lâm sàng}\label{appraisal}}
+
+\hypertarget{prognosis}{%
+\chapter{Nghiên cứu tiên lượng}\label{prognosis}}
+
+\hypertarget{diagnosis}{%
+\chapter{Nghiên cứu chẩn đoán}\label{diagnosis}}
+
+\hypertarget{therapeutic}{%
+\chapter{Nghiên cứu điều trị}\label{therapeutic}}
+
+\hypertarget{mux1ee5c-tiuxeau}{%
+\section{Mục tiêu}\label{mux1ee5c-tiuxeau}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Các dạng nghiên cứu đánh giá một phương pháp điều trị (đặc biệt là thử nghiệm lâm sàng)
+\item
+  Cách đọc và đánh giá một nghiên cứu về điều trị
+\end{enumerate}
+
+\hypertarget{vuxec-sao-cux1ea7n-nghiuxean-cux1ee9u-luxe2m-suxe0ng-vux1ec1-phux1b0ux1a1ng-phuxe1p-ux111iux1ec1u-trux1ecb}{%
+\section{Vì sao cần nghiên cứu lâm sàng về phương pháp điều trị?}\label{vuxec-sao-cux1ea7n-nghiuxean-cux1ee9u-luxe2m-suxe0ng-vux1ec1-phux1b0ux1a1ng-phuxe1p-ux111iux1ec1u-trux1ecb}}
+
+(Ý tưởng/giả thuyết vs.~bằng chứng)
+
+Trong thực tế, các ý tưởng hay giả thuyết về hiệu lực của các phương pháp điều trị thường bắt nguồn từ các diễn giải về cơ chế sinh bệnh học, các quan sát hay trải nghiệm thực tế trên lâm sàng, các nghiên cứu dịch tễ học hoặc thậm chí từ trí tưởng tượng của con người \citep{fletcher_clinical_2014}. Ngoại trừ các phương pháp điều trị có hiệu quả quá lớn mà không cần phải có thêm bằng chứng, luôn cần kiểm tra và đánh giá các ý tưởng hay giả thuyết trên bằng các nghiên cứu khoa học để có bằng chứng rõ ràng và thuyết phục. Bên cạnh bằng chứng từ các nghiên cứu về cơ chế sinh học trong phòng thí nghiệm hay trên động vật, bằng chứng trực tiếp từ các nghiên cứu trên người là cần thiết vì không phải lúc nào cũng có thể suy diễn các kết quả nghiên cứu trong phòng thí nghiệm hay trên động vật sang người.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figures/dieutri_01} 
+
+}
+
+\caption{Từ ý tưởng đến bằng chứng}\label{fig:unnamed-chunk-7}
+\end{figure}
+
+Ví dụ???
+
+\hypertarget{cuxe1c-vux1ea5n-ux111ux1ec1-vux1ec1-ux111ux1ea1o-ux111ux1ee9c-khi-tiux1ebfn-huxe0nh-mux1ed9t-nghiuxean-cux1ee9u-luxe2m-suxe0ng-vux1ec1-ux111iux1ec1u-trux1ecb}{%
+\section{Các vấn đề về đạo đức khi tiến hành một nghiên cứu lâm sàng về điều trị}\label{cuxe1c-vux1ea5n-ux111ux1ec1-vux1ec1-ux111ux1ea1o-ux111ux1ee9c-khi-tiux1ebfn-huxe0nh-mux1ed9t-nghiuxean-cux1ee9u-luxe2m-suxe0ng-vux1ec1-ux111iux1ec1u-trux1ecb}}
+
+\begin{itemize}
+\item
+  Khi nào thì một nghiên cứu lâm sàng về điều trị là cần thiết và phù hợp?
+\item
+  Chọn nhóm chứng như thế nào là phù hợp?
+\item
+  Khi nào thì việc phân nhóm ngẫu nhiên bệnh nhân vào nhóm điều trị khác nhau là phù hợp?
+\end{itemize}
+
+``Equipoise'': không có lý do nào để tin rằng một phương pháp điều trị là tốt hơn điều trị còn lại. Ai quyết định? Như thế nào là tốt hơn?
+
+\begin{itemize}
+\tightlist
+\item
+  Các nguyên tắc về đạo đức khác
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Informed consent
+  \item
+    Được quyền rút lui bất kỳ lúc nào
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{cuxe1c-cuxe2u-hux1ecfi-nghiuxean-cux1ee9u-liuxean-quan-ux111ux1ebfn-phux1b0ux1a1ng-phuxe1p-ux111iux1ec1u-trux1ecb}{%
+\section{Các câu hỏi nghiên cứu liên quan đến phương pháp điều trị}\label{cuxe1c-cuxe2u-hux1ecfi-nghiuxean-cux1ee9u-liuxean-quan-ux111ux1ebfn-phux1b0ux1a1ng-phuxe1p-ux111iux1ec1u-trux1ecb}}
+
+PICO
+
+\hypertarget{duxe2n-sux1ed1-nghiuxean-cux1ee9u}{%
+\subsection{Dân số nghiên cứu}\label{duxe2n-sux1ed1-nghiuxean-cux1ee9u}}
+
+Để có bằng chứng trực tiếp và thuyết phục về hiệu quả của các phương pháp điều trị, các nghiên cứu lâm sàng cần được tiến hành trên người bệnh.
+
+\hypertarget{ux111iux1ec1u-trux1ecb}{%
+\subsection{Điều trị}\label{ux111iux1ec1u-trux1ecb}}
+
+\hypertarget{nhuxf3m-so-suxe1nh}{%
+\subsection{Nhóm so sánh}\label{nhuxf3m-so-suxe1nh}}
+
+\hypertarget{kux1ebft-cuux1ed9c}{%
+\subsection{Kết cuộc}\label{kux1ebft-cuux1ed9c}}
+
+\hypertarget{cuxe1c-dux1ea1ng-nghiuxean-cux1ee9u-luxe2m-suxe0ng-giuxfap-ux111uxe1nh-giuxe1-mux1ed9t-phux1b0ux1a1ng-phuxe1p-ux111iux1ec1u-trux1ecb}{%
+\section{Các dạng nghiên cứu lâm sàng giúp đánh giá một phương pháp điều trị}\label{cuxe1c-dux1ea1ng-nghiuxean-cux1ee9u-luxe2m-suxe0ng-giuxfap-ux111uxe1nh-giuxe1-mux1ed9t-phux1b0ux1a1ng-phuxe1p-ux111iux1ec1u-trux1ecb}}
+
+\hypertarget{cuxe1ch-ux111ux1ecdc-vuxe0-ux111uxe1nh-giuxe1-mux1ed9t-nghiuxean-cux1ee9u-vux1ec1-ux111iux1ec1u-trux1ecb}{%
+\section{Cách đọc và đánh giá một nghiên cứu về điều trị}\label{cuxe1ch-ux111ux1ecdc-vuxe0-ux111uxe1nh-giuxe1-mux1ed9t-nghiuxean-cux1ee9u-vux1ec1-ux111iux1ec1u-trux1ecb}}
+
+\hypertarget{vuxed-dux1ee5-thux1ef1c-tux1ebf-nghiuxean-cux1ee9u-vux1ec1-ux111iux1ec1u-trux1ecb-covid-19}{%
+\section{Ví dụ thực tế: nghiên cứu về điều trị COVID-19}\label{vuxed-dux1ee5-thux1ef1c-tux1ebf-nghiuxean-cux1ee9u-vux1ec1-ux111iux1ec1u-trux1ecb-covid-19}}
+
+\hypertarget{buxe0i-tux1eadp}{%
+\section{Bài tập}\label{buxe0i-tux1eadp}}
+
+\hypertarget{ux111iux1ec1n-vuxe0o-chux1ed7-trux1ed1ng}{%
+\subsection{Điền vào chỗ trống}\label{ux111iux1ec1n-vuxe0o-chux1ed7-trux1ed1ng}}
+
+2 + 2 =
+
+Gợi ý
+
+See the documentation for \texttt{plot()} (\texttt{?plot})
+
+Xem đáp án
+
+4
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DecValTok{4}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{prevention}{%
+\chapter{Nghiên cứu dự phòng}\label{prevention}}
+
+\hypertarget{srma}{%
+\chapter{Tổng quan hệ thống và phân tích gộp}\label{srma}}
+
+\hypertarget{mdm}{%
+\chapter{Ra quyết định lâm sàng dựa trên chứng cứ}\label{mdm}}
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}

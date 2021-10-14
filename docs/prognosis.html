@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chương 7 Nghiên cứu tiên lượng | Dịch tễ học lâm sàng</title>
+  <meta name="description" content="Cơ bản về Dịch tễ học lâm sàng" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chương 7 Nghiên cứu tiên lượng | Dịch tễ học lâm sàng" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Cơ bản về Dịch tễ học lâm sàng" />
+  <meta name="github-repo" content="lampk/book_EvidenceBasedPractice" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chương 7 Nghiên cứu tiên lượng | Dịch tễ học lâm sàng" />
+  
+  <meta name="twitter:description" content="Cơ bản về Dịch tễ học lâm sàng" />
+  
+
+<meta name="author" content="Phùng Khánh Lâm" />
+
+
+<meta name="date" content="2021-09-04" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="appraisal.html"/>
+<link rel="next" href="diagnosis.html"/>
+<script src="libs/header-attrs-2.9.5/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6NP3MF25W3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6NP3MF25W3');
+</script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="include/webex.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Dịch tễ học lâm sàng</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Lời giới thiệu</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Giới thiệu Dịch tễ học lâm sàng</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#các-khái-niệm-cơ-bản"><i class="fa fa-check"></i><b>1.1</b> Các khái niệm cơ bản</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="intro.html"><a href="intro.html#ví-dụ-1-tung-một-đồng-xu-một-lần-flip-a-coin-one-time"><i class="fa fa-check"></i><b>1.1.1</b> Ví dụ 1: Tung một đồng xu một lần (flip a coin one time)</a></li>
+<li class="chapter" data-level="1.1.2" data-path="intro.html"><a href="intro.html#ví-dụ-2-tung-một-đồng-xu-hai-lần"><i class="fa fa-check"></i><b>1.1.2</b> Ví dụ 2: Tung một đồng xu hai lần</a></li>
+<li class="chapter" data-level="1.1.3" data-path="intro.html"><a href="intro.html#ví-dụ-3-viêm-tĩnh-mạch-phlebitis-sau-khi-sử-dụng-đường-truyền-tĩnh-mạch-ngoại-biên-peripheral-intravenous-catheter"><i class="fa fa-check"></i><b>1.1.3</b> Ví dụ 3: viêm tĩnh mạch (phlebitis) sau khi sử dụng đường truyền tĩnh mạch ngoại biên (peripheral intravenous catheter)</a></li>
+<li class="chapter" data-level="1.1.4" data-path="intro.html"><a href="intro.html#lý-thuyết-về-tập-hợp-sets"><i class="fa fa-check"></i><b>1.1.4</b> Lý thuyết về tập hợp (sets)</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#định-nghĩa-xác-suất-probability"><i class="fa fa-check"></i><b>1.2</b> Định nghĩa xác suất (probability)</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="intro.html"><a href="intro.html#định-nghĩa-đơn-giản-về-xác-suất-naive-definition-of-probability"><i class="fa fa-check"></i><b>1.2.1</b> Định nghĩa đơn giản về xác suất (naive definition of probability)</a></li>
+<li class="chapter" data-level="1.2.2" data-path="intro.html"><a href="intro.html#tính-xác-suất-theo-quy-tắc-nhân-multiplication-rule"><i class="fa fa-check"></i><b>1.2.2</b> Tính xác suất theo quy tắc nhân (multiplication rule)</a></li>
+<li class="chapter" data-level="1.2.3" data-path="intro.html"><a href="intro.html#ví-dụ-5-the-last-banana"><i class="fa fa-check"></i><b>1.2.3</b> Ví dụ 5: the last banana</a></li>
+<li class="chapter" data-level="1.2.4" data-path="intro.html"><a href="intro.html#hạn-chế-của-định-nghĩa-đơn-giản-về-xác-suất"><i class="fa fa-check"></i><b>1.2.4</b> Hạn chế của định nghĩa đơn giản về xác suất</a></li>
+<li class="chapter" data-level="1.2.5" data-path="intro.html"><a href="intro.html#định-nghĩa-đầy-đủ-về-xác-suất"><i class="fa fa-check"></i><b>1.2.5</b> Định nghĩa đầy đủ về xác suất</a></li>
+<li class="chapter" data-level="1.2.6" data-path="intro.html"><a href="intro.html#diễn-giải-ý-nghĩa-của-xác-suất"><i class="fa fa-check"></i><b>1.2.6</b> Diễn giải ý nghĩa của xác suất</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#xác-suất-có-điều-kiện"><i class="fa fa-check"></i><b>1.3</b> Xác suất có điều kiện</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="intro.html"><a href="intro.html#định-nghĩa-xác-suất-có-điều-kiện"><i class="fa fa-check"></i><b>1.3.1</b> Định nghĩa xác suất có điều kiện</a></li>
+<li class="chapter" data-level="1.3.2" data-path="intro.html"><a href="intro.html#định-lí-bayes-bayes-rule"><i class="fa fa-check"></i><b>1.3.2</b> Định lí Bayes (Bayes’ rule)</a></li>
+<li class="chapter" data-level="1.3.3" data-path="intro.html"><a href="intro.html#luật-xác-suất-toàn-phần-law-of-total-probability"><i class="fa fa-check"></i><b>1.3.3</b> Luật xác suất toàn phần (law of total probability)</a></li>
+<li class="chapter" data-level="1.3.4" data-path="intro.html"><a href="intro.html#sự-độc-lập-của-các-biến-cố-independence-of-events"><i class="fa fa-check"></i><b>1.3.4</b> Sự độc lập của các biến cố (Independence of events)</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#biến-số-ngẫu-nhiên-random-variables"><i class="fa fa-check"></i><b>1.4</b> Biến số ngẫu nhiên (Random variables)</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="intro.html"><a href="intro.html#ví-dụ"><i class="fa fa-check"></i><b>1.4.1</b> Ví dụ:</a></li>
+<li class="chapter" data-level="1.4.2" data-path="intro.html"><a href="intro.html#loại-biến-số-ngẫu-nhiên"><i class="fa fa-check"></i><b>1.4.2</b> Loại biến số ngẫu nhiên</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="intro.html"><a href="intro.html#phân-phối-xác-suất-probability-distribution"><i class="fa fa-check"></i><b>1.5</b> Phân phối xác suất (Probability distribution)</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="intro.html"><a href="intro.html#phân-phối-của-biến-số-ngẫu-nhiên-rời-rạc"><i class="fa fa-check"></i><b>1.5.1</b> Phân phối của biến số ngẫu nhiên rời rạc</a></li>
+<li class="chapter" data-level="1.5.2" data-path="intro.html"><a href="intro.html#phân-phối-của-biến-số-ngẫu-nhiên-liên-tục"><i class="fa fa-check"></i><b>1.5.2</b> Phân phối của biến số ngẫu nhiên liên tục</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="intro.html"><a href="intro.html#ứng-dụng-của-xác-suất-trong-chẩn-đoán-và-ra-quyết-định-lâm-sàng"><i class="fa fa-check"></i><b>1.6</b> Ứng dụng của xác suất trong chẩn đoán và ra quyết định lâm sàng</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="measure.html"><a href="measure.html"><i class="fa fa-check"></i><b>2</b> Các số đo trong nghiên cứu lâm sàng</a></li>
+<li class="chapter" data-level="3" data-path="bias.html"><a href="bias.html"><i class="fa fa-check"></i><b>3</b> Sai lệch trong nghiên cứu lâm sàng</a></li>
+<li class="chapter" data-level="4" data-path="design.html"><a href="design.html"><i class="fa fa-check"></i><b>4</b> Các thiết kế trong nghiên cứu lâm sàng</a></li>
+<li class="chapter" data-level="5" data-path="litsearch.html"><a href="litsearch.html"><i class="fa fa-check"></i><b>5</b> Tìm kiếm chứng cứ trong nghiên cứu lâm sàng</a></li>
+<li class="chapter" data-level="6" data-path="appraisal.html"><a href="appraisal.html"><i class="fa fa-check"></i><b>6</b> Phê bình y văn trong nghiên cứu lâm sàng</a></li>
+<li class="chapter" data-level="7" data-path="prognosis.html"><a href="prognosis.html"><i class="fa fa-check"></i><b>7</b> Nghiên cứu tiên lượng</a></li>
+<li class="chapter" data-level="8" data-path="diagnosis.html"><a href="diagnosis.html"><i class="fa fa-check"></i><b>8</b> Nghiên cứu chẩn đoán</a></li>
+<li class="chapter" data-level="9" data-path="therapeutic.html"><a href="therapeutic.html"><i class="fa fa-check"></i><b>9</b> Nghiên cứu điều trị</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="therapeutic.html"><a href="therapeutic.html#mục-tiêu"><i class="fa fa-check"></i><b>9.1</b> Mục tiêu</a></li>
+<li class="chapter" data-level="9.2" data-path="therapeutic.html"><a href="therapeutic.html#vì-sao-cần-nghiên-cứu-lâm-sàng-về-phương-pháp-điều-trị"><i class="fa fa-check"></i><b>9.2</b> Vì sao cần nghiên cứu lâm sàng về phương pháp điều trị?</a></li>
+<li class="chapter" data-level="9.3" data-path="therapeutic.html"><a href="therapeutic.html#các-vấn-đề-về-đạo-đức-khi-tiến-hành-một-nghiên-cứu-lâm-sàng-về-điều-trị"><i class="fa fa-check"></i><b>9.3</b> Các vấn đề về đạo đức khi tiến hành một nghiên cứu lâm sàng về điều trị</a></li>
+<li class="chapter" data-level="9.4" data-path="therapeutic.html"><a href="therapeutic.html#các-câu-hỏi-nghiên-cứu-liên-quan-đến-phương-pháp-điều-trị"><i class="fa fa-check"></i><b>9.4</b> Các câu hỏi nghiên cứu liên quan đến phương pháp điều trị</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="therapeutic.html"><a href="therapeutic.html#dân-số-nghiên-cứu"><i class="fa fa-check"></i><b>9.4.1</b> Dân số nghiên cứu</a></li>
+<li class="chapter" data-level="9.4.2" data-path="therapeutic.html"><a href="therapeutic.html#điều-trị"><i class="fa fa-check"></i><b>9.4.2</b> Điều trị</a></li>
+<li class="chapter" data-level="9.4.3" data-path="therapeutic.html"><a href="therapeutic.html#nhóm-so-sánh"><i class="fa fa-check"></i><b>9.4.3</b> Nhóm so sánh</a></li>
+<li class="chapter" data-level="9.4.4" data-path="therapeutic.html"><a href="therapeutic.html#kết-cuộc"><i class="fa fa-check"></i><b>9.4.4</b> Kết cuộc</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="therapeutic.html"><a href="therapeutic.html#các-dạng-nghiên-cứu-lâm-sàng-giúp-đánh-giá-một-phương-pháp-điều-trị"><i class="fa fa-check"></i><b>9.5</b> Các dạng nghiên cứu lâm sàng giúp đánh giá một phương pháp điều trị</a></li>
+<li class="chapter" data-level="9.6" data-path="therapeutic.html"><a href="therapeutic.html#cách-đọc-và-đánh-giá-một-nghiên-cứu-về-điều-trị"><i class="fa fa-check"></i><b>9.6</b> Cách đọc và đánh giá một nghiên cứu về điều trị</a></li>
+<li class="chapter" data-level="9.7" data-path="therapeutic.html"><a href="therapeutic.html#ví-dụ-thực-tế-nghiên-cứu-về-điều-trị-covid-19"><i class="fa fa-check"></i><b>9.7</b> Ví dụ thực tế: nghiên cứu về điều trị COVID-19</a></li>
+<li class="chapter" data-level="9.8" data-path="therapeutic.html"><a href="therapeutic.html#bài-tập"><i class="fa fa-check"></i><b>9.8</b> Bài tập</a>
+<ul>
+<li class="chapter" data-level="9.8.1" data-path="therapeutic.html"><a href="therapeutic.html#điền-vào-chỗ-trống"><i class="fa fa-check"></i><b>9.8.1</b> Điền vào chỗ trống</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="prevention.html"><a href="prevention.html"><i class="fa fa-check"></i><b>10</b> Nghiên cứu dự phòng</a></li>
+<li class="chapter" data-level="11" data-path="srma.html"><a href="srma.html"><i class="fa fa-check"></i><b>11</b> Tổng quan hệ thống và phân tích gộp</a></li>
+<li class="chapter" data-level="12" data-path="mdm.html"><a href="mdm.html"><i class="fa fa-check"></i><b>12</b> Ra quyết định lâm sàng dựa trên chứng cứ</a></li>
+<li class="chapter" data-level="" data-path="tài-liệu-tham-khảo.html"><a href="tài-liệu-tham-khảo.html"><i class="fa fa-check"></i>Tài liệu tham khảo</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/lampk/CEPI" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Dịch tễ học lâm sàng</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="prognosis" class="section level1" number="7">
+<h1><span class="header-section-number">Chương 7</span> Nghiên cứu tiên lượng</h1>
+
+</div>
+<script>
+
+/* update total correct if #webex-total_correct exists */
+update_total_correct = function() {
+  if (t = document.getElementById("webex-total_correct")) {
+    t.innerHTML =
+      document.getElementsByClassName("webex-correct").length + " of " +
+      document.getElementsByClassName("webex-solveme").length + " correct";
+  }
+}
+
+/* webex-solution button toggling function */
+b_func = function() {
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "")
+  }
+  
+  if (my_answer !== "" & real_answers.includes(my_answer)) {
+    cl.add("webex-correct");
+  } else {
+    cl.remove("webex-correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol > 0){
+    var tol = JSON.parse(this.dataset.tol);  
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("webex-correct");
+    } else {
+      cl.remove("webex-correct");
+    }  
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("webex-correct");
+    }  
+  }
+  
+  update_total_correct();
+}
+
+window.onload = function() {
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('webex-solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+  
+  /* set up webex-solveme inputs */
+  var solveme = document.getElementsByClassName("webex-solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off"); 
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+    
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+    
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+  }
+  
+  update_total_correct();
+}
+
+</script>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="appraisal.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="diagnosis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["CEPI.pdf", "CEPI.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chương 1 Kiến thức cơ bản về xác suất | Cơ bản về Thực hành y khoa dựa trên chứng cứ</title>
+  <meta name="description" content="Chương 1 Kiến thức cơ bản về xác suất | Cơ bản về Thực hành y khoa dựa trên chứng cứ" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chương 1 Kiến thức cơ bản về xác suất | Cơ bản về Thực hành y khoa dựa trên chứng cứ" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Chương 1 Kiến thức cơ bản về xác suất | Cơ bản về Thực hành y khoa dựa trên chứng cứ" />
+  <meta name="github-repo" content="lampk/book_EvidenceBasedPractice" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chương 1 Kiến thức cơ bản về xác suất | Cơ bản về Thực hành y khoa dựa trên chứng cứ" />
+  
+  <meta name="twitter:description" content="Chương 1 Kiến thức cơ bản về xác suất | Cơ bản về Thực hành y khoa dựa trên chứng cứ" />
+  
+
+<meta name="author" content="Phùng Khánh Lâm" />
+
+
+<meta name="date" content="2020-07-22" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="biostat.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Nghiên cứu lâm sàng</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Lời giới thiệu</a></li>
+<li class="chapter" data-level="1" data-path="prob.html"><a href="prob.html"><i class="fa fa-check"></i><b>1</b> Kiến thức cơ bản về xác suất</a><ul>
+<li class="chapter" data-level="1.1" data-path="prob.html"><a href="prob.html#các-khái-niệm-cơ-bản"><i class="fa fa-check"></i><b>1.1</b> Các khái niệm cơ bản</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="prob.html"><a href="prob.html#ví-dụ-1-tung-một-đồng-xu-một-lần-flip-a-coin-one-time"><i class="fa fa-check"></i><b>1.1.1</b> Ví dụ 1: Tung một đồng xu một lần (flip a coin one time)</a></li>
+<li class="chapter" data-level="1.1.2" data-path="prob.html"><a href="prob.html#ví-dụ-2-tung-một-đồng-xu-hai-lần"><i class="fa fa-check"></i><b>1.1.2</b> Ví dụ 2: Tung một đồng xu hai lần</a></li>
+<li class="chapter" data-level="1.1.3" data-path="prob.html"><a href="prob.html#ví-dụ-3-viêm-tĩnh-mạch-phlebitis-sau-khi-sử-dụng-đường-truyền-tĩnh-mạch-ngoại-biên-peripheral-intravenous-catheter"><i class="fa fa-check"></i><b>1.1.3</b> Ví dụ 3: viêm tĩnh mạch (phlebitis) sau khi sử dụng đường truyền tĩnh mạch ngoại biên (peripheral intravenous catheter)</a></li>
+<li class="chapter" data-level="1.1.4" data-path="prob.html"><a href="prob.html#lý-thuyết-về-tập-hợp-sets"><i class="fa fa-check"></i><b>1.1.4</b> Lý thuyết về tập hợp (sets)</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="prob.html"><a href="prob.html#định-nghĩa-xác-suất-probability"><i class="fa fa-check"></i><b>1.2</b> Định nghĩa xác suất (probability)</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="prob.html"><a href="prob.html#định-nghĩa-đơn-giản-về-xác-suất-naive-definition-of-probability"><i class="fa fa-check"></i><b>1.2.1</b> Định nghĩa đơn giản về xác suất (naive definition of probability)</a></li>
+<li class="chapter" data-level="1.2.2" data-path="prob.html"><a href="prob.html#tính-xác-suất-theo-quy-tắc-nhân-multiplication-rule"><i class="fa fa-check"></i><b>1.2.2</b> Tính xác suất theo quy tắc nhân (multiplication rule)</a></li>
+<li class="chapter" data-level="1.2.3" data-path="prob.html"><a href="prob.html#ví-dụ-5-the-last-banana"><i class="fa fa-check"></i><b>1.2.3</b> Ví dụ 5: the last banana</a></li>
+<li class="chapter" data-level="1.2.4" data-path="prob.html"><a href="prob.html#hạn-chế-của-định-nghĩa-đơn-giản-về-xác-suất"><i class="fa fa-check"></i><b>1.2.4</b> Hạn chế của định nghĩa đơn giản về xác suất</a></li>
+<li class="chapter" data-level="1.2.5" data-path="prob.html"><a href="prob.html#định-nghĩa-đầy-đủ-về-xác-suất"><i class="fa fa-check"></i><b>1.2.5</b> Định nghĩa đầy đủ về xác suất</a></li>
+<li class="chapter" data-level="1.2.6" data-path="prob.html"><a href="prob.html#diễn-giải-ý-nghĩa-của-xác-suất"><i class="fa fa-check"></i><b>1.2.6</b> Diễn giải ý nghĩa của xác suất</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="prob.html"><a href="prob.html#xác-suất-có-điều-kiện"><i class="fa fa-check"></i><b>1.3</b> Xác suất có điều kiện</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="prob.html"><a href="prob.html#định-nghĩa-xác-suất-có-điều-kiện"><i class="fa fa-check"></i><b>1.3.1</b> Định nghĩa xác suất có điều kiện</a></li>
+<li class="chapter" data-level="1.3.2" data-path="prob.html"><a href="prob.html#định-lí-bayes-bayes-rule"><i class="fa fa-check"></i><b>1.3.2</b> Định lí Bayes (Bayes’ rule)</a></li>
+<li class="chapter" data-level="1.3.3" data-path="prob.html"><a href="prob.html#luật-xác-suất-toàn-phần-law-of-total-probability"><i class="fa fa-check"></i><b>1.3.3</b> Luật xác suất toàn phần (law of total probability)</a></li>
+<li class="chapter" data-level="1.3.4" data-path="prob.html"><a href="prob.html#sự-độc-lập-của-các-biến-cố-independence-of-events"><i class="fa fa-check"></i><b>1.3.4</b> Sự độc lập của các biến cố (Independence of events)</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="prob.html"><a href="prob.html#biến-số-ngẫu-nhiên-random-variables"><i class="fa fa-check"></i><b>1.4</b> Biến số ngẫu nhiên (Random variables)</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="prob.html"><a href="prob.html#ví-dụ"><i class="fa fa-check"></i><b>1.4.1</b> Ví dụ:</a></li>
+<li class="chapter" data-level="1.4.2" data-path="prob.html"><a href="prob.html#loại-biến-số-ngẫu-nhiên"><i class="fa fa-check"></i><b>1.4.2</b> Loại biến số ngẫu nhiên</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="prob.html"><a href="prob.html#phân-phối-xác-suất-probability-distribution"><i class="fa fa-check"></i><b>1.5</b> Phân phối xác suất (Probability distribution)</a><ul>
+<li class="chapter" data-level="1.5.1" data-path="prob.html"><a href="prob.html#phân-phối-của-biến-số-ngẫu-nhiên-rời-rạc"><i class="fa fa-check"></i><b>1.5.1</b> Phân phối của biến số ngẫu nhiên rời rạc</a></li>
+<li class="chapter" data-level="1.5.2" data-path="prob.html"><a href="prob.html#phân-phối-của-biến-số-ngẫu-nhiên-liên-tục"><i class="fa fa-check"></i><b>1.5.2</b> Phân phối của biến số ngẫu nhiên liên tục</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="prob.html"><a href="prob.html#ứng-dụng-của-xác-suất-trong-chẩn-đoán-và-ra-quyết-định-lâm-sàng"><i class="fa fa-check"></i><b>1.6</b> Ứng dụng của xác suất trong chẩn đoán và ra quyết định lâm sàng</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="biostat.html"><a href="biostat.html"><i class="fa fa-check"></i><b>2</b> Kiến thức cơ bản về thống kê y sinh</a><ul>
+<li class="chapter" data-level="2.1" data-path="biostat.html"><a href="biostat.html#giới-thiệu-về-thống-kê-y-sinh"><i class="fa fa-check"></i><b>2.1</b> Giới thiệu về thống kê y sinh</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="biostat.html"><a href="biostat.html#biến-số"><i class="fa fa-check"></i><b>2.1.1</b> Biến số</a></li>
+<li class="chapter" data-level="2.1.2" data-path="biostat.html"><a href="biostat.html#mẫu-và-phương-pháp-lấy-mẫu"><i class="fa fa-check"></i><b>2.1.2</b> Mẫu và phương pháp lấy mẫu</a></li>
+<li class="chapter" data-level="2.1.3" data-path="biostat.html"><a href="biostat.html#thống-mê-mô-tả-vs.-thống-kê-phân-tích"><i class="fa fa-check"></i><b>2.1.3</b> Thống mê mô tả vs. Thống kê phân tích</a></li>
+<li class="chapter" data-level="2.1.4" data-path="biostat.html"><a href="biostat.html#kiểm-định-giả-thuyết-trị-số-p"><i class="fa fa-check"></i><b>2.1.4</b> Kiểm định giả thuyết &amp; trị số p</a></li>
+<li class="chapter" data-level="2.1.5" data-path="biostat.html"><a href="biostat.html#ước-lượng-khoảng-tin-cậy"><i class="fa fa-check"></i><b>2.1.5</b> Ước lượng khoảng tin cậy</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="biostat.html"><a href="biostat.html#phân-tích-biến-số-định-tính"><i class="fa fa-check"></i><b>2.2</b> Phân tích biến số định tính</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="biostat.html"><a href="biostat.html#mô-tả-biến-số-định-tính"><i class="fa fa-check"></i><b>2.2.1</b> Mô tả biến số định tính</a></li>
+<li class="chapter" data-level="2.2.2" data-path="biostat.html"><a href="biostat.html#kiểm-định-so-sánh-hai-tỉ-lệ-phép-kiểm-chi-bình-phương"><i class="fa fa-check"></i><b>2.2.2</b> Kiểm định so sánh hai tỉ lệ: phép kiểm Chi bình phương</a></li>
+<li class="chapter" data-level="2.2.3" data-path="biostat.html"><a href="biostat.html#kiểm-định-so-sánh-hai-tỉ-lệ-phép-kiểm-fishers-exact"><i class="fa fa-check"></i><b>2.2.3</b> Kiểm định so sánh hai tỉ lệ: phép kiểm Fisher’s exact</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="biostat.html"><a href="biostat.html#phân-tích-biến-số-định-lượng"><i class="fa fa-check"></i><b>2.3</b> Phân tích biến số định lượng</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="biostat.html"><a href="biostat.html#mô-tả-biến-số-định-lượng"><i class="fa fa-check"></i><b>2.3.1</b> Mô tả biến số định lượng</a></li>
+<li class="chapter" data-level="2.3.2" data-path="biostat.html"><a href="biostat.html#kiểm-định-so-sánh-hai-trung-bình-phép-kiểm-t"><i class="fa fa-check"></i><b>2.3.2</b> Kiểm định so sánh hai trung bình: phép kiểm t</a></li>
+<li class="chapter" data-level="2.3.3" data-path="biostat.html"><a href="biostat.html#kiểm-định-so-sánh-hai-trung-bình-phép-kiểm-mann-whitney"><i class="fa fa-check"></i><b>2.3.3</b> Kiểm định so sánh hai trung bình: phép kiểm Mann-Whitney</a></li>
+<li class="chapter" data-level="2.3.4" data-path="biostat.html"><a href="biostat.html#phân-tích-phương-sai"><i class="fa fa-check"></i><b>2.3.4</b> Phân tích phương sai</a></li>
+<li class="chapter" data-level="2.3.5" data-path="biostat.html"><a href="biostat.html#tương-quan-và-hồi-quy-tuyến-tính"><i class="fa fa-check"></i><b>2.3.5</b> Tương quan và hồi quy tuyến tính</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="biostat.html"><a href="biostat.html#tóm-tắt-về-phân-tích-thống-kê"><i class="fa fa-check"></i><b>2.4</b> Tóm tắt về phân tích thống kê</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="studyDesign.html"><a href="studyDesign.html"><i class="fa fa-check"></i><b>3</b> Kiến thức cơ bản về thiết kế nghiên cứu</a></li>
+<li class="chapter" data-level="4" data-path="appraisal.html"><a href="appraisal.html"><i class="fa fa-check"></i><b>4</b> Đọc và phê bình bài báo khoa học</a></li>
+<li class="chapter" data-level="" data-path="tài-liệu-tham-khảo.html"><a href="tài-liệu-tham-khảo.html"><i class="fa fa-check"></i>Tài liệu tham khảo</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/lampk/book_CliRes" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Cơ bản về Thực hành y khoa dựa trên chứng cứ</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="prob" class="section level1">
+<h1><span class="header-section-number">Chương 1</span> Kiến thức cơ bản về xác suất</h1>
+<div id="các-khái-niệm-cơ-bản" class="section level2">
+<h2><span class="header-section-number">1.1</span> Các khái niệm cơ bản</h2>
+<p>Các tính toán về xác suất bắt đầu với các <strong>thử nghiệm (experiment)</strong>. Mỗi thử nghiệm là một hoặc một chuỗi các hành động đưa đến kết quả. Các thử nghiệm này có thể được lặp đi lặp lại nhiều lần. Kết quả từ các thử nghiệm sẽ giúp tính toán các xác suất tương ứng.</p>
+<p>Kết quả của một thử nghiệm được gọi là <strong>kết cục (outcome)</strong>. Một thử nghiệm có thể có nhiều kết cục khác nhau. Tuy nhiên, trong mỗi một lần thử nghiệm, chúng ta chỉ có thể quan sát được duy nhất một kết cục.</p>
+<p>Tập hợp của tất cả các kết cục có thể có của một thử nghiệm được gọi là <strong>không gian mẫu (sample space)</strong>.</p>
+<p><strong>Biến cố (event)</strong> là một sự kiện bao gồm một hoặc một vài kết cuộc trong không gian mẫu. Do đó biến cố là một tập hợp con của không gian mẫu. Một biến cố được xem là xảy ra (occurred) nếu kết cục thực tế quan sát thấy có chứa trong biến cố đó.</p>
+<div id="ví-dụ-1-tung-một-đồng-xu-một-lần-flip-a-coin-one-time" class="section level3">
+<h3><span class="header-section-number">1.1.1</span> Ví dụ 1: Tung một đồng xu một lần (flip a coin one time)</h3>
+<p>Ở đây, thử nghiệm là tung đồng xu một lần.</p>
+<p>Các kết cục có thể có của thử nghiệm này là được mặt sấp (<span class="math inline">\(S\)</span>) hoặc mặt ngửa (<span class="math inline">\(N\)</span>).</p>
+<p>Do đó, không gian mẫu sẽ là một tập hợp với 2 phần tử: <span class="math inline">\(S = \{\text{S},\text{N} \}\)</span>.</p>
+<p>Trên không gian mẫu này có thể định nghĩa nhiều biến cố khác nhau:</p>
+<ul>
+<li>Biến cố được mặt ngửa: <span class="math inline">\(A = \{\text{N}\}\)</span></li>
+<li>Biến cố được mặt sấp: <span class="math inline">\(B = \{\text{S}\}\)</span></li>
+</ul>
+<p>Nếu thực hiện thử nghiệm và kết quả được mặt sấp, như vậy biến cố <span class="math inline">\(A\)</span> đã xảy ra.</p>
+<div class="figure"><span id="fig:example1"></span>
+<img src="figures/Picture01.png" alt="Minh hoạ cho ví dụ 1" width="914" />
+<p class="caption">
+Hình 1.1: Minh hoạ cho ví dụ 1
+</p>
+</div>
+</div>
+<div id="ví-dụ-2-tung-một-đồng-xu-hai-lần" class="section level3">
+<h3><span class="header-section-number">1.1.2</span> Ví dụ 2: Tung một đồng xu hai lần</h3>
+<p>Ở đây, thử nghiệm là tung đồng xu hai lần.</p>
+<p>Các kết cục có thể có của thử nghiệm này là được 2 mặt sấp (<span class="math inline">\(SS\)</span>), hoặc 2 mặt ngửa (<span class="math inline">\(NN\)</span>), hoặc ngửa rồi sấp (<span class="math inline">\(NS\)</span>), hoặc sấp rồi ngửa (<span class="math inline">\(SN\)</span>).</p>
+<p>Do đó, không gian mẫu sẽ là một tập hợp với 4 phần tử: <span class="math inline">\(S = \{\text{SS},\text{NN},\text{NS},\text{SN}\}\)</span>.</p>
+<p>Trên không gian mẫu này có thể định nghĩa nhiều biến cố khác nhau, ví dụ như:</p>
+<ul>
+<li>Biến cố được mặt ngửa đầu tiên: <span class="math inline">\(A = \{\text{NN},\text{NS}\}\)</span></li>
+<li>Biến cố được mặt thứ hai là mặt ngửa: <span class="math inline">\(B = \{\text{NN},\text{SN}\}\)</span></li>
+</ul>
+<p>Nếu thực hiện thử nghiệm và kết quả được 2 mặt ngửa, như vậy cả biến cố <span class="math inline">\(A\)</span> và biến cố <span class="math inline">\(B\)</span> đều đã xảy ra.</p>
+<div class="figure"><span id="fig:example2"></span>
+<img src="figures/Picture02.png" alt="Minh hoạ cho ví dụ 2" width="914" />
+<p class="caption">
+Hình 1.2: Minh hoạ cho ví dụ 2
+</p>
+</div>
+</div>
+<div id="ví-dụ-3-viêm-tĩnh-mạch-phlebitis-sau-khi-sử-dụng-đường-truyền-tĩnh-mạch-ngoại-biên-peripheral-intravenous-catheter" class="section level3">
+<h3><span class="header-section-number">1.1.3</span> Ví dụ 3: viêm tĩnh mạch (phlebitis) sau khi sử dụng đường truyền tĩnh mạch ngoại biên (peripheral intravenous catheter)</h3>
+<p>Ở đây, thử nghiệm là sử dụng đường truyền tĩnh mạch ngoại biên.</p>
+<p>Các kết cục có thể có của thử nghiệm này là bị viêm tĩnh mạch (<span class="math inline">\(\text{VTM+}\)</span>) hoặc không bị viêm tĩnh mạch (<span class="math inline">\(\text{VTM-}\)</span>).</p>
+<p>Do đó, không gian mẫu sẽ là một tập hợp với 2 thành phần: <span class="math inline">\(S = \{\text{VTM+},\text{VTM-}\}\)</span>.</p>
+<p>Trên không gian mẫu này có thể định nghĩa biến cố <span class="math inline">\(A\)</span> là biến cố xảy ra viêm tĩnh mạch: <span class="math inline">\(A = \{VTM+\}\)</span></p>
+<p>Nếu một bệnh nhân được sử dụng đường truyền tĩnh mạch và sau đó bị viêm tĩnh mạch thì ta nói rằng biến cố <span class="math inline">\(A\)</span> đã xảy ra.</p>
+</div>
+<div id="lý-thuyết-về-tập-hợp-sets" class="section level3">
+<h3><span class="header-section-number">1.1.4</span> Lý thuyết về tập hợp (sets)</h3>
+<p>Với <span class="math inline">\(A\)</span> và <span class="math inline">\(B\)</span> là 2 biến cố được định nghĩa trên cùng không gian mẫu <span class="math inline">\(S\)</span></p>
+<ul>
+<li>Hợp (union) của <span class="math inline">\(A\)</span> và <span class="math inline">\(B\)</span> (<span class="math inline">\(A \cup B\)</span>) là một biến cố xảy ra khi và chỉ khi <span class="math inline">\(A\)</span> hay <span class="math inline">\(B\)</span> xảy ra.</li>
+<li>Giao (intersection) của <span class="math inline">\(A\)</span> và <span class="math inline">\(B\)</span> (<span class="math inline">\(A \cap B\)</span>) là một biến cố xảy ra khi và chỉ khi <span class="math inline">\(A\)</span> và <span class="math inline">\(B\)</span> xảy ra.</li>
+<li>Phần bù (complement) của <span class="math inline">\(A\)</span> (<span class="math inline">\(A^c\)</span>) là một biến cố xảy ra khi và chỉ khi <span class="math inline">\(A\)</span> không xảy ra.</li>
+</ul>
+<p>Quay trở lại ví dụ 2:</p>
+<ul>
+<li>Gọi <span class="math inline">\(C\)</span> là biến cố có ít nhất 1 mặt ngửa: <span class="math inline">\(C = A \cup B = \{\text{NN},\text{NS},\text{SN}\}\)</span></li>
+<li>Gọi <span class="math inline">\(D\)</span> là biến cố cả 2 mặt đều là mặt ngửa: <span class="math inline">\(D = A \cap B = \{\text{NN}\}\)</span></li>
+<li>Gọi <span class="math inline">\(E\)</span> là biến cố có mặt sấp đầu tiên: <span class="math inline">\(E = A^c = \{\text{SN},\text{SS}\}\)</span></li>
+</ul>
+<div class="figure"><span id="fig:example3"></span>
+<img src="figures/Picture03.png" alt="Minh hoạ cho lý thuyết tập hợp" width="926" />
+<p class="caption">
+Hình 1.3: Minh hoạ cho lý thuyết tập hợp
+</p>
+</div>
+</div>
+</div>
+<div id="định-nghĩa-xác-suất-probability" class="section level2">
+<h2><span class="header-section-number">1.2</span> Định nghĩa xác suất (probability)</h2>
+<div id="định-nghĩa-đơn-giản-về-xác-suất-naive-definition-of-probability" class="section level3">
+<h3><span class="header-section-number">1.2.1</span> Định nghĩa đơn giản về xác suất (naive definition of probability)</h3>
+<p>Gọi <span class="math inline">\(A\)</span> là một biến cố trong một thử nghiệm với không gian mẫu <span class="math inline">\(S\)</span>.</p>
+<p>Xác suất xảy ra của <span class="math inline">\(A\)</span> (định nghĩa đơn giản) là:</p>
+<p><span class="math display">\[
+P(A) = \frac{\text{Size of A}}{\text{Size of S}} = \frac{\text{Số lượng kết cục của A}}{\text{Tổng số kết cục trong S}}
+\]</span></p>
+<p>Trong ví dụ 2:</p>
+<ul>
+<li><span class="math inline">\(P(A) = \frac{2}{4} = 0.5\)</span></li>
+<li><span class="math inline">\(P(B) = \frac{2}{4} = 0.5\)</span></li>
+<li><span class="math inline">\(P(C) = \frac{3}{4} = 0.75\)</span></li>
+<li><span class="math inline">\(P(D) = \frac{1}{4} = 0.25\)</span></li>
+<li><span class="math inline">\(P(E) = \frac{2}{4} = 0.5\)</span></li>
+</ul>
+</div>
+<div id="tính-xác-suất-theo-quy-tắc-nhân-multiplication-rule" class="section level3">
+<h3><span class="header-section-number">1.2.2</span> Tính xác suất theo quy tắc nhân (multiplication rule)</h3>
+<p>Để tính xác suất (theo định nghĩa đơn giản) của biến cố <span class="math inline">\(A\)</span>, chúng ta cần đếm được số phần tử của <span class="math inline">\(A\)</span> và số phần tử của <span class="math inline">\(B\)</span>. Trong nhiều trường hợp, những số lượng này rất lớn và do đó, không thể đếm trực tiếp theo cách thông thường được. Một cách đếm nhanh hơn là sử dụng <strong>quy tắc nhân (multiplication rule)</strong>:</p>
+<blockquote>
+<p>Thực hiện một thử nghiệm phức tạp, kết hợp hai thử nghiệm <span class="math inline">\(A\)</span> và <span class="math inline">\(B\)</span>. Giả sử thử nghiệm <span class="math inline">\(A\)</span> có thể có <span class="math inline">\(a\)</span> kết cục; và ứng với mỗi kết cục của <span class="math inline">\(A\)</span>, thử nghiệm <span class="math inline">\(B\)</span> có <span class="math inline">\(b\)</span> kết cục. Khi đó thử nghiệm phức tạp kết hợp <span class="math inline">\(A\)</span> và <span class="math inline">\(B\)</span> có thể có <span class="math inline">\(a \times b\)</span> kết cục.</p>
+</blockquote>
+<div id="ví-dụ-4-chạy-thi" class="section level4">
+<h4><span class="header-section-number">1.2.2.1</span> Ví dụ 4: Chạy thi</h4>
+<blockquote>
+<p>Có 10 người tham gia một cuộc thi chạy. Giả định rằng không có trường hợp đồng hạng và cả 10 người đều hoàn thành đường đua của mình. Khi đó luôn xác định được người xếp hạng nhất, nhì, ba. Có tất cả bao nhiêu cách chọn ra được người xếp hạng nhất, nhì, ba?</p>
+</blockquote>
+<p>Có tất cả 10 cách chọn người xếp hạng nhất.</p>
+<p>Sau khi chọn được người xếp hạng nhất, có 9 cách chọn người xếp hạng nhì.</p>
+<p>Sau khi đã chọn được người xếp hạng nhất và hạng nhì, có 8 cách chọn người xếp hạng ba.</p>
+<p>Như vậy có tất cả <span class="math inline">\(10 \times 9 \times 8 = 720\)</span> cách chọn ra được người xếp hạng nhất, nhì, ba.</p>
+</div>
+<div id="định-lý-về-chọn-mẫu-lặp-lại-sampling-with-replacement" class="section level4">
+<h4><span class="header-section-number">1.2.2.2</span> Định lý về chọn mẫu lặp lại (sampling with replacement)</h4>
+<blockquote>
+<p>Có <span class="math inline">\(n\)</span> đối tượng và cần lần lượt chọn ra <span class="math inline">\(k\)</span> phần tử từ các đối tượng này, theo kiểu <strong>lặp lại</strong> (một đối tượng đã được chọn vẫn có thể tiếp tục được chọn trong lần chọn tiếp theo). Khi đó sẽ có tất cả <span class="math inline">\(n^k\)</span> cách chọn (có tính đến thứ tự).</p>
+</blockquote>
+</div>
+<div id="định-lý-về-chọn-mẫu-không-lặp-lại-sampling-without-replacement" class="section level4">
+<h4><span class="header-section-number">1.2.2.3</span> Định lý về chọn mẫu không lặp lại (sampling without replacement)</h4>
+<blockquote>
+<p>Có <span class="math inline">\(n\)</span> đối tượng và cần lần lượt chọn ra <span class="math inline">\(k\)</span> phần tử từ các đối tượng này, theo kiểu <strong>không lặp lại</strong> (một đối tượng đã được chọn thì không thể được chọn trong lần chọn tiếp theo). Khi đó sẽ có tất cả <span class="math inline">\(n \times (n-1) \ldots (n-k+1)\)</span> cách chọn (có tính đến thứ tự), với <span class="math inline">\(k \leq n\)</span>. Khi <span class="math inline">\(k=n\)</span>, số cách chọn là <span class="math inline">\(n \times (n-1) \ldots 1 = n!\)</span></p>
+</blockquote>
+</div>
+</div>
+<div id="ví-dụ-5-the-last-banana" class="section level3">
+<h3><span class="header-section-number">1.2.3</span> Ví dụ 5: the last banana</h3>
+<blockquote>
+<p>Minh và Lan bị lạc trên hoang đảo. Đến ngày hôm nay thức ăn chỉ còn lại một quả chuối. Để phân định ai sẽ được ăn quả chuối, Minh và Lan quyết định cầu may bằng việc tung xúc sắc. Sau khi mỗi người tung xúc sắc của mình, điểm xúc sắc của hai người sẽ được so với nhau để xác định điểm cao nhất. Nếu điểm cao nhất là từ 1 đến 4 thì Minh thắng và được ăn quả chuối; nhưng nếu điểm cao nhất là 5 hay 6 thì Lan sẽ thắng. Hãy xác định xem giữa Minh và Lan thì ai có xác suất thắng cao hơn?</p>
+</blockquote>
+<p>Trong ví dụ này thử nghiệm là tung hai xúc sắc.</p>
+<p>Khi tung một xúc sắc có thể có 6 kết cục khác nhau. Theo quy tắc nhân, khi tung hai xúc sắc sẽ có tất cả <span class="math inline">\(6 \times 6 = 36\)</span> kết cục khác nhau.</p>
+<p>Gọi <span class="math inline">\(A\)</span> là biến cố điểm cao nhất trong một lần tung 2 xúc sắc là từ 1 đến 4.</p>
+<p>Gọi <span class="math inline">\(B\)</span> là biến cố điểm cao nhất trong một lần tung 2 xúc sắc là từ 5 đến 6.</p>
+<p>Không gian mẫu, điểm cao nhất trong từng kết cục và khả năng xuất hiện của biến cố <span class="math inline">\(A\)</span> và <span class="math inline">\(B\)</span> trong không gian mẫu được trình bày ở hình sau:</p>
+<div class="figure"><span id="fig:example5"></span>
+<img src="figures/Picture04.png" alt="Minh hoạ cho ví dụ 5" width="790" />
+<p class="caption">
+Hình 1.4: Minh hoạ cho ví dụ 5
+</p>
+</div>
+<p>Như vậy xác suất <span class="math inline">\(A\)</span> xảy ra là <span class="math inline">\(P(A) = \frac{16}{36} = 0.44\)</span>, còn xác suất <span class="math inline">\(B\)</span> xảy ra là <span class="math inline">\(P(B) = \frac{20}{36} = 0.56\)</span></p>
+<p>Như vậy Lan có xác suất thắng cao hơn.</p>
+<p>Link Youtube cho ví dụ này: <a href="https://youtu.be/Kgudt4PXs28" class="uri">https://youtu.be/Kgudt4PXs28</a></p>
+</div>
+<div id="hạn-chế-của-định-nghĩa-đơn-giản-về-xác-suất" class="section level3">
+<h3><span class="header-section-number">1.2.4</span> Hạn chế của định nghĩa đơn giản về xác suất</h3>
+<p>Định nghĩa đơn giản trên về xác suất có hai hạn chế chính:</p>
+<ul>
+<li>Không gian mẫu <span class="math inline">\(S\)</span> phải hữu hạn (finite sample space)</li>
+<li>Các kết cục có khả năng xảy ra như nhau (equally likely outcome)</li>
+</ul>
+</div>
+<div id="định-nghĩa-đầy-đủ-về-xác-suất" class="section level3">
+<h3><span class="header-section-number">1.2.5</span> Định nghĩa đầy đủ về xác suất</h3>
+<p>Một không gian xác suất (probability space) bao gồm một không gian mẫu <span class="math inline">\(S\)</span> và một hàm số xác suất <span class="math inline">\(P\)</span>, trong đó hàm số xác suất <span class="math inline">\(P\)</span> sẽ gán một số thực từ 0 đến 1 cho từng biến cố <span class="math inline">\(A\)</span> trong <span class="math inline">\(S\)</span>. Hàm số <span class="math inline">\(P\)</span> phải thoả mãn các tiên đề sau:</p>
+<ul>
+<li><span class="math inline">\(P(\emptyset) = 0\)</span> (xác suất của tập hợp rỗng bằng 0)</li>
+<li><span class="math inline">\(P(S) = 1\)</span> (xác suất của không gian mẫu bằng 1)</li>
+<li>Nếu <span class="math inline">\(A_1,A_2,\dots\)</span> là các biến cố xung khắc (mutually exclusive or disjoint), thì: <span class="math inline">\(P(\bigcup\limits_{j=1}^{\infty} A_{j}) = \Sigma_{j=1}^{\infty}P(A_{j})\)</span></li>
+</ul>
+<div id="các-tính-chất-của-xác-suất" class="section level4">
+<h4><span class="header-section-number">1.2.5.1</span> Các tính chất của xác suất</h4>
+<p>Với các biến cố <span class="math inline">\(A\)</span> và <span class="math inline">\(B\)</span> bất kỳ:</p>
+<ul>
+<li><span class="math inline">\(P(A^c) = 1 - P(A)\)</span></li>
+<li>Nếu <span class="math inline">\(A\)</span> là tập hợp con của <span class="math inline">\(B\)</span> (<span class="math inline">\(A \subseteq\)</span> B) thì <span class="math inline">\(P(A) \leq P(B)\)</span></li>
+<li><span class="math inline">\(P(A \cup B) = P(A) + P(B) - P(A \cap B)\)</span></li>
+</ul>
+<p>Định nghĩa và tính chất của xác suất được tóm tắt trong hình sau:</p>
+<div class="figure"><span id="fig:generaldefinition"></span>
+<img src="figures/Picture05.png" alt="Định nghĩa và tính chất của xác suất" width="871" />
+<p class="caption">
+Hình 1.5: Định nghĩa và tính chất của xác suất
+</p>
+</div>
+</div>
+</div>
+<div id="diễn-giải-ý-nghĩa-của-xác-suất" class="section level3">
+<h3><span class="header-section-number">1.2.6</span> Diễn giải ý nghĩa của xác suất</h3>
+<div id="theo-trường-phái-frequentist" class="section level4">
+<h4><span class="header-section-number">1.2.6.1</span> Theo trường phái frequentist</h4>
+<p>Xác suất của một biến cố thể hiện tần số xuất hiện của biến cố đó khi lặp lại thử nghiệm nhiều lần. Ví dụ, xác suất được mặt ngửa khi tung một đồng xu bằng 50%, nghĩa là nếu tung đồng xu rất nhiều lần, mặt ngửa sẽ xuất hiện trong khoảng 50% số lần tung đó.</p>
+</div>
+<div id="theo-trường-phái-bayesian" class="section level4">
+<h4><span class="header-section-number">1.2.6.2</span> Theo trường phái Bayesian</h4>
+<p>Xác suất của một biến cố phản ánh mức độ tin tưởng vào sự xuất hiện của biến cố đó, kể cả khi không thể lặp lại thử nghiệm.</p>
+</div>
+</div>
+</div>
+<div id="xác-suất-có-điều-kiện" class="section level2">
+<h2><span class="header-section-number">1.3</span> Xác suất có điều kiện</h2>
+<div id="định-nghĩa-xác-suất-có-điều-kiện" class="section level3">
+<h3><span class="header-section-number">1.3.1</span> Định nghĩa xác suất có điều kiện</h3>
+<p>Nếu <span class="math inline">\(A\)</span> và <span class="math inline">\(B\)</span> là các biến cố với <span class="math inline">\(P(B) &gt; 0\)</span>, xác suất của <span class="math inline">\(A\)</span> khi biết <span class="math inline">\(B\)</span> (<span class="math inline">\(P(A | B)\)</span>) được tính bằng công thức</p>
+<p><span class="math display">\[
+P(A|B) = \frac{P(A \cap B)}{P(B)}
+\]</span>
+#### Định lí về xác suất phần giao của hai biến cố</p>
+<p>Với các biến cố <span class="math inline">\(A\)</span> và <span class="math inline">\(B\)</span> có xác suất <span class="math inline">\(&gt;0\)</span> bất kỳ:</p>
+<p><span class="math display">\[
+P(A \cap B) = P(B) \times P(A|B) = P(A) \times P(B|A)
+\]</span></p>
+</div>
+<div id="định-lí-bayes-bayes-rule" class="section level3">
+<h3><span class="header-section-number">1.3.2</span> Định lí Bayes (Bayes’ rule)</h3>
+<p>Với các biến cố <span class="math inline">\(A\)</span> và <span class="math inline">\(B\)</span> bất kỳ và <span class="math inline">\(P(B) &gt; 0\)</span>:</p>
+<p><span class="math display">\[
+P(A|B) = \frac{P(B|A)P(A)}{P(B)}
+\]</span>
+<span class="math inline">\(P(A)\)</span> được gọi là <strong>xác suất tiền nghiệm (prior probability)</strong> của <span class="math inline">\(A\)</span>, và <span class="math inline">\(P(A|B)\)</span> được gọi là xác suất hậu nghiệm (posterior probability) của <span class="math inline">\(A\)</span> sau khi biết <span class="math inline">\(B\)</span> đã xảy ra.</p>
+</div>
+<div id="luật-xác-suất-toàn-phần-law-of-total-probability" class="section level3">
+<h3><span class="header-section-number">1.3.3</span> Luật xác suất toàn phần (law of total probability)</h3>
+<p>Gọi <span class="math inline">\(A_1,\ldots,A_n\)</span> là các phần của không gian mẫu <span class="math inline">\(S\)</span> (nghĩa là <span class="math inline">\(A_1,\ldots,A_n\)</span> xung khắc với nhau, và hợp của chúng là <span class="math inline">\(S\)</span>) và xác suất của các phần này đều <span class="math inline">\(&gt;0\)</span> (<span class="math inline">\(P(A_i) &gt; 0\)</span> với mọi <span class="math inline">\(i\)</span>)</p>
+<p><span class="math display">\[
+P(B) = \Sigma^n_{i = 1}P(B|A_i)P(A_i)
+\]</span></p>
+<p>Nói cách khác, để tính xác suất không điều kiện của <span class="math inline">\(B\)</span>, cần chia không gian mẫu <span class="math inline">\(S\)</span> thành các phần không trùng lắp <span class="math inline">\(A_i\)</span>, sau đó tính xác suất có điều kiện của <span class="math inline">\(B\)</span> trong từng phần, cuối cùng lấy tổng các tích số của xác suất có điều kiện đó với xác suất của từng phần.</p>
+</div>
+<div id="sự-độc-lập-của-các-biến-cố-independence-of-events" class="section level3">
+<h3><span class="header-section-number">1.3.4</span> Sự độc lập của các biến cố (Independence of events)</h3>
+<p>Hai biến cố <span class="math inline">\(A\)</span> và <span class="math inline">\(B\)</span> độc lập với nhau nếu</p>
+<p><span class="math display">\[
+P(A \cap B) = P(A) \times P(B)
+\]</span>
+nói cách khác</p>
+<p><span class="math display">\[
+P(A|B) = P(A)
+\]</span></p>
+<p>Lưu ý, <strong>độc lập (independence)</strong> khác với <strong>xung khắc (mutually exclusive/disjoint)</strong>. Khi <span class="math inline">\(A\)</span> và <span class="math inline">\(B\)</span> xung khắc với nhau, chúng không độc lập với nhau, trừ khi <span class="math inline">\(P(A) = 0\)</span> hay <span class="math inline">\(P(B) = 0\)</span> (vì khi biết <span class="math inline">\(A\)</span> xảy ra sẽ dễ dàng suy ra <span class="math inline">\(B\)</span> không xảy ra).</p>
+</div>
+</div>
+<div id="biến-số-ngẫu-nhiên-random-variables" class="section level2">
+<h2><span class="header-section-number">1.4</span> Biến số ngẫu nhiên (Random variables)</h2>
+<blockquote>
+<p>Cho một thử nghiệm với không gian mẫu <span class="math inline">\(S\)</span>, một <strong>biến số ngẫu nhiên</strong> là một hàm số kết nối từ không gian mẫu <span class="math inline">\(S\)</span> sang tập hợp số thực <span class="math inline">\(R\)</span></p>
+</blockquote>
+<p>Nói cách khác, biến số ngẫu nhiên <span class="math inline">\(X\)</span> gán một giá trị <span class="math inline">\(X(s)\)</span> cho mỗi kết cục <span class="math inline">\(s\)</span> của thử nghiệm.</p>
+<div id="ví-dụ" class="section level3">
+<h3><span class="header-section-number">1.4.1</span> Ví dụ:</h3>
+<p>Quay trở lại với thử nghiệm tung 2 đồng xu.</p>
+<p>Không gian mẫu bao gồm 4 kết cục: <span class="math inline">\(S = \{SS, NN, SN, NS\}\)</span></p>
+<p>Dưới đây là một số biến số ngẫu nhiên có thể được định nghĩa trên không gian mẫu này:</p>
+<ul>
+<li><p><span class="math inline">\(X\)</span> là số mặt ngửa. Đây là một biến số ngẫu nhiên với 3 giá trị có thể có: 0, 1, 2. Biến số này gán 2 cho kết cục <span class="math inline">\(NN\)</span> (<span class="math inline">\(X(NN) = 2\)</span>), 1 cho kết cục <span class="math inline">\(NS\)</span> hay <span class="math inline">\(SN\)</span> (<span class="math inline">\(X(NS) = X(SN) = 1\)</span>) và 0 cho kết cục <span class="math inline">\(SS\)</span> (<span class="math inline">\(X(SS) = 0\)</span>)</p></li>
+<li><p><span class="math inline">\(Y\)</span> là số mặt sấp. Có thể định nghĩa biến số ngẫu nhiên này bằng: <span class="math inline">\(Y(s) = 2 - X(s)\)</span></p></li>
+<li><p><span class="math inline">\(I = 1\)</span> nếu được mặt ngửa đầu tiên và <span class="math inline">\(I = 0\)</span> trong những trường hợp khác. Đây là một biến số ngẫu nhiên với 2 giá trị: 0, 1. Biến số này gán 1 cho kết cục <span class="math inline">\(NN\)</span> hay <span class="math inline">\(NS\)</span> (<span class="math inline">\(I(NN) = I(NS) = 1\)</span>), và gán 0 cho kết cục <span class="math inline">\(SN\)</span> hay <span class="math inline">\(SS\)</span> (<span class="math inline">\(I(SN) = I(SS) = 0\)</span>)</p></li>
+</ul>
+<div class="figure"><span id="fig:unnamed-chunk-2"></span>
+<img src="figures/Picture06.png" alt="Minh hoạ cho biến số ngẫu nhiên" width="921" />
+<p class="caption">
+Hình 1.6: Minh hoạ cho biến số ngẫu nhiên
+</p>
+</div>
+</div>
+<div id="loại-biến-số-ngẫu-nhiên" class="section level3">
+<h3><span class="header-section-number">1.4.2</span> Loại biến số ngẫu nhiên</h3>
+<p>Có hai loại biến số ngẫu nhiên: <strong>biến số ngẫu nhiên rời rạc (discrete random variables)</strong> và <strong>biến số ngẫu nhiên liên tục (continuous random variables)</strong>.</p>
+<div id="biến-số-ngẫu-nhiên-rời-rạc-discrete-random-variables" class="section level4">
+<h4><span class="header-section-number">1.4.2.1</span> Biến số ngẫu nhiên rời rạc (discrete random variables)</h4>
+<blockquote>
+<p>Một biến số ngẫu nhiên X được xem là rời rạc nếu tập hợp các giá trị có thể có của X là một tập hợp hữu hạn hoặc vô hạn nhưng đếm được.</p>
+</blockquote>
+<blockquote>
+<p>Một biến số ngẫu nhiên X được xem là liên tục nếu X có thể có bất kỳ giá trị nào trong một khoảng trên trục số</p>
+</blockquote>
+</div>
+</div>
+</div>
+<div id="phân-phối-xác-suất-probability-distribution" class="section level2">
+<h2><span class="header-section-number">1.5</span> Phân phối xác suất (Probability distribution)</h2>
+<p>Phân phối của một biến số ngẫu nhiên mô tả xác suất của mọi biến cố liên quan đến biến số ngẫu nhiên.</p>
+<div id="phân-phối-của-biến-số-ngẫu-nhiên-rời-rạc" class="section level3">
+<h3><span class="header-section-number">1.5.1</span> Phân phối của biến số ngẫu nhiên rời rạc</h3>
+<div id="hàm-khối-xác-suất-probability-mass-function-pmf" class="section level4">
+<h4><span class="header-section-number">1.5.1.1</span> Hàm khối xác suất (Probability mass function, PMF)</h4>
+<p>Là hàm số <span class="math inline">\(p_X\)</span> xác định bởi <span class="math inline">\(p_X(x) = P(X = x)\)</span>.</p>
+</div>
+<div id="tính-chất-của-pmf" class="section level4">
+<h4><span class="header-section-number">1.5.1.2</span> Tính chất của PMF</h4>
+<p>Cho <span class="math inline">\(X\)</span> là biến số ngẫu nhiên rời rạc với các giá trị có thể có là <span class="math inline">\(x_1, x_2, \ldots\)</span>. PMF <span class="math inline">\(p_X\)</span> của <span class="math inline">\(X\)</span> phải thoả mãn hai tiêu chí sau:</p>
+<ul>
+<li>Không âm: <span class="math inline">\(p_X(x) &gt; 0\)</span> cho một vài giá trị <span class="math inline">\(x\)</span> và <span class="math inline">\(p_X(x) = 0\)</span> cho các giá trị còn lại</li>
+<li>Tổng bằng 1: <span class="math inline">\(\Sigma^\infty_{j = 1}p_X(x_j) = 1\)</span></li>
+</ul>
+</div>
+<div id="ví-dụ-1" class="section level4">
+<h4><span class="header-section-number">1.5.1.3</span> Ví dụ</h4>
+<p>Tìm hàm khối xác suất của các biến số ngẫu nhiên sau trong thử nghiệm tung 2 đồng xu:</p>
+<ul>
+<li><span class="math inline">\(X\)</span> là số mặt ngửa
+<ul>
+<li><span class="math inline">\(p_X(0) = P(X = 0) = 1/4\)</span></li>
+<li><span class="math inline">\(p_X(1) = P(X = 1) = 1/2\)</span></li>
+<li><span class="math inline">\(p_X(2) = P(X = 2) = 1/4\)</span></li>
+<li><span class="math inline">\(p_X(x) = 0\)</span> cho mọi giá trị khác của <span class="math inline">\(x\)</span></li>
+</ul></li>
+<li><span class="math inline">\(Y\)</span> là số mặt sấp
+<ul>
+<li><span class="math inline">\(p_Y(0) = P(Y = 0) = 1/4\)</span></li>
+<li><span class="math inline">\(p_Y(1) = P(Y = 1) = 1/2\)</span></li>
+<li><span class="math inline">\(p_Y(2) = P(Y = 2) = 1/4\)</span></li>
+<li><span class="math inline">\(p_Y(y) = 0\)</span> cho mọi giá trị khác của <span class="math inline">\(y\)</span></li>
+</ul></li>
+<li><span class="math inline">\(I = 1\)</span> nếu được mặt ngửa đầu tiên và <span class="math inline">\(I = 0\)</span> trong những trường hợp khác
+<ul>
+<li><span class="math inline">\(p_I(0) = P(I = 0) = 1/2\)</span></li>
+<li><span class="math inline">\(p_I(1) = P(I = 1) = 1/2\)</span></li>
+<li><span class="math inline">\(p_I(i) = 0\)</span> cho mọi giá trị khác của <span class="math inline">\(i\)</span></li>
+</ul></li>
+</ul>
+<p>Các hàm khối xác suất này được minh hoạ trong hình sau:</p>
+<div class="figure"><span id="fig:unnamed-chunk-3"></span>
+<img src="figures/Picture07.png" alt="Minh hoạ cho hàm khối xác suất" width="387" />
+<p class="caption">
+Hình 1.7: Minh hoạ cho hàm khối xác suất
+</p>
+</div>
+</div>
+<div id="ví-dụ-2" class="section level4">
+<h4><span class="header-section-number">1.5.1.4</span> Ví dụ:</h4>
+<p>Tung 2 xúc sắc <span class="math inline">\(A\)</span> và <span class="math inline">\(B\)</span>. Xác định PMF của các biến số ngẫu nhiên sau:</p>
+<ul>
+<li><span class="math inline">\(X\)</span> là điểm số của xúc sắc <span class="math inline">\(A\)</span>.</li>
+<li><span class="math inline">\(Y\)</span> là điểm số của xúc sắc <span class="math inline">\(B\)</span></li>
+<li><span class="math inline">\(Z = 7 - X\)</span></li>
+<li><span class="math inline">\(T = X + Y\)</span></li>
+</ul>
+<p>PMF của <span class="math inline">\(T\)</span> được minh hoạ trong hình sau:</p>
+<div class="figure"><span id="fig:unnamed-chunk-4"></span>
+<img src="figures/Picture08.png" alt="Minh hoạ cho PMF của $T$" width="297" />
+<p class="caption">
+Hình 1.8: Minh hoạ cho PMF của <span class="math inline">\(T\)</span>
+</p>
+</div>
+</div>
+<div id="ví-dụ-3" class="section level4">
+<h4><span class="header-section-number">1.5.1.5</span> Ví dụ:</h4>
+<p>Với ví dụ trên, tính xác suất tổng điểm của 2 xúc sắc (<span class="math inline">\(T\)</span>) có giá trị từ 1 đến 4</p>
+<p><span class="math inline">\(P(1 \leq T \leq 4) = P(T = 2) + P(T = 3) + P(T = 4) = 6/36\)</span></p>
+</div>
+<div id="phân-phối-bernoulli-bernoulli-distribution" class="section level4">
+<h4><span class="header-section-number">1.5.1.6</span> Phân phối Bernoulli (Bernoulli distribution)</h4>
+<p>Một biến số ngẫu nhiên <span class="math inline">\(X\)</span> có phân phối Bernoulli với tham số <span class="math inline">\(p\)</span> nếu <span class="math inline">\(P(X = 1) = p\)</span> và <span class="math inline">\(P(X = 0) = 1 - p\)</span>, với <span class="math inline">\(0 &lt; p &lt; 1\)</span>. Ta có thể ký hiệu là <span class="math inline">\(X \sim Bern(p)\)</span></p>
+<p>Mọi biến số ngẫu nhiên chỉ có 2 giá trị <span class="math inline">\(0\)</span> và <span class="math inline">\(1\)</span> đều có phân phối Bernoulli với tham số <span class="math inline">\(p\)</span> <span class="math inline">\(Bern(p)\)</span>, với <span class="math inline">\(p\)</span> là xác suất biến số ngẫu nhiên có giá trị bằng <span class="math inline">\(1\)</span>.</p>
+<blockquote>
+<p>Thử nghiệm Bernoulli (Bernoulli trial): Một thử nghiệm mà kết quả chỉ có 1 trong 2 kết cục: “thành công” hay “thất bại” được gọi là một thử nghiệm Bernoulli. Một biến số ngẫu nhiên Bernoulli có thể xem là chỉ tố của thành công trong một thử nghiệm Bernoulli.</p>
+</blockquote>
+</div>
+<div id="phân-phối-nhị-thức-binomial-distribution" class="section level4">
+<h4><span class="header-section-number">1.5.1.7</span> Phân phối nhị thức (Binomial distribution)</h4>
+<p>Thực hiện <span class="math inline">\(n\)</span> thử nghiệm Bernoulli độc lập với nhau, mỗi thử nghiệm đều có xác suất thành công <span class="math inline">\(p\)</span>. Gọi <span class="math inline">\(X\)</span> là tổng số lần thành công. Phân phối của <span class="math inline">\(X\)</span> được gọi là phân phối nhị thức với các tham số là <span class="math inline">\(n\)</span> và <span class="math inline">\(p\)</span>. Ta có thể ký hiệu là <span class="math inline">\(X \sim Bin(n, p)\)</span></p>
+<p>Nếu <span class="math inline">\(X \sim Bin(n, p)\)</span>, PMF của <span class="math inline">\(X\)</span> là</p>
+<p><span class="math display">\[
+P(X = k) = {n \choose k} p^k (1-p)^{n-k}
+\]</span>
+Với <span class="math inline">\({n \choose k} = \frac{n!}{k!(n-k)!}\)</span></p>
+<div class="figure"><span id="fig:unnamed-chunk-5"></span>
+<img src="figures/Picture09.png" alt="Minh hoạ cho PMF của phân phối nhị thức" width="367" />
+<p class="caption">
+Hình 1.9: Minh hoạ cho PMF của phân phối nhị thức
+</p>
+</div>
+</div>
+<div id="hàm-phân-phối-tích-luỹ-cumulative-distribution-functions-cdf" class="section level4">
+<h4><span class="header-section-number">1.5.1.8</span> Hàm phân phối tích luỹ (Cumulative distribution functions, CDF)</h4>
+<p>Hàm phân phối tích luỹ (CDF) của một biến số ngẫu nhiên <span class="math inline">\(X\)</span> là một hàm số <span class="math inline">\(F_X\)</span> với <span class="math inline">\(F_X(x) = P(X \leq x)\)</span></p>
+</div>
+<div id="tính-chất-của-cdf" class="section level4">
+<h4><span class="header-section-number">1.5.1.9</span> Tính chất của CDF</h4>
+<p>Bất kỳ hàm phân phối tích luỹ nào cũng có các tính chất sau:</p>
+<ul>
+<li>Tăng dần: nếu <span class="math inline">\(x_1 \leq x_2\)</span> thì <span class="math inline">\(F(x_1) \leq F(x_2)\)</span></li>
+<li>Có giới hạn là <span class="math inline">\(0\)</span> và <span class="math inline">\(1\)</span>: <span class="math inline">\(\lim_{x\rightarrow -\infty}F(x) = 0\)</span> và <span class="math inline">\(\lim_{x\rightarrow +\infty}F(x) = 1\)</span></li>
+</ul>
+<p>Hình dưới đây minh hoạ cho PMF và CDF của phân phối <span class="math inline">\(Bin(4, 1/2)\)</span></p>
+<div class="figure"><span id="fig:unnamed-chunk-6"></span>
+<img src="figures/Picture10.png" alt="Minh hoạ cho PMF của phân phối nhị thức" width="367" />
+<p class="caption">
+Hình 1.10: Minh hoạ cho PMF của phân phối nhị thức
+</p>
+</div>
+</div>
+<div id="kì-vọng-expectation" class="section level4">
+<h4><span class="header-section-number">1.5.1.10</span> Kì vọng (Expectation)</h4>
+<p>Kì vọng giúp tóm tắt phân phối của biến số ngẫu nhiên. Có 2 loại kì vọng chính:</p>
+<ul>
+<li>Vọng trị (Expected value): mô tả vị trí trung tâm của phân phối</li>
+<li>Phương sai (Variance): mô tả độ phân tán của phân phối</li>
+</ul>
+<p>Vọng trị (expected value) của một biến số ngẫu nhiên rời rạc <span class="math inline">\(X\)</span> với các giá trị có thể có <span class="math inline">\(x_1, x_2, \ldots\)</span> được định nghĩa như sau:</p>
+<p><span class="math display">\[
+E(X) = \Sigma^\infty_{j = 1} x_j P(X = x_j)
+\]</span>
+Một số tính chất của vọng trị</p>
+<ul>
+<li>Với mọi biến số ngẫu nhiên <span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span> và hằng số <span class="math inline">\(c\)</span>: <span class="math inline">\(E(X + Y) = E(X) + E(Y)\)</span> và <span class="math inline">\(E(cX) = c E(X)\)</span></li>
+</ul>
+<p>Vọng trị của phân phối Bernoulli: Nếu <span class="math inline">\(X \sim Bern(p)\)</span> thì <span class="math inline">\(E(X) = p\)</span></p>
+<p>Vọng trị của phân phối nhị thức: Nếu <span class="math inline">\(X \sim Bin(n, p)\)</span> thì <span class="math inline">\(E(X) = np\)</span></p>
+<p>Phương sai (variance) và độ lệch chuẩn (standard deviation) của một biến số ngẫu nhiên X được định nghĩa như sau:</p>
+<p><span class="math display">\[
+Var(X) = E(X - EX)^2 = E(X^2) - (EX)^2
+\]</span>
+<span class="math display">\[
+SD(X) = \sqrt{Var(X)}
+\]</span>
+Phương sai của <span class="math inline">\(X\)</span> đo lường trung bình bình phương khoảng cách trung bình từ các giá trị của <span class="math inline">\(X\)</span> đến giá trị trung bình.</p>
+<p>Các tính chất của phương sai:</p>
+<ul>
+<li><span class="math inline">\(Var(X + c) = Var(X)\)</span></li>
+<li><span class="math inline">\(Var(cX) = c^2 Var(X)\)</span></li>
+<li>Nếu <span class="math inline">\(X\)</span> và <span class="math inline">\(Y\)</span> độc lập, <span class="math inline">\(Var(X + Y) = Var(X) + Var(Y)\)</span></li>
+</ul>
+<p>Phương sai của phân phối Bernoulli: Nếu <span class="math inline">\(X \sim Bern(p)\)</span> thì <span class="math inline">\(Var(X) = p(1-p)\)</span></p>
+<p>Phương sai của phân phối nhị thức: Nếu <span class="math inline">\(X \sim Bin(n, p)\)</span> thì <span class="math inline">\(Var(X) = np(1-p)\)</span></p>
+</div>
+</div>
+<div id="phân-phối-của-biến-số-ngẫu-nhiên-liên-tục" class="section level3">
+<h3><span class="header-section-number">1.5.2</span> Phân phối của biến số ngẫu nhiên liên tục</h3>
+<div id="hàm-mật-độ-xác-suất-probability-density-function-pdf." class="section level4">
+<h4><span class="header-section-number">1.5.2.1</span> Hàm mật độ xác suất (Probability density function, PDF).</h4>
+<p>Với biến số ngẫu nhiên <span class="math inline">\(X\)</span> có CDF <span class="math inline">\(F\)</span>, hàm mật độ xác suất (PDF) của <span class="math inline">\(X\)</span> là đạo hàm <span class="math inline">\(f\)</span> của CDF: <span class="math inline">\(f(x) = F^\prime(x)\)</span></p>
+<p>Lưu ý, giá trị <span class="math inline">\(f(x)\)</span> của PDF không phải là một xác suất (<span class="math inline">\(f(x)\)</span> có thể <span class="math inline">\(&gt;1\)</span>)</p>
+<p>Chuyển đổi từ PDF sang CDF: <span class="math inline">\(X\)</span> là biến số ngẫu nhiên với PDF <span class="math inline">\(f\)</span>. Khi đó CDF của <span class="math inline">\(X\)</span> có thể được tính bằng:</p>
+<p><span class="math display">\[
+F(x) = \int^x_{-\infty} f(t)dt
+\]</span>
+và xác suất <span class="math inline">\(X\)</span> nằm trong khoảng từ <span class="math inline">\(a\)</span> đến <span class="math inline">\(b\)</span> có thể được tính theo công thức</p>
+<p><span class="math display">\[
+P(a &lt; X \leq b) = \int^b_{a} f(x)dx
+\]</span>
+Một số tính chất của PDF</p>
+<ul>
+<li>Không âm: <span class="math inline">\(f(x) \geq 0\)</span></li>
+<li>Có tích phân bằng 1: <span class="math inline">\(\int_{-\infty}^{\infty}f(x)dx = 1\)</span></li>
+</ul>
+<p>Vọng trị của một biến số ngẫu nhiên <span class="math inline">\(X\)</span> có PDF <span class="math inline">\(f\)</span> là</p>
+<p><span class="math display">\[
+E(X) = \int_{-\infty}^{\infty} xf(x)dx
+\]</span>
+#### Phân phối chuẩn tắc (standard normal distribution)</p>
+<p>Một biến số ngẫu nhiên <span class="math inline">\(Z\)</span> có phân phối chuẩn tắc nếu có PDF</p>
+<p><span class="math display">\[
+\varphi(z) = \frac{1}{\sqrt{2\pi}}\exp^{-z^2/2}, -\infty &lt; z &lt; \infty
+\]</span>
+<span class="math inline">\(Z\)</span> có trung bình là <span class="math inline">\(0\)</span> và phương sai là <span class="math inline">\(1\)</span>. Ta có thể ký hiệu: <span class="math inline">\(Z \sim N(0, 1)\)</span></p>
+</div>
+<div id="phân-phối-bình-thường-normal-distribution" class="section level4">
+<h4><span class="header-section-number">1.5.2.2</span> Phân phối bình thường (normal distribution)</h4>
+<p>Một biến số ngẫu nhiên <span class="math inline">\(Z\)</span> có phân phối chuẩn tắc (<span class="math inline">\(Z \sim N(0, 1)\)</span>) thì</p>
+<p><span class="math display">\[
+X = \mu + \sigma Z
+\]</span>
+có phân phối bình thường với trung bình <span class="math inline">\(\mu\)</span> và phương sai <span class="math inline">\(\sigma^2\)</span>. Ta có thể ký hiệu là <span class="math inline">\(X \sim N(\mu, \sigma^2)\)</span></p>
+</div>
+</div>
+</div>
+<div id="ứng-dụng-của-xác-suất-trong-chẩn-đoán-và-ra-quyết-định-lâm-sàng" class="section level2">
+<h2><span class="header-section-number">1.6</span> Ứng dụng của xác suất trong chẩn đoán và ra quyết định lâm sàng</h2>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="biostat.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["CB_THYKCC.pdf", "CB_THYKCC.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
